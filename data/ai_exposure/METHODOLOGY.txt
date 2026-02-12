@@ -1,0 +1,27 @@
+
+AI Occupational Exposure Index
+==============================
+
+Based on Felten, Raj, and Seamans (2021) methodology.
+
+Data Sources (all free):
+1. O*NET Database: https://www.onetcenter.org/database.html
+   - Download: "Abilities" and "Work Activities" files
+
+2. BLS OES Data: https://www.bls.gov/oes/tables.htm
+   - Industry-occupation employment matrices
+
+3. AI Application Mapping:
+   The Felten et al. approach maps AI capabilities to O*NET abilities.
+   Their scores are available at: https://osf.io/3a5n2/
+
+Construction Steps:
+1. Map AI applications to cognitive abilities in O*NET
+2. Calculate ability-level AI exposure scores
+3. Aggregate to occupation level using ability importance weights
+4. Aggregate to industry level using employment shares
+
+Key Reference:
+Felten, E., Raj, M., & Seamans, R. (2021). "Occupational, industry,
+and geographic exposure to artificial intelligence: A novel dataset
+and its potential uses." Strategic Management Journal.

@@ -1,0 +1,42 @@
+PatentsView Data Download Instructions
+======================================
+
+NOTE: PatentsView deprecated their old API (410 Gone). Use bulk downloads.
+
+BULK DATA DOWNLOAD:
+Go to: https://patentsview.org/download/data-download-tables
+
+Key files needed:
+1. g_patent.tsv.zip - Main patent data (~3GB compressed)
+2. g_cpc_current.tsv.zip - CPC classifications for AI filtering
+3. g_assignee.tsv.zip - Assignee/company information
+
+AI-related CPC codes to filter:
+- G06N (Machine learning, neural networks)
+- G06F 18/ (Pattern recognition)
+- G06F 40/ (Natural language processing)
+- G10L (Speech recognition)
+- G06V (Image recognition)
+- G06Q (Business AI applications)
+
+ALTERNATIVE - Google Patents Public Data (BigQuery):
+https://console.cloud.google.com/marketplace/product/google_patents_public_datasets/google-patents-public-data
+- Free tier: 1TB/month query allowance
+- Contains full USPTO patent data with CPC codes
+- Can filter directly by AI CPC codes in SQL
+
+Sample BigQuery:
+```sql
+SELECT
+  publication_number,
+  application_number,
+  filing_date,
+  grant_date,
+  title_localized.text as title,
+  assignee_harmonized.name as assignee
+FROM `patents-public-data.patents.publications`
+WHERE
+  country_code = 'US'
+  AND grant_date >= '2015-01-01'
+  AND EXISTS (SELECT 1 FROM UNNEST(cpc) c WHERE c.code LIKE 'G06N%')
+```

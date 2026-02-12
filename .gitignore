@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# Data files (too large for git)
+data/ken_french/*.csv
+data/ken_french/*.zip
+data/epa_egrid/*.xlsx
+data/ai_exposure/onet_*.txt
+data/stocks/*.csv
+data/patents/*.zip
+data/patents/*.tsv
+data/sec_filings/ai_keywords_10k.csv
+data/sec_filings/scraper_log.txt
+
+# Partial/temporary files
+*_partial.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp

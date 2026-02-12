@@ -1,0 +1,41 @@
+EPA GHGRP Data Download Instructions
+=====================================
+
+NOTE: Direct API downloads are restricted. Manual download required.
+
+STEP-BY-STEP INSTRUCTIONS:
+
+1. Go to: https://www.epa.gov/ghgreporting/data-sets
+
+2. Scroll to "Data Summary Spreadsheets" section
+
+3. Download the ZIP file for each year needed (2015-2023)
+   - Files named like "2023_data_summary_spreadsheets.zip"
+   - Each ZIP contains Excel files with facility-level data
+
+4. Extract and place files in this folder:
+   data/epa_ghgrp/
+
+ALTERNATIVE - FLIGHT Tool Export:
+1. Go to: https://ghgdata.epa.gov/ghgp/main.do
+2. Click "Facility Search"
+3. Search without filters to get all facilities
+4. Export results to Excel/CSV
+
+ALTERNATIVE - Envirofacts Query:
+1. Go to: https://enviro.epa.gov/facts/ghg/search.html
+2. Leave all filters blank for full dataset
+3. Click "Search" then "Download"
+
+Key fields you'll need:
+- FACILITY_ID: Unique identifier
+- FACILITY_NAME: Company/site name
+- PARENT_COMPANIES: Ultimate parent company
+- TOTAL_REPORTED_DIRECT_EMISSIONS: CO2e in metric tons
+- LATITUDE/LONGITUDE: For regional analysis
+- PRIMARY_NAICS_CODE: Industry classification
+- REPORTING_YEAR: Year of emissions
+
+For matching to S&P 500 firms:
+- Use PARENT_COMPANIES field
+- May need fuzzy matching to company names
