@@ -1,0 +1,10 @@
+gics_sector,ai_exposure,ai_exposure_std,n_occupations,ability_exposure,activity_exposure
+Communication Services,58.78,14.42,38,0.75,0.69
+Consumer Discretionary,62.62,15.29,123,0.75,0.69
+Consumer Staples,29.59,16.47,12,0.71,0.69
+Financials,81.16,11.87,50,0.77,0.7
+Health Care,65.05,12.11,168,0.75,0.7
+Industrials,50.34,25.09,338,0.73,0.69
+Information Technology,81.51,6.87,29,0.77,0.7
+Materials,37.2,9.9,107,0.71,0.69
+Real Estate,28.92,11.49,8,0.71,0.68
