@@ -71,7 +71,36 @@ ESG (Environmental, Social, Governance) scores are ratings that measure a compan
 
 ---
 
-### 5. CSRHub
+### 5. CDP Open Data Portal (Recommended for Emissions)
+
+**Website:** https://data.cdp.net/browse
+
+**Direct links:**
+- Governance data: https://data.cdp.net/browse?category=Governance
+- Climate data: https://data.cdp.net/browse?category=Climate+Change
+- Water data: https://data.cdp.net/browse?category=Water
+
+**What you get free:**
+- Corporate climate disclosures (Scope 1, 2, 3 emissions)
+- CDP letter grades (A to D-)
+- Climate targets and progress
+- Water usage data
+- Downloadable CSV/Excel files
+
+**How to access:**
+1. Browse datasets at data.cdp.net
+2. Click on dataset to view
+3. Export to CSV directly (no registration for public data)
+4. Some datasets require free CDP account
+
+**Key datasets:**
+- "Corporate Climate Change Questionnaire Responses"
+- "Corporate Emissions Data"
+- "Climate Change Scores"
+
+---
+
+### 6. CSRHub
 
 **Website:** https://www.csrhub.com/
 
