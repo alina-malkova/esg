@@ -1,0 +1,4 @@
+facility_id,facility_name,parent_company,state,city,total_reported_direct_emissions,primary_naics_code,reporting_year,latitude,longitude
+1001,Sample Plant A,APPLE INC,CA,Cupertino,50000,334111,2022,37.33,-122.03
+1002,Sample Plant B,MICROSOFT CORPORATION,WA,Redmond,120000,511210,2022,47.67,-122.12
+1003,Sample Plant C,AMAZON.COM INC,WA,Seattle,250000,454110,2022,47.61,-122.33
