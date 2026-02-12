@@ -1,0 +1,498 @@
+ticker,company,gics_sector,year,cdp_scope_1,cdp_scope_2,total_cdp
+APD,Air Products,Materials,2011,14440000.0,9878817.0,24318817.0
+APD,Air Products,Materials,2012,14767209.0,10563030.0,25330239.0
+APD,Air Products,Materials,2013,14972268.0,10853989.0,25826257.0
+ALB,Albemarle Corporation,Materials,2012,752000.0,376000.0,1128000.0
+ALB,Albemarle Corporation,Materials,2011,706000.0,379000.0,1085000.0
+ALB,Albemarle Corporation,Materials,2013,747000.0,393000.0,1140000.0
+ADM,Archer Daniels Midland,Consumer Staples,2011,14809727.0,3852992.0,18662719.0
+ADM,Archer Daniels Midland,Consumer Staples,2012,15431577.0,3885465.0,19317042.0
+ADM,Archer Daniels Midland,Consumer Staples,2013,14832646.0,2820056.0,17652702.0
+BA,Boeing,Industrials,2011,718000.0,1075000.0,1793000.0
+BA,Boeing,Industrials,2012,576000.0,998000.0,1574000.0
+BA,Boeing,Industrials,2013,610000.0,1026000.0,1636000.0
+BG,Bunge Global,Consumer Staples,2011,1500000.0,1300000.0,2800000.0
+BG,Bunge Global,Consumer Staples,2012,1810000.0,1670000.0,3480000.0
+BG,Bunge Global,Consumer Staples,2013,1337968.0,1417642.0,2755610.0
+CAT,Caterpillar Inc.,Industrials,2011,500000.0,1400000.0,1900000.0
+CAT,Caterpillar Inc.,Industrials,2012,839000.0,1670000.0,2509000.0
+CAT,Caterpillar Inc.,Industrials,2013,1020000.0,1450000.0,2470000.0
+CF,CF Industries,Materials,2011,1100000.0,1100000.0,2200000.0
+CF,CF Industries,Materials,2012,1200000.0,1000000.0,2200000.0
+CF,CF Industries,Materials,2013,1200000.0,920000.0,2120000.0
+CAG,Conagra Brands,Consumer Staples,2011,909671.0,1002250.0,1911921.0
+CAG,Conagra Brands,Consumer Staples,2012,1071303.0,1089063.0,2160366.0
+CAG,Conagra Brands,Consumer Staples,2013,1078551.0,1078707.0,2157258.0
+STZ,Constellation Brands,Consumer Staples,2011,72885.0,37797.0,110682.0
+STZ,Constellation Brands,Consumer Staples,2012,67717.0,37914.0,105631.0
+STZ,Constellation Brands,Consumer Staples,2013,139130.0,52833.0,191963.0
+COR,Cencora,Health Care,2011,5020.3,36091.4,41111.700000000004
+COR,Cencora,Health Care,2012,,,0.0
+COR,Cencora,Health Care,2013,4789.0,36630.0,41419.0
+COST,Costco,Consumer Staples,2011,381867.0,1168576.0,1550443.0
+COST,Costco,Consumer Staples,2012,391848.0,1168576.0,1560424.0
+COST,Costco,Consumer Staples,2013,429980.0,1233973.0,1663953.0
+CMI,Cummins,Industrials,2011,227070.0,434891.0,661961.0
+CMI,Cummins,Industrials,2012,232052.0,409890.0,641942.0
+CMI,Cummins,Industrials,2013,269130.0,530453.0,799583.0
+DE,Deere & Company,Industrials,2011,420019.0,1041067.0,1461086.0
+DE,Deere & Company,Industrials,2012,440147.0,1053446.0,1493593.0
+DE,Deere & Company,Industrials,2013,460808.29,1073059.05,1533867.34
+DAL,Delta Air Lines,Industrials,2011,31932076.39,416585.02,32348661.41
+DAL,Delta Air Lines,Industrials,2012,30994534.87,368830.6,31363365.470000003
+DAL,Delta Air Lines,Industrials,2013,32143942.81,341123.1,32485065.91
+EMN,Eastman Chemical Company,Materials,2011,2300000.0,970000.0,3270000.0
+EMN,Eastman Chemical Company,Materials,2012,6440000.0,301000.0,6741000.0
+EMN,Eastman Chemical Company,Materials,2013,6190000.0,760000.0,6950000.0
+ECL,Ecolab,Materials,2011,189202.0,88525.0,277727.0
+ECL,Ecolab,Materials,2012,336258.0,199296.0,535554.0
+ECL,Ecolab,Materials,2013,396424.0,233406.0,629830.0
+DD,DuPont,Materials,2011,14093100.0,5282400.0,19375500.0
+DD,DuPont,Materials,2012,10817680.0,4416220.0,15233900.0
+DD,DuPont,Materials,2013,13561008.0,4944363.0,18505371.0
+FCX,Freeport-McMoRan,Materials,2011,5358795.0,4582267.0,9941062.0
+FCX,Freeport-McMoRan,Materials,2012,5679367.0,3985464.0,9664831.0
+FCX,Freeport-McMoRan,Materials,2013,5859810.0,4321572.0,10181382.0
+GD,General Dynamics,Industrials,2011,340000.0,640000.0,980000.0
+GD,General Dynamics,Industrials,2012,260000.0,490000.0,750000.0
+GD,General Dynamics,Industrials,2013,300000.0,470000.0,770000.0
+GE,GE Aerospace,Industrials,2011,2180000.0,2910000.0,5090000.0
+GE,GE Aerospace,Industrials,2012,1970000.0,2905000.0,4875000.0
+GE,GE Aerospace,Industrials,2013,1946000.0,3031000.0,4977000.0
+GIS,General Mills,Consumer Staples,2011,259400.0,737000.0,996400.0
+GIS,General Mills,Consumer Staples,2012,291606.0,771157.0,1062763.0
+GIS,General Mills,Consumer Staples,2013,299921.0,720189.0,1020110.0
+HON,Honeywell,Industrials,2011,5931000.0,2274000.0,8205000.0
+HON,Honeywell,Industrials,2012,5532844.0,1756275.0,7289119.0
+HON,Honeywell,Industrials,2013,4346781.0,1760651.0,6107432.0
+IP,International Paper,Materials,2011,8820000.0,4241000.0,13061000.0
+IP,International Paper,Materials,2012,8500000.0,5100000.0,13600000.0
+IP,International Paper,Materials,2013,10100000.0,5660000.0,15760000.0
+IT,Gartner,Information Technology,2011,34431256.0,2524043.0,36955299.0
+IT,Gartner,Information Technology,2012,31702171.0,2354679.0,34056850.0
+IT,Gartner,Information Technology,2013,28553554.0,2209161.0,30762715.0
+K,Kellanova,Consumer Staples,2011,652512.0,567625.0,1220137.0
+K,Kellanova,Consumer Staples,2012,769974.0,473640.0,1243614.0
+K,Kellanova,Consumer Staples,2013,793182.0,544172.0,1337354.0
+KR,Kroger,Consumer Staples,2013,1200000.0,2800000.0,4000000.0
+KR,Kroger,Consumer Staples,2011,2010936.0,4405959.0,6416895.0
+KR,Kroger,Consumer Staples,2012,1889971.0,4215860.0,6105831.0
+LIN,Linde plc,Materials,2011,6700000.0,10200000.0,16900000.0
+LIN,Linde plc,Materials,2012,6100000.0,9800000.0,15900000.0
+LIN,Linde plc,Materials,2013,8000000.0,13000000.0,21000000.0
+LMT,Lockheed Martin,Industrials,2011,309529.0,1011104.0,1320633.0
+LMT,Lockheed Martin,Industrials,2012,249491.0,985006.0,1234497.0
+LMT,Lockheed Martin,Industrials,2013,241148.0,866684.0,1107832.0
+TAP,Molson Coors Beverage Company,Consumer Staples,2011,426879.0,466467.0,893346.0
+TAP,Molson Coors Beverage Company,Consumer Staples,2012,380118.0,466599.0,846717.0
+TAP,Molson Coors Beverage Company,Consumer Staples,2013,206749.0,123415.0,330164.0
+MDLZ,Mondelez International,Consumer Staples,2011,2200000.0,2300000.0,4500000.0
+MDLZ,Mondelez International,Consumer Staples,2012,1075761.0,954755.0,2030516.0
+MDLZ,Mondelez International,Consumer Staples,2013,1080025.0,988185.0,2068210.0
+NEM,Newmont,Materials,2011,4414205.63,1145553.1,5559758.73
+NEM,Newmont,Materials,2012,4016150.0,1182740.0,5198890.0
+NEM,Newmont,Materials,2013,4402779.5,1205633.1,5608412.6
+NOC,Northrop Grumman,Industrials,2011,154642.0,537934.0,692576.0
+NOC,Northrop Grumman,Industrials,2012,135360.0,484309.0,619669.0
+NOC,Northrop Grumman,Industrials,2013,148787.0,462419.0,611206.0
+NUE,Nucor,Materials,2011,17000000.0,1800000.0,18800000.0
+NUE,Nucor,Materials,2012,19000000.0,2000000.0,21000000.0
+NUE,Nucor,Materials,2013,19000000.0,2200000.0,21200000.0
+PCAR,Paccar,Industrials,2011,58367.0,146895.0,205262.0
+PCAR,Paccar,Industrials,2012,60923.0,152017.0,212940.0
+PCAR,Paccar,Industrials,2013,103201.0,167474.0,270675.0
+PEP,PepsiCo,Consumer Staples,2011,3980007.0,2016774.0,5996781.0
+PEP,PepsiCo,Consumer Staples,2012,3854784.0,1928490.0,5783274.0
+PEP,PepsiCo,Consumer Staples,2013,3823000.0,1958000.0,5781000.0
+PPG,PPG Industries,Materials,2011,3954000.0,1720000.0,5674000.0
+PPG,PPG Industries,Materials,2012,4053000.0,1810000.0,5863000.0
+PPG,PPG Industries,Materials,2013,1122000.0,943000.0,2065000.0
+SHW,Sherwin-Williams,Materials,2011,244363.0,279995.0,524358.0
+SHW,Sherwin-Williams,Materials,2012,241734.0,280996.0,522730.0
+SHW,Sherwin-Williams,Materials,2013,263324.0,273240.0,536564.0
+LUV,Southwest Airlines,Industrials,2011,17417782.0,42058.0,17459840.0
+LUV,Southwest Airlines,Industrials,2012,18232474.0,46783.0,18279257.0
+LUV,Southwest Airlines,Industrials,2013,17949278.0,47680.0,17996958.0
+TSCO,Tractor Supply,Consumer Discretionary,2011,1944344.0,3596445.0,5540789.0
+TSCO,Tractor Supply,Consumer Discretionary,2012,1418798.0,3764068.0,5182866.0
+TSCO,Tractor Supply,Consumer Discretionary,2013,1370725.75,3409318.72,4780044.470000001
+KO,Coca-Cola Company (The),Consumer Staples,2011,2420996.0,1308327.0,3729323.0
+KO,Coca-Cola Company (The),Consumer Staples,2012,2551626.0,1138377.0,3690003.0
+KO,Coca-Cola Company (The),Consumer Staples,2013,2231744.0,1067512.0,3299256.0
+DOW,Dow Inc.,Materials,2011,28130000.0,9021000.0,37151000.0
+DOW,Dow Inc.,Materials,2012,27429000.0,8403000.0,35832000.0
+DOW,Dow Inc.,Materials,2013,27730000.0,7570000.0,35300000.0
+MOS,Mosaic Company (The),Materials,2011,2142600.0,1450790.0,3593390.0
+MOS,Mosaic Company (The),Materials,2012,2904196.0,1605383.0,4509579.0
+MOS,Mosaic Company (The),Materials,2013,2793949.0,1616303.0,4410252.0
+TSN,Tyson Foods,Consumer Staples,2011,3432870.11,1767129.89,5200000.0
+TSN,Tyson Foods,Consumer Staples,2012,3615981.8,1604018.2,5220000.0
+TSN,Tyson Foods,Consumer Staples,2013,1400000.0,1000000.0,2400000.0
+UAL,United Airlines Holdings,Industrials,2011,32771983.0,231389.0,33003372.0
+UAL,United Airlines Holdings,Industrials,2012,32086690.0,309256.0,32395946.0
+UAL,United Airlines Holdings,Industrials,2013,31360099.0,307164.0,31667263.0
+WMT,Walmart,Consumer Staples,2011,5804559.0,15660871.0,21465430.0
+WMT,Walmart,Consumer Staples,2012,5605099.0,15581135.0,21186234.0
+WMT,Walmart,Consumer Staples,2013,6501715.0,14933422.0,21435137.0
+COP,ConocoPhillips,Energy,2011,57981000.0,10024000.0,68005000.0
+DELL,Dell Technologies,Information Technology,2011,34115.0,404791.0,438906.0
+PM,Philip Morris International,Consumer Staples,2011,355789.0,412984.0,768773.0
+AMZN,Amazon,Consumer Discretionary,2011,,,0.0
+EXC,Exelon,Utilities,2011,9245696.0,276678.0,9522374.0
+TRV,Travelers Companies (The),Financials,2011,37084.0,51388.0,88472.0
+MO,Altria,Consumer Staples,2011,273437.0,251194.0,524631.0
+WDC,Western Digital,Information Technology,2011,30975.0,482582.0,513557.0
+SYY,Sysco,Consumer Staples,2011,,,0.0
+FOXA,Fox Corporation (Class A),Communication Services,2011,81791.0,456473.0,538264.0
+ACN,Accenture,Information Technology,2011,14270.0,198329.0,212599.0
+INTC,Intel,Information Technology,2011,1165284.0,1712724.0,2878008.0
+MET,MetLife,Financials,2011,,,0.0
+BK,BNY Mellon,Financials,2011,9474.0,202096.0,211570.0
+DTE,DTE Energy,Utilities,2011,391152.0,3093352.0,3484504.0
+JNJ,Johnson & Johnson,Health Care,2011,345723.0,934081.0,1279804.0
+USB,U.S. Bancorp,Financials,2011,40445.0,370934.0,411379.0
+LLY,Lilly (Eli),Health Care,2011,454521.0,1167098.0,1621619.0
+F,Ford Motor Company,Consumer Discretionary,2011,1602246.0,3666231.0,5268477.0
+AAPL,Apple Inc.,Information Technology,2011,,,0.0
+CSX,CSX Corporation,Industrials,2011,5214546.0,260874.0,5475420.0
+STT,State Street Corporation,Financials,2011,5683.0,141071.0,146754.0
+OXY,Occidental Petroleum,Energy,2011,11200000.0,6600000.0,17800000.0
+NEE,NextEra Energy,Utilities,2011,,,0.0
+PRU,Prudential Financial,Financials,2011,14839.0,93260.0,108099.0
+TJX,TJX Companies,Consumer Discretionary,2011,64250.0,698160.0,762410.0
+CTSH,Cognizant,Information Technology,2011,28647.0,147288.0,175935.0
+NTAP,NetApp,Information Technology,2011,8082.0,88238.0,96320.0
+SO,Southern Company,Utilities,2011,132000000.0,,132000000.0
+PCG,PG&E Corporation,Utilities,2011,3218256.0,997983.0,4216239.0
+LVS,Las Vegas Sands,Consumer Discretionary,2011,,,0.0
+XOM,ExxonMobil,Energy,2011,132000000.0,15000000.0,147000000.0
+CVS,CVS Health,Health Care,2011,220888.0,1545951.0,1766839.0
+EOG,EOG Resources,Energy,2011,,,0.0
+TXN,Texas Instruments,Information Technology,2011,831460.0,1125452.0,1956912.0
+BDX,Becton Dickinson,Health Care,2011,61975.0,468149.0,530124.0
+TEL,TE Connectivity,Information Technology,2011,344881.0,714463.0,1059344.0
+CSCO,Cisco,Information Technology,2011,53363.0,597257.0,650620.0
+SYK,Stryker Corporation,Health Care,2011,,,0.0
+JCI,Johnson Controls,Industrials,2011,562223.0,1349406.0,1911629.0
+BAX,Baxter International,Health Care,2011,339720.0,461280.0,801000.0
+ABT,Abbott Laboratories,Health Care,2011,838000.0,771000.0,1609000.0
+MS,Morgan Stanley,Financials,2011,14322.0,344751.0,359073.0
+D,Dominion Energy,Utilities,2011,59004018.0,349938.0,59353956.0
+ORCL,Oracle Corporation,Information Technology,2011,15208.0,433523.0,448731.0
+MRK,Merck & Co.,Health Care,2011,1046881.0,1028780.0,2075661.0
+HPQ,HP Inc.,Information Technology,2011,136660.0,1728510.0,1865170.0
+ADP,Automatic Data Processing,Industrials,2011,18000.0,155000.0,173000.0
+UPS,United Parcel Service,Industrials,2011,11712803.0,917695.0,12630498.0
+WM,Waste Management,Industrials,2011,24531046.0,201800.0,24732846.0
+GS,Goldman Sachs,Financials,2011,14645.0,336842.0,351487.0
+SLB,Schlumberger,Energy,2011,1610000.0,330000.0,1940000.0
+JPM,JPMorgan Chase,Financials,2011,96034.4,1226197.1,1322231.5
+AEP,American Electric Power,Utilities,2011,138294800.0,,138294800.0
+MSFT,Microsoft,Information Technology,2011,47383.0,1144271.0,1191654.0
+HAL,Halliburton,Energy,2011,4020000.0,,4020000.0
+TGT,Target Corporation,Consumer Staples,2011,414968.0,2714973.0,3129941.0
+CCL,Carnival,Consumer Discretionary,2011,10700267.0,48370.0,10748637.0
+FDX,FedEx,Industrials,2011,13152895.0,996872.0,14149767.0
+BAC,Bank of America,Financials,2011,119760.0,1752453.0,1872213.0
+UNH,UnitedHealth Group,Health Care,2011,,,0.0
+C,Citigroup,Financials,2011,43116.32,1141732.45,1184848.77
+MCD,McDonald's,Consumer Discretionary,2011,,,0.0
+BMY,Bristol Myers Squibb,Health Care,2011,253398.0,270791.0,524189.0
+PNC,PNC Financial Services,Financials,2011,44700.0,324951.0,369651.0
+MDT,Medtronic,Health Care,2011,25040.0,211657.0,236697.0
+YUM,Yum! Brands,Consumer Discretionary,2011,,,0.0
+ITW,Illinois Tool Works,Industrials,2011,,,0.0
+DHR,Danaher Corporation,Health Care,2011,,,0.0
+CMCSA,Comcast,Communication Services,2011,,,0.0
+AMT,American Tower,Real Estate,2011,5819.79,138559.55,144379.34
+PEG,Public Service Enterprise Group,Utilities,2011,22893828.0,1250417.0,24144245.0
+BBY,Best Buy,Consumer Discretionary,2011,236170.0,704526.0,940696.0
+CB,Chubb Limited,Financials,2011,,14216.0,14216.0
+LOW,Lowe's,Consumer Discretionary,2011,,,0.0
+EBAY,eBay Inc.,Consumer Discretionary,2011,11462.0,196284.0,207746.0
+CVX,Chevron Corporation,Energy,2011,62136044.0,4483820.0,66619864.0
+MSI,Motorola Solutions,Information Technology,2011,15793.85,263440.0,279233.85
+EMR,Emerson Electric,Industrials,2011,,,0.0
+VZ,Verizon,Communication Services,2011,567297.0,5495301.0,6062598.0
+SBUX,Starbucks,Consumer Discretionary,2011,209828.0,804277.0,1014105.0
+GOOG,Alphabet Inc. (Class C),Communication Services,2011,11126.0,1226350.0,1237476.0
+PG,Procter & Gamble,Consumer Staples,2011,2795000.0,3109000.0,5904000.0
+NKE,"Nike, Inc.",Consumer Discretionary,2011,6900.0,65000.0,71900.0
+BEN,Franklin Resources,Financials,2011,10362.0,29587.0,39949.0
+SCHW,Charles Schwab Corporation,Financials,2011,,,0.0
+AXP,American Express,Financials,2011,32504.01,189346.55,221850.56
+DG,Dollar General,Consumer Staples,2011,1971500.0,178500.0,2150000.0
+AMGN,Amgen,Health Care,2011,136986.0,293997.0,430983.0
+PSA,Public Storage,Real Estate,2011,,,0.0
+DIS,Walt Disney Company (The),Communication Services,2011,550782.0,914864.0,1465646.0
+CME,CME Group,Financials,2011,,,0.0
+DUK,Duke Energy,Utilities,2011,90612245.0,,90612245.0
+IBM,IBM,Information Technology,2011,578290.0,2125986.0,2704276.0
+MA,Mastercard,Financials,2011,,,0.0
+KMB,Kimberly-Clark,Consumer Staples,2011,2611787.0,3117027.0,5728814.0
+AFL,Aflac,Financials,2011,4352.0,23369.0,27721.0
+CL,Colgate-Palmolive,Consumer Staples,2011,267077.0,425207.0,692284.0
+COF,Capital One,Financials,2011,14896.0,204719.0,219615.0
+QCOM,Qualcomm,Information Technology,2011,57713.0,39824.0,97537.0
+SPG,Simon Property Group,Real Estate,2011,23432.0,582837.0,606269.0
+MMM,3M,Industrials,2011,4300000.0,1950000.0,6250000.0
+HD,Home Depot (The),Consumer Discretionary,2011,268091.0,2805003.0,3073094.0
+UNP,Union Pacific Corporation,Industrials,2011,11207344.0,352660.0,11560004.0
+ALL,Allstate,Financials,2011,35504.0,183474.0,218978.0
+WFC,Wells Fargo,Financials,2011,116858.0,1485930.0,1602788.0
+GLW,Corning Inc.,Information Technology,2011,266635.0,908817.0,1175452.0
+DVN,Devon Energy,Energy,2011,3680000.0,490000.0,4170000.0
+V,Visa Inc.,Financials,2011,,,0.0
+GILD,Gilead Sciences,Health Care,2011,29725.0,37369.0,67094.0
+TMO,Thermo Fisher Scientific,Health Care,2011,,,0.0
+NSC,Norfolk Southern,Industrials,2011,4958921.0,279250.0,5238171.0
+APA,APA Corporation,Energy,2011,9860000.0,1040000.0,10900000.0
+T,AT&T,Communication Services,2011,1105251.0,7798222.0,8903473.0
+PFE,Pfizer,Health Care,2011,1459943.0,1247985.0,2707928.0
+BIIB,Biogen,Health Care,2012,46557.0,54589.0,101146.0
+MMM,3M,Industrials,2012,4060000.0,2030000.0,6090000.0
+PG,Procter & Gamble,Consumer Staples,2012,2906000.0,2923299.0,5829299.0
+STT,State Street Corporation,Financials,2012,4890.0,139007.0,143897.0
+EQR,Equity Residential,Real Estate,2012,,,0.0
+TJX,TJX Companies,Consumer Discretionary,2012,58479.0,697280.0,755759.0
+CTSH,Cognizant,Information Technology,2012,27829.0,144629.0,172458.0
+PM,Philip Morris International,Consumer Staples,2012,373641.0,400883.0,774524.0
+MSFT,Microsoft,Information Technology,2012,40848.0,1186492.0,1227340.0
+AMZN,Amazon,Consumer Discretionary,2012,,,0.0
+BEN,Franklin Resources,Financials,2012,9018.0,31360.0,40378.0
+AMT,American Tower,Real Estate,2012,,,0.0
+SYY,Sysco,Consumer Staples,2012,,,0.0
+MCK,McKesson Corporation,Health Care,2012,,,0.0
+DUK,Duke Energy,Utilities,2012,85271807.0,,85271807.0
+KMB,Kimberly-Clark,Consumer Staples,2012,2530334.0,3027447.0,5557781.0
+APA,APA Corporation,Energy,2012,11760000.0,1340000.0,13100000.0
+FE,FirstEnergy,Utilities,2012,,,0.0
+TRV,Travelers Companies (The),Financials,2012,36254.0,42222.0,78476.0
+CL,Colgate-Palmolive,Consumer Staples,2012,239524.0,427057.0,666581.0
+PPL,PPL Corporation,Utilities,2012,,,0.0
+COF,Capital One,Financials,2012,15166.0,201041.0,216207.0
+CSX,CSX Corporation,Industrials,2012,5397577.0,318864.0,5716441.0
+CME,CME Group,Financials,2012,,,0.0
+AFL,Aflac,Financials,2012,4585.0,21188.0,25773.0
+CB,Chubb Limited,Financials,2012,1767.0,13500.0,15267.0
+GOOG,Alphabet Inc. (Class C),Communication Services,2012,29563.0,1439703.0,1469266.0
+CVX,Chevron Corporation,Energy,2012,61346995.0,4561010.0,65908005.0
+T,AT&T,Communication Services,2012,1007201.0,8071070.0,9078271.0
+MS,Morgan Stanley,Financials,2012,14903.0,366830.0,381733.0
+BLK,BlackRock,Financials,2012,,,0.0
+TGT,Target Corporation,Consumer Staples,2012,476783.0,2598661.0,3075444.0
+AMGN,Amgen,Health Care,2012,126233.0,274718.0,400951.0
+DHR,Danaher Corporation,Health Care,2012,,,0.0
+UPS,United Parcel Service,Industrials,2012,11980892.0,891430.0,12872322.0
+DIS,Walt Disney Company (The),Communication Services,2012,661493.0,863344.0,1524837.0
+FOX,Fox Corporation (Class B),Communication Services,2012,76548.0,401005.0,477553.0
+OXY,Occidental Petroleum,Energy,2012,12200000.0,6900000.0,19100000.0
+MDT,Medtronic,Health Care,2012,23596.0,217148.0,240744.0
+EBAY,eBay Inc.,Consumer Discretionary,2012,15079.0,189870.0,204949.0
+EOG,EOG Resources,Energy,2012,,,0.0
+DELL,Dell Technologies,Information Technology,2012,38672.0,397558.0,436230.0
+VZ,Verizon,Communication Services,2012,533459.79,5216554.69,5750014.48
+JPM,JPMorgan Chase,Financials,2012,92413.0,1231178.0,1323591.0
+WDC,Western Digital,Information Technology,2012,31126.0,479785.0,510911.0
+PCG,PG&E Corporation,Utilities,2012,3618015.0,1138434.0,4756449.0
+MO,Altria,Consumer Staples,2012,279395.0,267808.0,547203.0
+ADP,Automatic Data Processing,Industrials,2012,17300.0,146000.0,163300.0
+BK,BNY Mellon,Financials,2012,9490.0,230078.0,239568.0
+GLW,Corning Inc.,Information Technology,2012,371844.0,1053862.0,1425706.0
+PNC,PNC Financial Services,Financials,2012,49257.0,380124.0,429381.0
+ABT,Abbott Laboratories,Health Care,2012,834000.0,822000.0,1656000.0
+QCOM,Qualcomm,Information Technology,2012,63300.3,50614.8,113915.1
+LLY,Lilly (Eli),Health Care,2012,409871.0,1119833.0,1529704.0
+BDX,Becton Dickinson,Health Care,2012,79454.0,447426.0,526880.0
+F,Ford Motor Company,Consumer Discretionary,2012,1559240.0,3535959.0,5095199.0
+AEP,American Electric Power,Utilities,2012,135671200.0,,135671200.0
+TMO,Thermo Fisher Scientific,Health Care,2012,68804.0,308736.0,377540.0
+MRK,Merck & Co.,Health Care,2012,1135597.0,951450.0,2087047.0
+BAX,Baxter International,Health Care,2012,336000.0,458000.0,794000.0
+MMC,Marsh McLennan,Financials,2012,126.69,99842.02,99968.71
+YUM,Yum! Brands,Consumer Discretionary,2012,83397.0,2350100.0,2433497.0
+UNH,UnitedHealth Group,Health Care,2012,10155.0,112156.0,122311.0
+SBUX,Starbucks,Consumer Discretionary,2012,228505.0,751457.0,979962.0
+EXC,Exelon,Utilities,2012,6600286.0,5541932.0,12142218.0
+CSCO,Cisco,Information Technology,2012,60382.0,610832.0,671214.0
+LOW,Lowe's,Consumer Discretionary,2012,292747.0,2605669.0,2898416.0
+INTU,Intuit,Information Technology,2012,6769.0,39494.0,46263.0
+NSC,Norfolk Southern,Industrials,2012,5127985.0,277067.0,5405052.0
+CVS,CVS Health,Health Care,2012,216456.0,1572334.0,1788790.0
+ACN,Accenture,Information Technology,2012,12098.0,222168.0,234266.0
+LVS,Las Vegas Sands,Consumer Discretionary,2012,,,0.0
+TXN,Texas Instruments,Information Technology,2012,897759.0,1481735.0,2379494.0
+TEL,TE Connectivity,Information Technology,2012,283480.0,816205.0,1099685.0
+INTC,Intel,Information Technology,2012,885416.0,2214130.0,3099546.0
+DG,Dollar General,Consumer Staples,2012,2068019.0,234440.0,2302459.0
+WMB,Williams Companies,Energy,2012,,,0.0
+JCI,Johnson Controls,Industrials,2012,831783.0,1542453.0,2374236.0
+PRU,Prudential Financial,Financials,2012,13725.0,123856.0,137581.0
+USB,U.S. Bancorp,Financials,2012,45725.0,385661.0,431386.0
+GM,General Motors,Consumer Discretionary,2012,2310819.0,5329095.0,7639914.0
+DTE,DTE Energy,Utilities,2012,414565.0,3041004.0,3455569.0
+AXP,American Express,Financials,2012,35313.09,195839.5,231152.59
+MA,Mastercard,Financials,2012,,,0.0
+D,Dominion Energy,Utilities,2012,56812875.0,256934.0,57069809.0
+ORCL,Oracle Corporation,Information Technology,2012,,,0.0
+NKE,"Nike, Inc.",Consumer Discretionary,2012,8000.0,76700.0,84700.0
+BAC,Bank of America,Financials,2012,110005.0,1599885.0,1709890.0
+GS,Goldman Sachs,Financials,2012,11787.0,321641.0,333428.0
+HD,Home Depot (The),Consumer Discretionary,2012,281083.0,2738927.0,3020010.0
+UNP,Union Pacific Corporation,Industrials,2012,11854279.0,410738.0,12265017.0
+ED,Consolidated Edison,Utilities,2012,3370542.0,1142721.0,4513263.0
+PFE,Pfizer,Health Care,2012,1402528.0,1256664.0,2659192.0
+VTR,Ventas,Real Estate,2012,,,0.0
+PSA,Public Storage,Real Estate,2012,,,0.0
+XOM,ExxonMobil,Energy,2012,136000000.0,14000000.0,150000000.0
+SLB,Schlumberger,Energy,2012,1761333.0,341824.0,2103157.0
+C,Citigroup,Financials,2012,36750.52,1039178.2,1075928.72
+ISRG,Intuitive Surgical,Health Care,2012,,,0.0
+HAL,Halliburton,Energy,2012,4246608.0,152519.0,4399127.0
+HPQ,HP Inc.,Information Technology,2012,276449.0,1724377.0,2000826.0
+MET,MetLife,Financials,2012,10598.0,15486.0,26084.0
+SYK,Stryker Corporation,Health Care,2012,,,0.0
+DVN,Devon Energy,Energy,2012,7232882.0,1009209.0,8242091.0
+AAPL,Apple Inc.,Information Technology,2012,,,0.0
+AIG,American International Group,Financials,2012,,,0.0
+IBM,IBM,Information Technology,2012,535387.0,2199567.0,2734954.0
+COP,ConocoPhillips,Energy,2012,59400000.0,10800000.0,70200000.0
+PEG,Public Service Enterprise Group,Utilities,2012,,,0.0
+BMY,Bristol Myers Squibb,Health Care,2012,279981.0,266968.0,546949.0
+GILD,Gilead Sciences,Health Care,2012,30472.0,35014.0,65486.0
+V,Visa Inc.,Financials,2012,,,0.0
+MCD,McDonald's,Consumer Discretionary,2012,,,0.0
+SPG,Simon Property Group,Real Estate,2012,22605.0,561403.0,584008.0
+EMR,Emerson Electric,Industrials,2012,289470.0,,289470.0
+FDX,FedEx,Industrials,2012,13802445.0,989874.0,14792319.0
+SO,Southern Company,Utilities,2012,121000000.0,,121000000.0
+CCL,Carnival,Consumer Discretionary,2012,10949844.0,53228.0,11003072.0
+JNJ,Johnson & Johnson,Health Care,2012,329669.0,891562.0,1221231.0
+WFC,Wells Fargo,Financials,2012,105454.0,1495594.0,1601048.0
+CMCSA,Comcast,Communication Services,2012,,,0.0
+NEE,NextEra Energy,Utilities,2012,,,0.0
+ITW,Illinois Tool Works,Industrials,2012,,,0.0
+CSX,CSX Corporation,Industrials,2013,5268905.0,300170.0,5569075.0
+VLO,Valero Energy,Energy,2013,,,0.0
+MMM,3M,Industrials,2013,4540000.0,2230000.0,6770000.0
+PRU,Prudential Financial,Financials,2013,5090.0,70613.0,75703.0
+HD,Home Depot (The),Consumer Discretionary,2013,250224.0,2529646.0,2779870.0
+LVS,Las Vegas Sands,Consumer Discretionary,2013,225157.0,821527.0,1046684.0
+BAC,Bank of America,Financials,2013,116666.0,1421829.0,1538495.0
+DHR,Danaher Corporation,Health Care,2013,,,0.0
+DG,Dollar General,Consumer Staples,2013,2195535.0,193548.0,2389083.0
+EOG,EOG Resources,Energy,2013,,,0.0
+AIG,American International Group,Financials,2013,,,0.0
+MCK,McKesson Corporation,Health Care,2013,,,0.0
+AMT,American Tower,Real Estate,2013,,,0.0
+FDX,FedEx,Industrials,2013,14602697.0,959109.0,15561806.0
+CMCSA,Comcast,Communication Services,2013,,,0.0
+PSA,Public Storage,Real Estate,2013,,,0.0
+UNP,Union Pacific Corporation,Industrials,2013,11595509.0,407176.0,12002685.0
+DUK,Duke Energy,Utilities,2013,123430000.0,,123430000.0
+BEN,Franklin Resources,Financials,2013,8175.0,29552.0,37727.0
+MPC,Marathon Petroleum,Energy,2013,,,0.0
+MDT,Medtronic,Health Care,2013,31460.0,170685.0,202145.0
+KMB,Kimberly-Clark,Consumer Staples,2013,2461675.0,2967804.0,5429479.0
+TMO,Thermo Fisher Scientific,Health Care,2013,64863.0,297992.0,362855.0
+NSC,Norfolk Southern,Industrials,2013,4925238.0,252854.0,5178092.0
+CVX,Chevron Corporation,Energy,2013,58559220.0,3849319.0,62408539.0
+FOX,Fox Corporation (Class B),Communication Services,2013,62360.0,376022.0,438382.0
+GOOG,Alphabet Inc. (Class C),Communication Services,2013,37187.0,1149988.0,1187175.0
+MSFT,Microsoft,Information Technology,2013,48516.0,1207419.0,1255935.0
+ADBE,Adobe Inc.,Information Technology,2013,2744.0,22995.0,25739.0
+ISRG,Intuitive Surgical,Health Care,2013,,,0.0
+BMY,Bristol Myers Squibb,Health Care,2013,269734.0,262565.0,532299.0
+GILD,Gilead Sciences,Health Care,2013,,,0.0
+STT,State Street Corporation,Financials,2013,10009.07,98756.0,108765.07
+LOW,Lowe's,Consumer Discretionary,2013,303721.0,2552740.0,2856461.0
+ORCL,Oracle Corporation,Information Technology,2013,16481.0,440773.0,457254.0
+MMC,Marsh McLennan,Financials,2013,3429.21,97423.43,100852.64
+JPM,JPMorgan Chase,Financials,2013,83343.0,1219748.0,1303091.0
+WDC,Western Digital,Information Technology,2013,25187.0,458569.0,483756.0
+CL,Colgate-Palmolive,Consumer Staples,2013,232574.0,435061.0,667635.0
+HAL,Halliburton,Energy,2013,4211808.0,839363.0,5051171.0
+COP,ConocoPhillips,Energy,2013,24171000.0,1638000.0,25809000.0
+T,AT&T,Communication Services,2013,948441.0,7894626.0,8843067.0
+ABT,Abbott Laboratories,Health Care,2013,470781.0,537821.0,1008602.0
+GS,Goldman Sachs,Financials,2013,14559.0,276815.0,291374.0
+TEL,TE Connectivity,Information Technology,2013,342073.0,787079.0,1129152.0
+LLY,Lilly (Eli),Health Care,2013,415040.0,1160941.0,1575981.0
+AAPL,Apple Inc.,Information Technology,2013,,,0.0
+ETN,Eaton Corporation,Industrials,2013,105382.0,637346.0,742728.0
+BAX,Baxter International,Health Care,2013,345000.0,445000.0,790000.0
+XOM,ExxonMobil,Energy,2013,132000000.0,14000000.0,146000000.0
+ALL,Allstate,Financials,2013,40796.0,150401.0,191197.0
+DTE,DTE Energy,Utilities,2013,356128.0,3291232.0,3647360.0
+TGT,Target Corporation,Consumer Staples,2013,527047.0,2489866.0,3016913.0
+AEP,American Electric Power,Utilities,2013,121927400.0,,121927400.0
+ADP,Automatic Data Processing,Industrials,2013,15500.0,157100.0,172600.0
+MA,Mastercard,Financials,2013,3025.8,37825.0,40850.8
+MET,MetLife,Financials,2013,,,0.0
+CSCO,Cisco,Information Technology,2013,65832.0,628164.0,693996.0
+NEE,NextEra Energy,Utilities,2013,,,0.0
+YUM,Yum! Brands,Consumer Discretionary,2013,156510.0,2377372.0,2533882.0
+ITW,Illinois Tool Works,Industrials,2013,,,0.0
+F,Ford Motor Company,Consumer Discretionary,2013,1698799.0,3440338.0,5139137.0
+HPQ,HP Inc.,Information Technology,2013,246000.0,1643000.0,1889000.0
+SYY,Sysco,Consumer Staples,2013,788200.0,336857.0,1125057.0
+CRM,Salesforce,Information Technology,2013,2349.52,29428.55,31778.07
+BLK,BlackRock,Financials,2013,,,0.0
+INTC,Intel,Information Technology,2013,794759.0,2331048.0,3125807.0
+MS,Morgan Stanley,Financials,2013,13757.46,330746.62,344504.08
+CVS,CVS Health,Health Care,2013,201000.0,1495000.0,1696000.0
+DIS,Walt Disney Company (The),Communication Services,2013,867353.0,899027.0,1766380.0
+D,Dominion Energy,Utilities,2013,,,0.0
+SPG,Simon Property Group,Real Estate,2013,21854.0,496006.0,517860.0
+ACN,Accenture,Information Technology,2013,9383.0,224615.0,233998.0
+CB,Chubb Limited,Financials,2013,1129.0,10133.0,11262.0
+V,Visa Inc.,Financials,2013,8151.0,68313.0,76464.0
+EBAY,eBay Inc.,Consumer Discretionary,2013,14374.0,225952.0,240326.0
+JCI,Johnson Controls,Industrials,2013,866181.0,1465658.0,2331839.0
+CTSH,Cognizant,Information Technology,2013,46934.0,137460.0,184394.0
+MO,Altria,Consumer Staples,2013,283926.0,236169.0,520095.0
+DVN,Devon Energy,Energy,2013,7596657.0,1087905.0,8684562.0
+CCL,Carnival,Consumer Discretionary,2013,10819814.0,57585.0,10877399.0
+OXY,Occidental Petroleum,Energy,2013,14270000.0,5600000.0,19870000.0
+SYK,Stryker Corporation,Health Care,2013,,,0.0
+SO,Southern Company,Utilities,2013,,,0.0
+UNH,UnitedHealth Group,Health Care,2013,8693.78,104200.46,112894.24
+PSX,Phillips 66,Energy,2013,,,0.0
+VZ,Verizon,Communication Services,2013,512899.04,5334874.05,5847773.09
+APA,APA Corporation,Energy,2013,10766000.0,1314000.0,12080000.0
+PFE,Pfizer,Health Care,2013,1217736.0,1155762.0,2373498.0
+EQR,Equity Residential,Real Estate,2013,,,0.0
+SLB,Schlumberger,Energy,2013,2200000.0,550000.0,2750000.0
+NKE,"Nike, Inc.",Consumer Discretionary,2013,,,0.0
+SCHW,Charles Schwab Corporation,Financials,2013,,,0.0
+AMGN,Amgen,Health Care,2013,119968.0,286679.0,406647.0
+PG,Procter & Gamble,Consumer Staples,2013,2799000.0,3028000.0,5827000.0
+AXP,American Express,Financials,2013,23371.0,142667.0,166038.0
+AFL,Aflac,Financials,2013,3884.0,18536.0,22420.0
+BIIB,Biogen,Health Care,2013,46588.0,39307.0,85895.0
+MRK,Merck & Co.,Health Care,2013,1053000.0,927000.0,1980000.0
+C,Citigroup,Financials,2013,35569.83,993687.28,1029257.11
+IBM,IBM,Information Technology,2013,541584.0,2208459.0,2750043.0
+MCD,McDonald's,Consumer Discretionary,2013,,,0.0
+TJX,TJX Companies,Consumer Discretionary,2013,63084.0,686955.0,750039.0
+EMR,Emerson Electric,Industrials,2013,264967.0,,264967.0
+KMI,Kinder Morgan,Energy,2013,,,0.0
+SBUX,Starbucks,Consumer Discretionary,2013,239972.0,792644.0,1032616.0
+AMZN,Amazon,Consumer Discretionary,2013,,,0.0
+CCI,Crown Castle,Real Estate,2013,,,0.0
+PNC,PNC Financial Services,Financials,2013,47606.0,398414.0,446020.0
+QCOM,Qualcomm,Information Technology,2013,64782.0,49216.0,113998.0
+BK,BNY Mellon,Financials,2013,9513.0,208926.0,218439.0
+TXN,Texas Instruments,Information Technology,2013,827274.44,1588465.81,2415740.25
+COF,Capital One,Financials,2013,14501.0,194433.0,208934.0
+UPS,United Parcel Service,Industrials,2013,11715635.0,823212.0,12538847.0
+GLW,Corning Inc.,Information Technology,2013,383729.0,1129330.0,1513059.0
+GM,General Motors,Consumer Discretionary,2013,2454755.0,5531380.0,7986135.0
+EXC,Exelon,Utilities,2013,26038890.0,5691542.0,31730432.0
+TRV,Travelers Companies (The),Financials,2013,35633.0,48175.0,83808.0
+JNJ,Johnson & Johnson,Health Care,2013,329556.0,853700.0,1183256.0
+WFC,Wells Fargo,Financials,2013,93904.0,1333372.0,1427276.0
+PM,Philip Morris International,Consumer Staples,2013,441953.0,433892.0,875845.0
+VTR,Ventas,Real Estate,2013,43381.0,314379.0,357760.0
+WMB,Williams Companies,Energy,2013,,,0.0
+USB,U.S. Bancorp,Financials,2013,38055.0,370672.0,408727.0
