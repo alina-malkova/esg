@@ -155,6 +155,11 @@ From Yahoo Finance: stock returns, market cap changes, Tobin's Q approximations
 | Dataset | File | Size | Description |
 |---------|------|------|-------------|
 | **EPA eGRID** | `epa_egrid/eGRID2022_data.xlsx` | 15 MB | Regional electricity grid emission factors |
+| **EPA GHGRP Raw** | `epa_ghgrp/raw/2023 Data Summary Spreadsheets/ghgp_data_*.xlsx` | 30 MB | Facility-level emissions 2010-2023 (14 years) |
+| **EPA GHGRP Parent** | `epa_ghgrp/raw/EPA Parent Company Data.xlsb` | 8 MB | Parent company ownership data |
+| **EPA GHGRP Panel** | `epa_ghgrp/processed/ghgrp_company_year_sp500_all_years.csv` | 44 KB | 121 S&P 500 firms × 14 years (1,636 company-year obs) |
+| **EPA GHGRP Facilities Panel** | `epa_ghgrp/processed/ghgrp_facilities_sp500_all_years.csv` | 3 MB | 23,439 facility-year observations for S&P 500 |
+| **EPA GHGRP 2023 Only** | `epa_ghgrp/processed/ghgrp_company_year_sp500.csv` | 3 KB | 116 S&P 500 firms (2023 snapshot) |
 | **Ken French Factors** | `ken_french/F-F_Research_Data_Factors_daily.csv` | 1.1 MB | Daily Fama-French factor returns |
 | **Ken French Industries** | `ken_french/48_Industry_Portfolios_Daily.csv` | 20 MB | 48 industry portfolio returns |
 | **FRED Macro Data** | `fred/*.csv` | 58 KB | GDP, unemployment, CPI, Fed funds, S&P 500, industrial production |
@@ -169,7 +174,6 @@ From Yahoo Finance: stock returns, market cap changes, Tobin's Q approximations
 | Dataset | Instructions | Why |
 |---------|--------------|-----|
 | **PatentsView** | See `data/patents/DOWNLOAD_INSTRUCTIONS.txt` | Files >10GB, need AI CPC codes |
-| **EPA GHGRP** | See `data/epa_ghgrp/DOWNLOAD_INSTRUCTIONS.txt` | Interactive export from Envirofacts |
 | **CDP Data** | Register at cdp.net/en/data | Requires free account |
 | **ESG Scores** | Yahoo Finance API deprecated; use S&P Global free tier | API restrictions |
 
@@ -180,6 +184,7 @@ From Yahoo Finance: stock returns, market cap changes, Tobin's Q approximations
 | `download_data.py` | Main download orchestrator | `python3 scripts/download_data.py` |
 | `sec_edgar_scraper.py` | Extract AI keywords from 10-K filings | `python3 scripts/sec_edgar_scraper.py` |
 | `yahoo_esg_scraper.py` | ESG score collection (currently restricted) | `python3 scripts/yahoo_esg_scraper.py` |
+| `process_ghgrp_all_years.py` | Process EPA GHGRP 2010-2023, match to S&P 500 | `python3 scripts/process_ghgrp_all_years.py` |
 
 ---
 
@@ -190,10 +195,12 @@ From Yahoo Finance: stock returns, market cap changes, Tobin's Q approximations
 - [x] Download Ken French factor data
 - [x] Download S&P 500 constituent list
 - [x] Download O*NET data for AI exposure calculation
+- [x] Download EPA GHGRP from Envirofacts (2010-2023 facility data, parent company matching)
+- [x] Match EPA GHGRP facilities to S&P 500 companies (121 firms, 2,175 facilities)
+- [x] Process GHGRP panel data for all years (1,636 company-year observations, 109 firms with complete 14-year panel)
 - [ ] Run full SEC EDGAR scraper on S&P 500 (`python3 scripts/sec_edgar_scraper.py`)
 - [ ] Download PatentsView bulk files manually (see instructions)
 - [ ] Register for CDP data access and download emissions data
-- [ ] Download EPA GHGRP from Envirofacts (interactive)
 - [ ] Construct AI exposure index from O*NET data
 - [ ] Define firm sample and merge datasets
 

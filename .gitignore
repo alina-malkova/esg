@@ -18,6 +18,11 @@ data/patents/*.zip
 data/patents/*.tsv
 data/sec_filings/scraper_log.txt
 
+# EPA GHGRP raw data (large Excel files - keep processed CSVs)
+data/epa_ghgrp/raw/*.xlsx
+data/epa_ghgrp/raw/*.xlsb
+data/epa_ghgrp/raw/2023 Data Summary Spreadsheets/
+
 # Partial/temporary files
 *_partial.csv
 
