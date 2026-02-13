@@ -79,6 +79,10 @@ Following \citet{felten2021occupational}, I construct an AI exposure index using
 
 To examine the measurement gap, I obtain corporate emissions data from CDP (formerly Carbon Disclosure Project) for 2011--2013, which includes both Scope 1 and Scope 2 emissions. I also compile Big Tech emissions from corporate sustainability reports for 2020--2023.
 
+\subsection{Sustainalytics ESG Risk Ratings}
+
+I obtain cross-sectional ESG risk ratings from Sustainalytics (via Kaggle) for 430 S\&P 500 firms. The data include total ESG risk scores, decomposed E/S/G pillar scores, and controversy ratings. Sustainalytics uses a risk-based framework where higher scores indicate greater ESG risk (worse performance). This provides independent validation of the AI-ESG trade-off using commercial ESG data rather than self-reported emissions.
+
 \section{Empirical Strategy}
 
 \subsection{Identification}
@@ -323,6 +327,54 @@ Figure \ref{fig:scissors} illustrates the predicted pattern. Pre-ChatGPT, all th
 \caption{Predicted ESG Pillar ``Scissors'' Pattern for High AI-Adopting Firms}
 \label{fig:scissors}
 \par\smallskip\noindent\textit{Notes:} Conceptual illustration of predicted ESG pillar divergence. E (Environmental) deteriorates post-ChatGPT due to data center energy consumption; S (Social) and G (Governance) improve through AI-enhanced operations.
+\end{figure}
+
+\subsection{Cross-Sectional ESG Validation: Sustainalytics Risk Ratings}
+
+To validate the AI-ESG trade-off with independent commercial data, I analyze Sustainalytics ESG risk ratings for S\&P 500 firms. Table \ref{tab:bigtech_esg} presents the decomposed risk scores for major technology firms. Higher scores indicate greater ESG risk.
+
+\begin{table}[H]
+\centering
+\caption{Big Tech ESG Risk Scores (Sustainalytics)}
+\label{tab:bigtech_esg}
+\begin{tabular}{lccccc}
+\toprule
+Company & Total Risk & E Risk & S Risk & G Risk & Risk Level \\
+\midrule
+NVIDIA & 13.6 & 2.3 & 4.9 & 6.3 & Low \\
+Microsoft & 15.1 & 1.5 & 7.5 & 6.1 & Low \\
+Apple & 17.2 & 0.5 & 7.4 & 9.4 & Low \\
+Alphabet & 24.2 & 1.6 & 11.2 & 11.5 & Medium \\
+Tesla & 25.2 & 3.3 & 14.1 & 7.8 & Medium \\
+Amazon & 30.6 & 6.0 & 15.4 & 9.2 & High \\
+Meta & 34.1 & 2.7 & 21.1 & 10.3 & High \\
+\midrule
+S\&P 500 Mean & 21.5 & 5.7 & 9.1 & 6.7 & --- \\
+\bottomrule
+\end{tabular}
+\par\smallskip\noindent\textit{Notes:} Higher scores indicate greater ESG risk (worse performance). Data from Sustainalytics via Kaggle.
+\end{table}
+
+Several patterns emerge. First, Meta and Amazon are rated ``High Risk'' with total scores of 34.1 and 30.6 respectively---well above the S\&P 500 mean of 21.5. Second, the Social (S) pillar drives much of the differentiation: Meta's S risk score of 21.1 is more than double the S\&P 500 average (9.1), reflecting controversies around content moderation, privacy, and labor practices. Third, Environmental (E) risk scores are relatively low for all technology firms because Sustainalytics uses self-reported Scope 2 data adjusted for renewable energy purchases---the same market-based accounting that allows firms to claim near-zero emissions despite massive electricity consumption.
+
+Figure \ref{fig:esg_sector} shows ESG risk by sector and its relationship with AI exposure. Technology has the second-lowest average ESG risk (16.9), behind only Real Estate (13.1). This is paradoxical given that Technology firms operate the most energy-intensive AI infrastructure. The negative correlation between AI exposure and ESG risk at the sector level ($r = -0.31$) suggests that current ESG frameworks may actually \textit{favor} AI-intensive sectors, despite their growing environmental footprint.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../analysis/output/fig16_kaggle_esg_by_sector.png}
+\caption{ESG Risk by Sector and AI Exposure}
+\label{fig:esg_sector}
+\par\smallskip\noindent\textit{Notes:} Panel A: Mean ESG risk score by GICS sector (higher = worse). Panel B: Sector-level correlation between AI exposure (O*NET-based) and ESG risk. Technology has low ESG risk despite high AI exposure.
+\end{figure}
+
+Figure \ref{fig:esg_bigtech} presents the pillar decomposition for Big Tech firms. The Social pillar accounts for the largest share of ESG risk for Meta, Amazon, and Tesla. Environmental risk is comparatively small, reflecting the limitations of current E-pillar measurement.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../analysis/output/fig18_big_tech_esg_detail.png}
+\caption{Big Tech ESG Risk Decomposition}
+\label{fig:esg_bigtech}
+\par\smallskip\noindent\textit{Notes:} ESG risk decomposed into Environmental (E), Social (S), and Governance (G) pillars. Total risk score and risk level shown above bars. Horizontal line shows S\&P 500 average.
 \end{figure}
 
 \subsection{Research Agenda: Forward-Looking Empirical Strategies}
