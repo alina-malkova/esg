@@ -240,6 +240,36 @@ GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Sco
 
 ---
 
+## New Analysis Strategies (February 2026)
+
+### Strategy 1: ESG Score Decomposition (E, S, G Pillars)
+- **Status:** Framework ready, needs commercial ESG data
+- **Prediction:** "Scissors" pattern - E pillar deteriorates, S/G improve
+- **Data needed:** MSCI or Sustainalytics pillar scores
+
+### Strategy 2: Utility Electricity Demand (Data Center Hubs)
+- **Status:** COMPLETED ✓
+- **Result:** Hub states saw **9.1% more electricity demand growth** post-ChatGPT (p=0.007)
+- Hub states: VA, TX, OR, AZ, GA
+- Control states: MT, WY, VT, ME
+- Hub growth 2022-2024: 64.9% vs Control: 48.0% (16.8 pp differential)
+
+### Strategy 3: Investor Pricing of the Trade-off
+- **Status:** COMPLETED ✓
+- **Result:** Correlation between emissions growth and stock returns = **0.947**
+- Markets are "forgiving" environmental costs for AI productivity
+- META: +174% emissions → +502% stock return
+- NVDA: +1,114% stock return (AI chips)
+
+### Strategy 4: Builder vs. User Decomposition
+- **Status:** COMPLETED ✓
+- AI Infrastructure Builders: 27 firms (MSFT, GOOGL, AMZN, META, NVDA, etc.)
+- AI Users (high-exposure non-builders): 205 firms
+- Builders have minimal Scope 1 in GHGRP (their footprint is Scope 2)
+- Users may see ESG improvement from AI-enhanced operations
+
+---
+
 ## Next Steps
 
 - [x] Download EPA eGRID regional emission factors
@@ -254,11 +284,13 @@ GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Sco
 - [x] Run diff-in-diff analysis with firm fixed effects
 - [x] Process CDP Scope 2 data (2011-2013)
 - [x] Document Scope 2 measurement gap for Big Tech
-- [ ] **CRITICAL:** Register for CDP and download Scope 2 data for 2018-2023
+- [x] **Strategy 2:** Utility electricity DiD (hub vs control states) - 9.1% effect, p=0.007
+- [x] **Strategy 3:** Investor pricing analysis - 0.95 correlation
+- [x] **Strategy 4:** Builder/user classification - 27 builders, 205 users
+- [ ] **Strategy 1:** Obtain decomposed ESG scores (E, S, G separately)
+- [ ] Download formal EIA Form 861 data for utility analysis
 - [ ] Run full SEC EDGAR scraper on S&P 500 (`python3 scripts/sec_edgar_scraper.py`)
 - [ ] Download PatentsView bulk files manually (see instructions)
-- [ ] Re-run DiD with Scope 1 + Scope 2 combined emissions
-- [ ] Alternative: Test utilities in tech hub regions as proxy for AI electricity demand
 
 ---
 

@@ -1,0 +1,25 @@
+EIA Form 861 Data Download Instructions
+========================================
+
+1. Go to: https://www.eia.gov/electricity/data/eia861/
+
+2. Download "Zip file" for each year (2018-2024)
+   - Contains Sales to Ultimate Customers data
+   - Utility-level electricity sales by state and customer class
+
+3. Key files needed:
+   - Sales_Ult_Cust_YYYY.xlsx (or .xls)
+
+4. Data fields:
+   - Utility Number, Utility Name, State
+   - Residential, Commercial, Industrial sales (MWh)
+   - Total sales and revenues
+
+5. Analysis plan:
+   - Compare electricity demand growth in tech hub states vs. non-hub states
+   - Pre-period: 2018-2022, Post-period: 2023-2024
+   - Treatment: States with major data center corridors
+   - Control: States without significant data center presence
+
+6. Alternative: Use EIA-923 for monthly generation data at power plant level
+   https://www.eia.gov/electricity/data/eia923/
