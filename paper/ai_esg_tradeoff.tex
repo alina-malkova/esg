@@ -1,0 +1,211 @@
+\documentclass[12pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\geometry{margin=1in}
+\doublespacing
+
+% Title
+\title{AI Adoption and the ESG Trade-off: Evidence from Corporate Emissions Data}
+\author{
+    Alina Malkova\\
+    \textit{Florida Institute of Technology}\\
+    \texttt{amalkova@fit.edu}
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Does artificial intelligence adoption create a productivity-ESG trade-off for public firms? Using the ChatGPT launch (November 2022) as an exogenous shock to AI adoption pressure, I employ a difference-in-differences design to examine whether firms in high AI-exposed industries experienced differential changes in greenhouse gas emissions. Matching EPA GHGRP facility-level emissions data to S\&P 500 firms (2010--2023) and constructing an AI exposure index from O*NET occupational data, I find no significant differential effect of AI exposure on Scope 1 emissions. However, I document a critical measurement limitation: GHGRP captures only direct emissions (Scope 1), while AI infrastructure emissions are primarily Scope 2 (purchased electricity). Big Tech firms' Scope 2 emissions---which grew 60--176\% from 2020--2023---represent 87--99\% of their carbon footprint and are entirely absent from regulatory emissions databases. These findings highlight that current ESG measurement frameworks may systematically understate the environmental costs of AI adoption.
+
+\medskip
+\noindent\textbf{Keywords:} Artificial Intelligence, ESG, Carbon Emissions, Scope 2, Data Centers, ChatGPT
+
+\noindent\textbf{JEL Codes:} G30, Q54, O33, M14
+\end{abstract}
+
+\newpage
+
+\section{Introduction}
+
+The rapid adoption of artificial intelligence technologies has created a fundamental tension for corporate environmental sustainability. Firms that aggressively deploy AI---and by extension, the data centers with massive energy footprints that power these systems---may boost productivity and competitiveness but simultaneously increase their carbon emissions. This tension is particularly acute given that environmental, social, and governance (ESG) performance increasingly matters for institutional investors, index inclusion, and cost of capital.
+
+This paper investigates whether AI adoption creates a measurable productivity-ESG trade-off for public firms. I exploit the launch of ChatGPT in November 2022 as an exogenous shock that dramatically increased competitive pressure to adopt AI across industries. Using a difference-in-differences framework, I compare emissions trajectories of firms in high versus low AI-exposed industries before and after this shock.
+
+My analysis reveals a critical measurement challenge: the EPA's Greenhouse Gas Reporting Program (GHGRP)---the primary regulatory source of U.S. corporate emissions data---captures only Scope 1 emissions (direct combustion from owned facilities). However, AI infrastructure emissions are predominantly Scope 2 (indirect emissions from purchased electricity to power data centers). I document that for major technology firms, Scope 2 represents 87--99\% of total emissions, and these emissions grew 60--176\% between 2020 and 2023. None of this growth appears in GHGRP data.
+
+This measurement gap has significant implications for both academic research and policy. Studies relying on regulatory emissions databases may systematically underestimate the environmental costs of AI adoption. Current ESG frameworks may not adequately capture emissions from the fastest-growing source of corporate carbon footprints.
+
+\section{Related Literature}
+
+\subsection{AI Adoption and ESG Performance}
+
+The dominant finding in recent literature is that AI adoption \textit{improves} firm-level ESG performance. Studies using Chinese A-share listed firms find positive effects across all three ESG pillars, with mechanisms including better internal controls, financing constraint alleviation, and green innovation \citep[see][for a review]{chen2025ai}. However, this literature treats AI as a tool for ESG management rather than examining the equilibrium trade-off firms face when AI adoption itself carries environmental costs.
+
+\subsection{Big Tech's Emissions Crisis}
+
+Emerging evidence contradicts the optimistic view for firms building AI infrastructure. Alphabet's emissions rose nearly 50\% since 2019; Meta's location-based emissions more than doubled; Microsoft's rose 23.4\% since 2020---all driven by data center electricity demand. In 2025, Microsoft, Google, Amazon, and Meta are projected to spend a combined \$320 billion on AI infrastructure. A Harvard study found that the carbon intensity of electricity used by data centers was 48\% higher than the U.S. average.
+
+\subsection{Emissions Scope and Measurement}
+
+Corporate emissions are classified into three scopes: Scope 1 (direct emissions from owned sources), Scope 2 (indirect emissions from purchased energy), and Scope 3 (all other indirect emissions in the value chain). For technology firms, Scope 2 dominates because data centers consume massive amounts of electricity but generate minimal direct emissions. The EPA GHGRP requires reporting only for facilities emitting more than 25,000 metric tons CO$_2$e of direct (Scope 1) emissions, creating a systematic gap for electricity-intensive operations.
+
+\section{Data}
+
+\subsection{EPA GHGRP Emissions Panel}
+
+I obtain facility-level emissions data from the EPA Greenhouse Gas Reporting Program for 2010--2023. Matching facilities to parent companies using EPA ownership data and then to S\&P 500 constituents, I construct a panel of 121 firms with 1,636 company-year observations. The panel is well-balanced: 109 firms have complete data for all 14 years.
+
+\subsection{AI Exposure Index}
+
+Following \citet{felten2021occupational}, I construct an AI exposure index using O*NET occupational ability and work activity data. I identify abilities where AI systems have strong capabilities (e.g., written comprehension, deductive reasoning, information processing) and weight occupations by their reliance on these abilities. Aggregating to GICS sectors, I find Information Technology (81.5) and Financials (81.2) have the highest AI exposure, while Utilities (42.0) and Materials (37.2) have the lowest.
+
+\subsection{CDP Scope 2 Data}
+
+To examine the measurement gap, I obtain corporate emissions data from CDP (formerly Carbon Disclosure Project) for 2011--2013, which includes both Scope 1 and Scope 2 emissions. I also compile Big Tech emissions from corporate sustainability reports for 2020--2023.
+
+\section{Empirical Strategy}
+
+\subsection{Identification}
+
+I employ a difference-in-differences design using the ChatGPT launch (November 30, 2022) as a shock to AI adoption pressure:
+\begin{equation}
+\ln(\text{Emissions}_{it}) = \beta(\text{HighAIExposure}_i \times \text{Post}_t) + \alpha_i + \gamma_t + \varepsilon_{it}
+\end{equation}
+where $\alpha_i$ are firm fixed effects, $\gamma_t$ are year fixed effects, and $\text{HighAIExposure}_i$ indicates firms in sectors above median AI exposure. The coefficient $\beta$ captures the differential change in emissions for high AI-exposed firms after ChatGPT.
+
+\subsection{Parallel Trends}
+
+I verify the parallel trends assumption using an event study specification:
+\begin{equation}
+\ln(\text{Emissions}_{it}) = \sum_{k \neq 2022} \beta_k (\text{HighAIExposure}_i \times \mathbf{1}[\text{Year}=k]) + \alpha_i + \gamma_t + \varepsilon_{it}
+\end{equation}
+Pre-treatment coefficients ($\beta_k$ for $k < 2022$) should be statistically indistinguishable from zero.
+
+\section{Results}
+
+\subsection{Diff-in-Diff Estimates}
+
+Table \ref{tab:did} presents the main results. Across all specifications, I find no statistically significant differential effect of AI exposure on emissions.
+
+\begin{table}[H]
+\centering
+\caption{Diff-in-Diff Estimates: AI Exposure and Emissions}
+\label{tab:did}
+\begin{tabular}{lccc}
+\toprule
+& (1) & (2) & (3) \\
+& Basic DiD & Firm FE & Continuous AI \\
+\midrule
+High AI Exposure $\times$ Post & 0.057 & & \\
+& (0.425) & & \\
+Treatment (High AI $\times$ Post) & & 0.006 & \\
+& & (0.062) & \\
+AI Exposure (Std.) $\times$ Post & & & $-0.020$ \\
+& & & (0.031) \\
+\midrule
+Firm FE & No & Yes & Yes \\
+Year FE & No & Yes & Yes \\
+R-squared & 0.167 & 0.984 & 0.984 \\
+Observations & 1,636 & 1,636 & 1,636 \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses. * p<0.1, ** p<0.05, *** p<0.01}
+\end{tabular}
+\end{table}
+
+\subsection{Event Study}
+
+Figure \ref{fig:event} shows event study coefficients. Pre-treatment coefficients are not statistically different from zero, supporting the parallel trends assumption. The post-treatment coefficient (2023) is also insignificant.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{../analysis/output/fig5_parallel_trends.png}
+\caption{Parallel Trends and Event Study}
+\label{fig:event}
+\floatfoot{\textit{Notes:} Panel A shows mean log emissions for high versus low AI exposure firms over time. Panel B shows event study coefficients with 95\% confidence intervals; 2022 is the reference year.}
+\end{figure}
+
+\subsection{The Scope 2 Measurement Gap}
+
+The null result may reflect a measurement artifact rather than the absence of an AI-emissions relationship. Table \ref{tab:scope2} documents that Big Tech emissions are overwhelmingly Scope 2, which GHGRP does not capture.
+
+\begin{table}[H]
+\centering
+\caption{Big Tech 2023 Emissions: Scope 1 vs. Scope 2 (Million Metric Tons CO$_2$e)}
+\label{tab:scope2}
+\begin{tabular}{lcccc}
+\toprule
+Company & Scope 1 & Scope 2 & Total & \% Missing from GHGRP \\
+\midrule
+Microsoft & 0.13 & 7.10 & 7.23 & 98\% \\
+Alphabet & 0.08 & 7.48 & 7.56 & 99\% \\
+Meta & 0.05 & 3.81 & 3.86 & 99\% \\
+Amazon & 9.12 & 10.20 & 19.32 & 53\% \\
+\midrule
+\textbf{Total} & 9.38 & 28.59 & 37.97 & 75\% \\
+\bottomrule
+\end{tabular}
+\floatfoot{\textit{Source:} Corporate sustainability reports (2023).}
+\end{table}
+
+Moreover, Big Tech emissions are growing rapidly. From 2020 to 2023:
+\begin{itemize}
+    \item Meta: +176\%
+    \item Alphabet: +64\%
+    \item Microsoft: +60\%
+    \item Amazon: +68\%
+\end{itemize}
+
+Figure \ref{fig:gap} illustrates what GHGRP captures versus misses.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{../analysis/output/fig8_ghgrp_gap.png}
+\caption{What GHGRP Captures vs. Misses for Big Tech}
+\label{fig:gap}
+\end{figure}
+
+\section{Discussion}
+
+\subsection{Implications for ESG Measurement}
+
+The finding that 87--99\% of Big Tech emissions fall outside regulatory reporting has significant implications. ESG rating agencies that rely on regulatory emissions data may systematically understate the environmental impact of technology firms. This could lead to:
+\begin{enumerate}
+    \item Mispricing of climate risk for AI-intensive firms
+    \item Misleading ESG scores that favor high-emitting tech companies
+    \item Regulatory blind spots for the fastest-growing source of emissions
+\end{enumerate}
+
+\subsection{Limitations and Future Research}
+
+This study faces several limitations. First, the CDP Scope 2 data available cover only 2011--2013, predating the ChatGPT shock. Future research should obtain CDP data for 2018--2023 to properly test the AI-emissions hypothesis with Scope 2 included.
+
+Second, the post-treatment period includes only one year (2023). As more data become available, longer-run effects may emerge.
+
+Third, an alternative identification strategy could examine utilities serving technology hubs as indirect evidence of AI electricity demand.
+
+\section{Conclusion}
+
+This paper documents a critical measurement gap in corporate emissions data that has implications for understanding the environmental costs of AI adoption. While I find no differential effect of AI exposure on Scope 1 emissions around the ChatGPT launch, this null result likely reflects the fact that AI infrastructure emissions are predominantly Scope 2 (purchased electricity), which regulatory databases do not capture. Big Tech firms' Scope 2 emissions---representing 87--99\% of their carbon footprint---grew 60--176\% from 2020--2023, a period of massive AI infrastructure investment.
+
+These findings suggest that current ESG frameworks may not adequately capture the environmental costs of AI adoption. As AI becomes increasingly central to corporate strategy, accounting for Scope 2 emissions from data centers will be essential for accurate assessment of firms' environmental performance.
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document}

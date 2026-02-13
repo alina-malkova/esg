@@ -160,6 +160,8 @@ From Yahoo Finance: stock returns, market cap changes, Tobin's Q approximations
 | **EPA GHGRP Panel** | `epa_ghgrp/processed/ghgrp_company_year_sp500_all_years.csv` | 44 KB | 121 S&P 500 firms × 14 years (1,636 company-year obs) |
 | **EPA GHGRP Facilities Panel** | `epa_ghgrp/processed/ghgrp_facilities_sp500_all_years.csv` | 3 MB | 23,439 facility-year observations for S&P 500 |
 | **EPA GHGRP 2023 Only** | `epa_ghgrp/processed/ghgrp_company_year_sp500.csv` | 3 KB | 116 S&P 500 firms (2023 snapshot) |
+| **CDP Emissions** | `cdp/*.csv` | 2 MB | Corporate emissions 2010-2013 (Scope 1 + 2) |
+| **CDP Processed** | `analysis/output/cdp_emissions_sp500.csv` | 40 KB | 183 S&P 500 firms with Scope 1 & 2 (2011-2013) |
 | **Ken French Factors** | `ken_french/F-F_Research_Data_Factors_daily.csv` | 1.1 MB | Daily Fama-French factor returns |
 | **Ken French Industries** | `ken_french/48_Industry_Portfolios_Daily.csv` | 20 MB | 48 industry portfolio returns |
 | **FRED Macro Data** | `fred/*.csv` | 58 KB | GDP, unemployment, CPI, Fed funds, S&P 500, industrial production |
@@ -174,7 +176,7 @@ From Yahoo Finance: stock returns, market cap changes, Tobin's Q approximations
 | Dataset | Instructions | Why |
 |---------|--------------|-----|
 | **PatentsView** | See `data/patents/DOWNLOAD_INSTRUCTIONS.txt` | Files >10GB, need AI CPC codes |
-| **CDP Data** | Register at cdp.net/en/data | Requires free account |
+| **CDP 2018-2023** | Register at cdp.net/en/data | Need Scope 2 for post-ChatGPT analysis |
 | **ESG Scores** | Yahoo Finance API deprecated; use S&P Global free tier | API restrictions |
 
 ### Scripts Available (in `scripts/` folder)
@@ -185,6 +187,56 @@ From Yahoo Finance: stock returns, market cap changes, Tobin's Q approximations
 | `sec_edgar_scraper.py` | Extract AI keywords from 10-K filings | `python3 scripts/sec_edgar_scraper.py` |
 | `yahoo_esg_scraper.py` | ESG score collection (currently restricted) | `python3 scripts/yahoo_esg_scraper.py` |
 | `process_ghgrp_all_years.py` | Process EPA GHGRP 2010-2023, match to S&P 500 | `python3 scripts/process_ghgrp_all_years.py` |
+| `build_ai_exposure_index.py` | Build AI exposure index from O*NET data | `python3 scripts/build_ai_exposure_index.py` |
+| `process_cdp_scope2.py` | Process CDP Scope 2 data, merge with GHGRP | `python3 scripts/process_cdp_scope2.py` |
+
+### Analysis Scripts (in `analysis/` folder)
+
+| Script | Purpose | Output |
+|--------|---------|--------|
+| `01_emissions_analysis.py` | Descriptive stats, emissions trends by sector | Figures 1-4, yearly summaries |
+| `02_diff_in_diff_analysis.py` | DiD regression: AI exposure × Post-ChatGPT | Figures 5-6, regression tables |
+| `03_scope2_analysis.py` | Scope 2 importance, Big Tech emissions | Figures 7-8, measurement gap analysis |
+
+---
+
+## Preliminary Findings
+
+### Diff-in-Diff Results (GHGRP Scope 1)
+
+**Treatment:** High AI Exposure × Post-ChatGPT (Nov 2022)
+
+| Model | Coefficient | SE | P-value |
+|-------|-------------|-----|---------|
+| Basic DiD | +0.057 | 0.425 | 0.893 |
+| Firm FE | +0.006 | 0.062 | 0.921 |
+| Continuous AI | -0.020 | 0.031 | 0.519 |
+
+**Result:** No significant differential effect — but this is likely a **measurement artifact**.
+
+### Critical Data Limitation
+
+GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Scope 2** (purchased electricity):
+
+| Company | Scope 1 | Scope 2 | % Missing from GHGRP |
+|---------|---------|---------|---------------------|
+| Microsoft | 0.13M | 7.10M | 98% |
+| Alphabet | 0.08M | 7.48M | 99% |
+| Meta | 0.05M | 3.81M | 99% |
+| Amazon | 9.12M | 10.20M | 53% |
+
+**Big Tech emissions grew 60-176% from 2020-2023** — none of this shows up in GHGRP.
+
+### AI Exposure Index (O*NET-based)
+
+| Sector | AI Exposure Score |
+|--------|-------------------|
+| Information Technology | 81.5 |
+| Financials | 81.2 |
+| Health Care | 65.1 |
+| Consumer Discretionary | 62.6 |
+| Utilities | 42.0 |
+| Materials | 37.2 |
 
 ---
 
@@ -198,11 +250,15 @@ From Yahoo Finance: stock returns, market cap changes, Tobin's Q approximations
 - [x] Download EPA GHGRP from Envirofacts (2010-2023 facility data, parent company matching)
 - [x] Match EPA GHGRP facilities to S&P 500 companies (121 firms, 2,175 facilities)
 - [x] Process GHGRP panel data for all years (1,636 company-year observations, 109 firms with complete 14-year panel)
+- [x] Construct AI exposure index from O*NET data (873 occupations, 11 GICS sectors)
+- [x] Run diff-in-diff analysis with firm fixed effects
+- [x] Process CDP Scope 2 data (2011-2013)
+- [x] Document Scope 2 measurement gap for Big Tech
+- [ ] **CRITICAL:** Register for CDP and download Scope 2 data for 2018-2023
 - [ ] Run full SEC EDGAR scraper on S&P 500 (`python3 scripts/sec_edgar_scraper.py`)
 - [ ] Download PatentsView bulk files manually (see instructions)
-- [ ] Register for CDP data access and download emissions data
-- [ ] Construct AI exposure index from O*NET data
-- [ ] Define firm sample and merge datasets
+- [ ] Re-run DiD with Scope 1 + Scope 2 combined emissions
+- [ ] Alternative: Test utilities in tech hub regions as proxy for AI electricity demand
 
 ---
 
