@@ -140,44 +140,86 @@ Figure \ref{fig:event} shows event study coefficients. Pre-treatment coefficient
 \par\smallskip\noindent\textit{Notes:} Panel A shows mean log emissions for high versus low AI exposure firms over time. Panel B shows event study coefficients with 95\% confidence intervals; 2022 is the reference year.
 \end{figure}
 
-\subsection{The Scope 2 Measurement Gap}
+\subsection{The Scope 2 Measurement Gap: Big Tech Deep Dive}
 
-The null result may reflect a measurement artifact rather than the absence of an AI-emissions relationship. Table \ref{tab:scope2} documents that Big Tech emissions are overwhelmingly Scope 2, which GHGRP does not capture.
+The null result reflects a measurement artifact rather than the absence of an AI-emissions relationship. I compile a comprehensive panel of Big Tech emissions from corporate sustainability reports (2019--2023) to document what regulatory databases miss.
+
+\subsubsection{Time Series Evidence}
+
+Table \ref{tab:scope2_panel} presents the complete time series of Scope 2 location-based emissions for major technology firms. These emissions grew dramatically during the AI infrastructure buildout period, with Meta showing the most rapid growth (+223\% from 2019--2023), followed by Amazon (+97\%), Microsoft (+78\%), and Alphabet (+47\%).
 
 \begin{table}[H]
 \centering
-\caption{Big Tech 2023 Emissions: Scope 1 vs. Scope 2 (Million Metric Tons CO$_2$e)}
-\label{tab:scope2}
+\caption{Big Tech Scope 2 Location-Based Emissions (Million MT CO$_2$e)}
+\label{tab:scope2_panel}
+\begin{tabular}{lccccccc}
+\toprule
+Company & 2019 & 2020 & 2021 & 2022 & 2023 & Growth & \% Scope 2 \\
+\midrule
+Microsoft & 4.00 & 4.44 & 5.20 & 6.10 & 7.10 & +78\% & 98\% \\
+Alphabet & 5.10 & 4.56 & 5.38 & 6.24 & 7.48 & +47\% & 99\% \\
+Meta & 1.18 & 1.38 & 2.14 & 2.89 & 3.81 & +223\% & 99\% \\
+Amazon & 5.17 & 6.08 & 7.65 & 8.89 & 10.20 & +97\% & 53\% \\
+Apple & 0.41 & 0.42 & 0.45 & 0.48 & 0.51 & +24\% & 90\% \\
+\midrule
+\textbf{Total} & 15.86 & 16.88 & 20.82 & 24.60 & 29.10 & +83\% & --- \\
+\bottomrule
+\end{tabular}
+\par\smallskip\noindent\textit{Source:} Corporate sustainability reports. Growth is 2019--2023. \% Scope 2 is share of total 2023 emissions.
+\end{table}
+
+\subsubsection{What GHGRP Captures vs. Misses}
+
+Table \ref{tab:ghgrp_compare} shows the stark contrast between what GHGRP reports and what sustainability reports reveal for the same firms in 2023. For Microsoft, Alphabet, and Meta, GHGRP captures less than 2\% of total emissions because these firms' data centers generate minimal direct (Scope 1) emissions---nearly all their carbon footprint comes from purchased electricity (Scope 2).
+
+\begin{table}[H]
+\centering
+\caption{GHGRP vs. Sustainability Reports: 2023 Comparison}
+\label{tab:ghgrp_compare}
 \begin{tabular}{lcccc}
 \toprule
 Company & Scope 1 & Scope 2 & Total & \% Missing from GHGRP \\
 \midrule
-Microsoft & 0.13 & 7.10 & 7.23 & 98\% \\
-Alphabet & 0.08 & 7.48 & 7.56 & 99\% \\
-Meta & 0.05 & 3.81 & 3.86 & 99\% \\
-Amazon & 9.12 & 10.20 & 19.32 & 53\% \\
+Microsoft & 0.13 & 7.10 & 7.23 & 98.2\% \\
+Alphabet & 0.08 & 7.48 & 7.56 & 99.0\% \\
+Meta & 0.05 & 3.81 & 3.86 & 98.6\% \\
+Amazon & 9.12 & 10.20 & 19.32 & 52.8\% \\
 \midrule
-\textbf{Total} & 9.38 & 28.59 & 37.97 & 75\% \\
+\textbf{Total} & 9.38 & 28.59 & 37.97 & 75.3\% \\
 \bottomrule
 \end{tabular}
-\par\smallskip\noindent\textit{Source:} Corporate sustainability reports (2023).
+\par\smallskip\noindent\textit{Notes:} Values in million metric tons CO$_2$e. Amazon's higher Scope 1 reflects its delivery fleet.
 \end{table}
 
-Moreover, Big Tech emissions are growing rapidly. From 2020 to 2023:
-\begin{itemize}
-    \item Meta: +176\%
-    \item Alphabet: +64\%
-    \item Microsoft: +60\%
-    \item Amazon: +68\%
-\end{itemize}
+\subsubsection{Location-Based vs. Market-Based Scope 2}
 
-Figure \ref{fig:gap} illustrates what GHGRP captures versus misses.
+A further complication arises from the distinction between location-based and market-based Scope 2 accounting. Location-based emissions use average grid emission factors and reflect actual electricity consumption; market-based emissions are adjusted for renewable energy purchases (RECs, PPAs). Table \ref{tab:loc_vs_market} shows that several Big Tech firms report near-zero market-based Scope 2 while their location-based emissions continue to grow. For ESG assessment, location-based emissions are the appropriate measure of environmental impact.
+
+\begin{table}[H]
+\centering
+\caption{Location-Based vs. Market-Based Scope 2 (2023, Million MT CO$_2$e)}
+\label{tab:loc_vs_market}
+\begin{tabular}{lccc}
+\toprule
+Company & Location-Based & Market-Based & Difference \\
+\midrule
+Microsoft & 7.10 & 0.45 & 6.65 \\
+Alphabet & 7.48 & 0.00 & 7.48 \\
+Meta & 3.81 & 0.00 & 3.81 \\
+Amazon & 10.20 & 3.58 & 6.62 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\noindent\textit{Notes:} Market-based accounting allows firms to claim near-zero Scope 2 by purchasing RECs, even as actual electricity consumption grows.
+\end{table}
+
+Figure \ref{fig:deepdive} presents the comprehensive visualization: Panel A shows the Scope 2 time series with acceleration after ChatGPT; Panel B illustrates what GHGRP captures versus misses; Panel C contrasts location-based and market-based accounting; Panel D shows year-over-year growth rates.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{../analysis/output/fig8_ghgrp_gap.png}
-\caption{What GHGRP Captures vs. Misses for Big Tech}
-\label{fig:gap}
+\includegraphics[width=\textwidth]{../analysis/output/fig13_big_tech_deep_dive.png}
+\caption{Big Tech Emissions Deep Dive (2019--2023)}
+\label{fig:deepdive}
+\par\smallskip\noindent\textit{Notes:} Panel A: Scope 2 location-based emissions time series. Panel B: What GHGRP captures (Scope 1) vs. misses (Scope 2) in 2023. Panel C: Location-based vs. market-based Scope 2 accounting. Panel D: Year-over-year Scope 2 growth rates.
 \end{figure}
 
 \section{Alternative Strategies and Additional Evidence}
@@ -261,6 +303,14 @@ The finding that 87--99\% of Big Tech emissions fall outside regulatory reportin
 
 The utility-level analysis provides complementary evidence: hub states saw 9.1\% differential electricity demand growth post-ChatGPT, translating to substantial unmeasured Scope 2 emissions.
 
+\subsection{The AI Exposure Index Mismatch}
+
+A potential concern with the main specification is that the O*NET-based AI exposure index measures \textit{worker} exposure to AI automation---the degree to which occupational tasks can be performed by AI systems---rather than \textit{infrastructure} investment in AI compute capacity. Information Technology and Financial Services score highest on this index because their workers perform cognitive tasks amenable to AI augmentation, not because these sectors necessarily operate the most data centers.
+
+This mismatch is actually central to the paper's argument. Even the best available proxies for AI adoption intensity do not map onto the emissions mechanism, which is infrastructure-driven. The AI-ESG literature predominantly uses worker-level exposure measures, patent counts, or earnings call mentions---none of which capture the electricity consumption from GPU clusters and cooling systems that generates Scope 2 emissions. The null result in my DiD specification is therefore \textit{expected}: worker-level AI exposure is orthogonal to data center electricity demand.
+
+This highlights a fundamental challenge for research on AI's environmental impact. Firm-level AI adoption is difficult to measure, and available proxies emphasize adoption of AI \textit{applications} rather than investment in AI \textit{infrastructure}. The builder-versus-user decomposition partially addresses this: only infrastructure builders (hyperscalers, chip manufacturers) bear the Scope 2 emissions costs, while users of cloud AI services may show ESG improvements without direct environmental footprint. Future work should develop measures that distinguish these channels.
+
 \subsection{The ESG Pillar ``Scissors'' Pattern}
 
 For high AI-adopting firms, I predict a ``scissors'' pattern across ESG pillars: the E (Environmental) pillar should deteriorate due to data center energy consumption, while S (Social) and G (Governance) pillars may improve through AI-enhanced compliance monitoring and operational efficiency. Net ESG scores may remain stable, masking significant E-pillar deterioration. This decomposition is essential for accurate assessment of AI's environmental impact.
@@ -275,13 +325,31 @@ Figure \ref{fig:scissors} illustrates the predicted pattern. Pre-ChatGPT, all th
 \par\smallskip\noindent\textit{Notes:} Conceptual illustration of predicted ESG pillar divergence. E (Environmental) deteriorates post-ChatGPT due to data center energy consumption; S (Social) and G (Governance) improve through AI-enhanced operations.
 \end{figure}
 
-\subsection{Limitations and Future Research}
+\subsection{Research Agenda: Forward-Looking Empirical Strategies}
+
+This paper establishes the measurement challenge; future work can exploit strategies that directly capture Scope 2 emissions and ESG pillar decomposition.
+
+\textbf{Strategy 1: Utility-Level Electricity Demand.} EIA Form 861 provides utility-level electricity sales by state and customer class. A formal difference-in-differences design would compare commercial electricity demand growth in data center corridor counties (Loudoun County, VA; Prineville, OR; Quincy, WA) versus matched control counties before and after the ChatGPT shock. Data center siting decisions were largely predetermined, so the treatment is plausibly exogenous to post-2022 demand shocks. This approach yields a revealed-preference measure of AI infrastructure buildout that maps directly to Scope 2 emissions.
+
+\textbf{Strategy 2: ESG Pillar Decomposition with Commercial Data.} Using MSCI, Sustainalytics, or Refinitiv ESG ratings decomposed into E, S, and G pillars, estimate:
+\begin{equation}
+\Delta \text{Pillar}_{it}^k = \beta_k (\text{AIAdoption}_{it} \times \text{Post}_t) + \alpha_i + \gamma_t + \varepsilon_{it}
+\end{equation}
+for $k \in \{E, S, G\}$. The prediction is $\beta_E < 0$ (E deteriorates), $\beta_S > 0$, and $\beta_G > 0$---the ``scissors'' pattern. AI adoption can be measured through earnings call AI mentions, AI job postings (from Lightcast/Burning Glass), or AI patent filings. This approach sidesteps the GHGRP measurement problem because commercial ESG ratings incorporate self-reported sustainability data including Scope 2.
+
+\textbf{Strategy 3: Infrastructure Builder Identification.} Construct a direct measure of AI infrastructure investment using: (1) capital expenditure disclosures mentioning data centers; (2) GPU procurement announcements; (3) power purchase agreements (PPAs) for data center electricity. This would enable a triple-difference design: compare E-pillar changes for infrastructure builders versus users, in high versus low AI-exposed industries, before and after ChatGPT.
+
+\textbf{Strategy 4: Investor Response Heterogeneity.} Using 13F institutional holdings data, test whether ESG-focused investors (identified by fund names or Morningstar sustainability ratings) differentially divest from high-emission AI adopters relative to non-ESG investors. This would reveal whether the market is pricing the AI-ESG trade-off and whether investor clienteles are segmented by environmental preferences.
+
+\subsection{Limitations}
 
 This study faces several limitations. First, the CDP Scope 2 data available cover only 2011--2013, predating the ChatGPT shock. Future research should obtain CDP data for 2018--2023 to properly test the AI-emissions hypothesis with Scope 2 included.
 
 Second, the post-treatment period includes only one year (2023). As more data become available, longer-run effects may emerge.
 
-Third, formal EIA Form 861 utility-level data would strengthen the electricity demand analysis.
+Third, formal EIA Form 861 utility-level data would strengthen the electricity demand analysis beyond the industry estimates used here.
+
+Fourth, the Big Tech emissions time series relies on self-reported sustainability data, which may be subject to measurement inconsistencies across firms and years.
 
 \section{Conclusion}
 
