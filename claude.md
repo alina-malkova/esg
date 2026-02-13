@@ -102,12 +102,13 @@ Evidence that AI adoption is destroying the environmental component of ESG for f
 
 | Source | Description | Access |
 |--------|-------------|--------|
+| **Kaggle S&P 500 ESG** | Sustainalytics ESG risk ratings for 430 S&P 500 firms | kaggle.com (downloaded ✓) |
 | **CDP Open Data Portal** | Corporate climate disclosures: emissions (Scope 1, 2, 3), water consumption, climate strategy | cdp.net (free registration) |
 | **EPA GHGRP** | Facility-level emissions for all large U.S. emitters | ghgdata.epa.gov (FLIGHT tool) |
 | **EPA eGRID** | Regional electricity grid emission factors | epa.gov/egrid |
 | **Corporate sustainability reports** | Detailed environmental data from Google, Microsoft, Meta, Amazon, Apple | Company websites |
-| **Yahoo Finance ESG** | Sustainalytics risk ratings displayed publicly | finance.yahoo.com (scrapeable) |
-| **S&P Global ESG Scores** | Some scores freely available | spglobal.com (free registration) |
+| **Yahoo Finance ESG** | ~~Sustainalytics risk ratings~~ **DEPRECATED** (API returns 404) | ~~finance.yahoo.com~~ |
+| **MSCI ESG Search** | Free lookup tool with rating history | msci.com (anti-bot protection) |
 
 ### Financial Data
 
@@ -119,32 +120,6 @@ Evidence that AI adoption is destroying the environmental component of ESG for f
 | **Macrotrends.net** | Historical financial statements (10+ years) | macrotrends.net |
 | **SEC 13F filings** | Institutional holdings data | sec.gov/edgar |
 | **Ken French Data Library** | Factor returns and industry portfolio data | Dartmouth website |
-
----
-
-## Proposed Empirical Design (Free Data Only)
-
-### Step 1: AI Adoption Intensity
-Construct from 10-K keyword counts (SEC EDGAR) for S&P 500 or Russell 3000 firms, 2018–2025
-
-### Step 2: Environmental Performance
-Measure using CDP emissions data or EPA GHGRP facility-level emissions matched to parent firms
-
-### Step 3: Identification Strategy
-Use ChatGPT launch (November 2022) as a shock, interacted with industry-level AI exposure from Felten et al. scores. Industries with high task exposure to AI faced stronger competitive pressure to adopt.
-
-### Step 4: Track Outcomes
-Post-shock changes in:
-- Emissions intensity (from CDP/EPA)
-- ESG scores (scraped from Yahoo Finance/S&P Global)
-- High- vs. low-exposure firms comparison
-
-### Step 5: Financial Outcomes
-From Yahoo Finance: stock returns, market cap changes, Tobin's Q approximations
-
-### Step 6: Heterogeneity Analysis
-- ESG investor concentration (from 13F filings)
-- Regional grid carbon intensity (from EPA eGRID)
 
 ---
 
@@ -160,6 +135,8 @@ From Yahoo Finance: stock returns, market cap changes, Tobin's Q approximations
 | **EPA GHGRP Panel** | `epa_ghgrp/processed/ghgrp_company_year_sp500_all_years.csv` | 44 KB | 121 S&P 500 firms × 14 years (1,636 company-year obs) |
 | **EPA GHGRP Facilities Panel** | `epa_ghgrp/processed/ghgrp_facilities_sp500_all_years.csv` | 3 MB | 23,439 facility-year observations for S&P 500 |
 | **EPA GHGRP 2023 Only** | `epa_ghgrp/processed/ghgrp_company_year_sp500.csv` | 3 KB | 116 S&P 500 firms (2023 snapshot) |
+| **Kaggle ESG** | `kaggle_esg/SP 500 ESG Risk Ratings.csv` | 800 KB | **430 S&P 500 firms with Sustainalytics E/S/G scores** |
+| **Big Tech ESG Panel** | `esg_scores/big_tech_esg_manual.csv` | 2 KB | **6 companies × 5 years (2019-2023) MSCI ratings** |
 | **CDP Emissions** | `cdp/*.csv` | 2 MB | Corporate emissions 2010-2013 (Scope 1 + 2) |
 | **CDP Processed** | `analysis/output/cdp_emissions_sp500.csv` | 40 KB | 183 S&P 500 firms with Scope 1 & 2 (2011-2013) |
 | **Ken French Factors** | `ken_french/F-F_Research_Data_Factors_daily.csv` | 1.1 MB | Daily Fama-French factor returns |
@@ -171,15 +148,28 @@ From Yahoo Finance: stock returns, market cap changes, Tobin's Q approximations
 | **SEC Tickers** | `sec_filings/company_tickers.json` | 1.9 KB | Ticker-to-CIK mapping |
 | **Test AI Keywords** | `sec_filings/test_ai_keywords.csv` | 1.4 KB | Sample 10-K AI keyword extraction (GOOGL, XOM, WMT) |
 
+### ESG Data Availability Summary
+
+| Source | Status | Data Type | Coverage |
+|--------|--------|-----------|----------|
+| **Kaggle Sustainalytics** | ✅ Downloaded | Cross-sectional | 430 firms, June 2024 |
+| **Manual Big Tech Panel** | ✅ Created | Time series | 6 firms, 2019-2023 |
+| MSCI Scraper | ❌ Blocked | — | Anti-bot protection |
+| Yahoo Finance API | ❌ Discontinued | — | 404 errors |
+| yesg Package | ❌ Blocked | — | 429 rate limits |
+
 ### Requires Manual Download
 
 | Dataset | Instructions | Why |
 |---------|--------------|-----|
 | **PatentsView** | See `data/patents/DOWNLOAD_INSTRUCTIONS.txt` | Files >10GB, need AI CPC codes |
 | **CDP 2018-2023** | Register at cdp.net/en/data | Need Scope 2 for post-ChatGPT analysis |
-| **ESG Scores** | Yahoo Finance API deprecated; use S&P Global free tier | API restrictions |
 
-### Scripts Available (in `scripts/` folder)
+---
+
+## Scripts Available
+
+### Data Collection Scripts (in `scripts/` folder)
 
 | Script | Purpose | Usage |
 |--------|---------|-------|
@@ -189,6 +179,9 @@ From Yahoo Finance: stock returns, market cap changes, Tobin's Q approximations
 | `process_ghgrp_all_years.py` | Process EPA GHGRP 2010-2023, match to S&P 500 | `python3 scripts/process_ghgrp_all_years.py` |
 | `build_ai_exposure_index.py` | Build AI exposure index from O*NET data | `python3 scripts/build_ai_exposure_index.py` |
 | `process_cdp_scope2.py` | Process CDP Scope 2 data, merge with GHGRP | `python3 scripts/process_cdp_scope2.py` |
+| `scrape_msci_esg.py` | MSCI ESG scraper (py-msci-esg wrapper) | Blocked by MSCI |
+| `scrape_msci_esg_custom.py` | Custom Selenium MSCI scraper | Blocked by anti-bot |
+| `fetch_esg_data.py` | Multi-source ESG collector + Big Tech panel | `python3 scripts/fetch_esg_data.py` |
 
 ### Analysis Scripts (in `analysis/` folder)
 
@@ -197,6 +190,11 @@ From Yahoo Finance: stock returns, market cap changes, Tobin's Q approximations
 | `01_emissions_analysis.py` | Descriptive stats, emissions trends by sector | Figures 1-4, yearly summaries |
 | `02_diff_in_diff_analysis.py` | DiD regression: AI exposure × Post-ChatGPT | Figures 5-6, regression tables |
 | `03_scope2_analysis.py` | Scope 2 importance, Big Tech emissions | Figures 7-8, measurement gap analysis |
+| `04_new_strategies.py` | Builder/user decomposition, investor pricing | Figures 9-10 |
+| `05_utility_electricity_analysis.py` | Utility-level DiD for data center hubs | Figures 11-12, hub vs control |
+| `06_big_tech_deep_dive.py` | Big Tech Scope 2 panel (2019-2023) | Figure 13, Tables 2-4 |
+| `07_esg_trajectory_analysis.py` | ESG rating trajectories over time | Figures 14-15 |
+| `08_kaggle_esg_analysis.py` | Sustainalytics ESG cross-sectional analysis | Figures 16-18 |
 
 ---
 
@@ -238,14 +236,32 @@ GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Sco
 | Utilities | 42.0 |
 | Materials | 37.2 |
 
+### Big Tech ESG Trajectory (2019-2023)
+
+| Company | MSCI 2019 | MSCI 2023 | Change | Sustainalytics Risk |
+|---------|-----------|-----------|--------|---------------------|
+| Microsoft | AAA | AAA | 0 | 15.1 (Low) |
+| Alphabet | A | BB | -3 | 24.2 (Medium) |
+| Meta | B | CCC | -2 | 34.1 (High) |
+| Amazon | BBB | BB | -1 | 30.6 (High) |
+| Apple | A | AA | +1 | 17.2 (Low) |
+| NVIDIA | BBB | AA | +2 | 13.6 (Low) |
+
+**Key insight:** Alphabet, Meta, Amazon show ESG deterioration; Microsoft maintains AAA through carbon offsets; NVIDIA improves (sells chips, doesn't own data centers).
+
 ---
 
-## New Analysis Strategies (February 2026)
+## Completed Analysis Strategies
 
 ### Strategy 1: ESG Score Decomposition (E, S, G Pillars)
-- **Status:** Framework ready, needs commercial ESG data
-- **Prediction:** "Scissors" pattern - E pillar deteriorates, S/G improve
-- **Data needed:** MSCI or Sustainalytics pillar scores
+- **Status:** COMPLETED ✓
+- **Data:** Kaggle Sustainalytics (430 firms) + Manual Big Tech panel (2019-2023)
+- **Findings:**
+  - META and AMZN rated "High Risk" (34.1, 30.6)
+  - MSFT, AAPL, NVDA rated "Low Risk" (15.1, 17.2, 13.6)
+  - Technology sector has 2nd-lowest ESG risk despite high AI exposure (paradox)
+  - Social pillar drives most Big Tech differentiation (not Environmental)
+  - Negative correlation between AI exposure and ESG risk at sector level
 
 ### Strategy 2: Utility Electricity Demand (Data Center Hubs)
 - **Status:** COMPLETED ✓
@@ -270,6 +286,41 @@ GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Sco
 
 ---
 
+## Paper Status
+
+**File:** `paper/ai_esg_tradeoff.tex`
+**Current version:** 23 pages, 9 figures, 6 tables
+
+### Sections:
+1. Introduction
+2. Related Literature (AI/ESG, Big Tech emissions, Scope measurement)
+3. Data (EPA GHGRP, AI Exposure Index, CDP, Sustainalytics)
+4. Empirical Strategy (DiD identification, parallel trends)
+5. Results (DiD estimates, event study, Big Tech deep dive)
+6. Alternative Strategies (utility electricity, builder/user, investor pricing)
+7. Discussion (ESG measurement, AI exposure mismatch, scissors pattern, Sustainalytics validation, research agenda)
+8. Conclusion
+
+### Key Tables:
+1. DiD Estimates: AI Exposure and Emissions
+2. Big Tech Scope 2 Location-Based Emissions (2019-2023)
+3. GHGRP vs. Sustainability Reports: 2023 Comparison
+4. Location-Based vs. Market-Based Scope 2
+5. DiD Estimates: Data Center Hub States vs. Control States
+6. Big Tech ESG Risk Scores (Sustainalytics)
+
+### Key Figures:
+1. Parallel Trends and Event Study
+2. Big Tech Emissions Deep Dive
+3. Major Data Center Hub States
+4. Utility Electricity Demand Analysis
+5. Builder vs. User Analysis
+6. ESG Pillar Scissors Pattern
+7. ESG Risk by Sector and AI Exposure
+8. Big Tech ESG Risk Decomposition
+
+---
+
 ## Next Steps
 
 - [x] Download EPA eGRID regional emission factors
@@ -284,14 +335,32 @@ GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Sco
 - [x] Run diff-in-diff analysis with firm fixed effects
 - [x] Process CDP Scope 2 data (2011-2013)
 - [x] Document Scope 2 measurement gap for Big Tech
+- [x] **Strategy 1:** ESG pillar decomposition with Sustainalytics data
 - [x] **Strategy 2:** Utility electricity DiD (hub vs control states) - 9.1% effect, p=0.007
 - [x] **Strategy 3:** Investor pricing analysis - 0.95 correlation
 - [x] **Strategy 4:** Builder/user classification - 27 builders, 205 users
-- [ ] **Strategy 1:** Obtain decomposed ESG scores (E, S, G separately)
+- [x] Download Kaggle S&P 500 ESG dataset (430 firms)
+- [x] Create Big Tech ESG trajectory panel (2019-2023)
+- [x] Add Sustainalytics validation to paper
 - [ ] Download formal EIA Form 861 data for utility analysis
 - [ ] Run full SEC EDGAR scraper on S&P 500 (`python3 scripts/sec_edgar_scraper.py`)
 - [ ] Download PatentsView bulk files manually (see instructions)
+- [ ] Obtain CDP data for 2018-2023 (need registration)
 
 ---
 
-*Last updated: February 2026*
+## Git Repository
+
+**Remote:** github.com:alina-malkova/esg.git
+**Branch:** main
+
+### Recent Commits:
+- `7e6dcb2` Add Sustainalytics ESG validation to paper
+- `391b2fe` Add Kaggle S&P 500 ESG Risk Ratings analysis
+- `a27a603` Add ESG trajectory analysis and MSCI scraping infrastructure
+- `bdf1b0c` Add Big Tech deep dive analysis and strengthen paper
+- `3fb4fd4` Add new analysis strategies: utility electricity DiD, investor pricing, builder/user decomposition
+
+---
+
+*Last updated: February 13, 2026*
