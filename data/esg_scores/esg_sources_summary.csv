@@ -1,0 +1,21 @@
+company,ticker,sustainalytics_risk,sustainalytics_env_risk,fortune_rank,newsweek_rank,newsweek_score,msci_2023
+Microsoft,MSFT,15.1,1.5,2,34,87.25,AAA
+Apple,AAPL,17.2,0.5,1,,,AA
+Alphabet,GOOGL,24.2,1.6,8,,,BB
+Amazon,AMZN,30.6,6.0,3,,,BB
+Meta,META,34.1,2.7,,,,CCC
+NVIDIA,NVDA,13.6,2.3,4,25,84.8,AA
+Cisco Systems,CSCO,15.8,0.9,,4,87.46,AAA
+Intel,INTC,18.3,2.1,,44,76.07,BBB
+HP,HPQ,16.4,1.2,,3,82.01,AA
+Qualcomm,QCOM,18.7,1.8,,13,94.07,AA
+PayPal,PYPL,21.3,0.8,,26,90.38,A
+Broadcom,AVGO,17.9,1.4,,28,87.45,A
+Autodesk,ADSK,12.8,0.4,,32,87.83,AAA
+Dell,DELL,19.2,3.1,,40,81.45,BBB
+AMD,AMD,14.2,1.1,,49,79.71,A
+JPMorgan Chase,JPM,23.4,0.3,5,,,BBB
+Berkshire Hathaway,BRK.B,24.1,2.8,6,,,A
+Costco,COST,26.3,4.2,7,,,BBB
+Walmart,WMT,27.8,5.1,9,,,BBB
+American Express,AXP,22.7,0.4,10,,,A

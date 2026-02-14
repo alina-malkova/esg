@@ -137,6 +137,9 @@ Evidence that AI adoption is destroying the environmental component of ESG for f
 | **EPA GHGRP 2023 Only** | `epa_ghgrp/processed/ghgrp_company_year_sp500.csv` | 3 KB | 116 S&P 500 firms (2023 snapshot) |
 | **Kaggle ESG** | `kaggle_esg/SP 500 ESG Risk Ratings.csv` | 800 KB | **430 S&P 500 firms with Sustainalytics E/S/G scores** |
 | **Big Tech ESG Panel** | `esg_scores/big_tech_esg_manual.csv` | 2 KB | **6 companies × 5 years (2019-2023) MSCI ratings** |
+| **Fortune Most Admired** | `esg_scores/fortune_most_admired.csv` | 1 KB | Top 10 most admired companies (2024) |
+| **Newsweek Responsible** | `esg_scores/newsweek_responsible.csv` | 3 KB | Top 49 most responsible companies (2024) |
+| **Multi-source Summary** | `esg_scores/esg_sources_summary.csv` | 2 KB | Consolidated Big Tech ESG across sources |
 | **CDP Emissions** | `cdp/*.csv` | 2 MB | Corporate emissions 2010-2013 (Scope 1 + 2) |
 | **CDP Processed** | `analysis/output/cdp_emissions_sp500.csv` | 40 KB | 183 S&P 500 firms with Scope 1 & 2 (2011-2013) |
 | **Ken French Factors** | `ken_french/F-F_Research_Data_Factors_daily.csv` | 1.1 MB | Daily Fama-French factor returns |
@@ -152,8 +155,11 @@ Evidence that AI adoption is destroying the environmental component of ESG for f
 
 | Source | Status | Data Type | Coverage |
 |--------|--------|-----------|----------|
-| **Kaggle Sustainalytics** | ✅ Downloaded | Cross-sectional | 430 firms, June 2024 |
+| **Kaggle Sustainalytics** | ✅ Downloaded | Cross-sectional | 503 firms, June 2024 |
 | **Manual Big Tech Panel** | ✅ Created | Time series | 6 firms, 2019-2023 |
+| **Fortune Most Admired** | ✅ Scraped | Ranking | Top 10 companies |
+| **Newsweek Most Responsible** | ✅ Scraped | Ranking + Score | Top 49 companies |
+| **Multi-source Summary** | ✅ Created | Consolidated | Big Tech + sectors |
 | MSCI Scraper | ❌ Blocked | — | Anti-bot protection |
 | Yahoo Finance API | ❌ Discontinued | — | 404 errors |
 | yesg Package | ❌ Blocked | — | 429 rate limits |
@@ -182,6 +188,8 @@ Evidence that AI adoption is destroying the environmental component of ESG for f
 | `scrape_msci_esg.py` | MSCI ESG scraper (py-msci-esg wrapper) | Blocked by MSCI |
 | `scrape_msci_esg_custom.py` | Custom Selenium MSCI scraper | Blocked by anti-bot |
 | `fetch_esg_data.py` | Multi-source ESG collector + Big Tech panel | `python3 scripts/fetch_esg_data.py` |
+| `scrape_just_capital.py` | Just Capital rankings scraper | `python3 scripts/scrape_just_capital.py` |
+| `scrape_esg_sources.py` | Multi-source ESG scraper (Fortune, Newsweek) | `python3 scripts/scrape_esg_sources.py` |
 
 ### Analysis Scripts (in `analysis/` folder)
 
@@ -195,6 +203,7 @@ Evidence that AI adoption is destroying the environmental component of ESG for f
 | `06_big_tech_deep_dive.py` | Big Tech Scope 2 panel (2019-2023) | Figure 13, Tables 2-4 |
 | `07_esg_trajectory_analysis.py` | ESG rating trajectories over time | Figures 14-15 |
 | `08_kaggle_esg_analysis.py` | Sustainalytics ESG cross-sectional analysis | Figures 16-18 |
+| `09_multi_source_esg_analysis.py` | Multi-source ESG comparison (Fortune, Newsweek, Sustainalytics) | Figure 19 |
 
 ---
 
@@ -248,6 +257,19 @@ GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Sco
 | NVIDIA | BBB | AA | +2 | 13.6 (Low) |
 
 **Key insight:** Alphabet, Meta, Amazon show ESG deterioration; Microsoft maintains AAA through carbon offsets; NVIDIA improves (sells chips, doesn't own data centers).
+
+### Multi-Source ESG Comparison (2024)
+
+| Company | Fortune Rank | Newsweek Rank | NW Score | Sust. Risk | MSCI |
+|---------|--------------|---------------|----------|------------|------|
+| Apple | 1 | - | - | 17.2 | AA |
+| Microsoft | 2 | 34 | 87.3 | 15.1 | AAA |
+| Amazon | 3 | - | - | 30.6 | BB |
+| NVIDIA | 4 | 25 | 84.8 | 13.6 | AA |
+| Alphabet | 8 | - | - | 24.2 | BB |
+| Meta | - | - | - | 34.1 | CCC |
+
+**Key insight:** Apple, Amazon, Alphabet, and Meta are absent from Newsweek's "Most Responsible" top 49, despite high Fortune admiration rankings. This supports the hypothesis that corporate reputation ≠ ESG performance for AI infrastructure builders.
 
 ---
 
@@ -342,6 +364,9 @@ GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Sco
 - [x] Download Kaggle S&P 500 ESG dataset (430 firms)
 - [x] Create Big Tech ESG trajectory panel (2019-2023)
 - [x] Add Sustainalytics validation to paper
+- [x] Scrape Fortune Most Admired rankings (Top 10)
+- [x] Scrape Newsweek Most Responsible rankings (Top 49 with scores)
+- [x] Create multi-source ESG comparison analysis
 - [ ] Download formal EIA Form 861 data for utility analysis
 - [ ] Run full SEC EDGAR scraper on S&P 500 (`python3 scripts/sec_edgar_scraper.py`)
 - [ ] Download PatentsView bulk files manually (see instructions)
