@@ -383,6 +383,14 @@ Observations & 100 & 100 \\
 
 The IV strategy provides a third identification approach complementing the firm-level DiD and utility-level DiD: pre-determined tax policy variation induces data center capacity, which drives post-ChatGPT electricity demand growth. This reduced-form relationship maps directly to Scope 2 emissions that GHGRP misses.
 
+\subsection{State-Level Scope 2 Estimation}
+
+As additional validation, I estimate state-level Scope 2 emissions using EIA Form 861 electricity sales data combined with EPA eGRID regional emission factors. This approach multiplies commercial/industrial electricity consumption (MWh) by the CO$_2$ intensity of the local grid (MT CO$_2$/MWh) to yield estimated Scope 2 emissions by state and year (2018--2023).
+
+Virginia---the world's largest data center market, hosting major facilities for AWS, Microsoft, Google, and Meta---shows particularly striking growth: commercial sector Scope 2 emissions increased 46.1\% from 2019 to 2023. Oregon, another major data center hub, grew 38.1\% over the same period. In contrast, control states with minimal data center presence (Montana, Wyoming, Vermont, Maine) averaged near-zero growth.
+
+Aggregating across all sectors, hub states experienced 12.1\% total Scope 2 growth from 2019--2023, while control states declined 1.3\%---a differential of 13.3 percentage points. This independent validation using EIA electricity data and eGRID emission factors corroborates the utility-level DiD findings and confirms that AI infrastructure buildout drove substantial Scope 2 emissions growth invisible in GHGRP regulatory data.
+
 \section{Discussion}
 
 \subsection{Implications for ESG Measurement}
