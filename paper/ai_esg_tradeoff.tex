@@ -457,6 +457,58 @@ The event study for the preferred specification (Figure \ref{fig:expanded_builde
 
 These results demonstrate that the AI-emissions relationship is robust and economically significant when: (1) the treatment timing aligns with AI infrastructure investment (GPT-3 rather than ChatGPT), and (2) the treatment group comprehensively captures the AI supply chain (cloud providers + semiconductors + data centers). The 47\% differential Scope 2 growth represents a substantial environmental cost that current ESG frameworks may underweight.
 
+\subsection{Heterogeneity Analysis}
+
+I examine whether the AI builder effect varies across firm characteristics. Table \ref{tab:heterogeneity} presents DiD estimates for subgroups defined by firm size, business model, supply chain position, and pre-treatment growth trajectory.
+
+\begin{table}[H]
+\centering
+\caption{Heterogeneity in AI Builder Effect on Scope 2 Emissions}
+\label{tab:heterogeneity}
+\begin{tabular}{llcccc}
+\toprule
+Dimension & Category & Coefficient & SE & Implied Effect & N \\
+\midrule
+\multicolumn{6}{l}{\textit{Panel A: Firm Size (Pre-2021 Mean Emissions)}} \\
+& Large Emitters & 0.492*** & (0.152) & +63.5\% & 11 \\
+& Small Emitters & 0.276* & (0.142) & +31.7\% & 17 \\
+\midrule
+\multicolumn{6}{l}{\textit{Panel B: Business Model}} \\
+& Hyperscalers (Big 4) & 1.149*** & (0.149) & +215.6\% & 4 \\
+& Other AI Builders & 0.221* & (0.116) & +24.8\% & 24 \\
+\midrule
+\multicolumn{6}{l}{\textit{Panel C: Supply Chain Position}} \\
+& Cloud Providers & 0.647*** & (0.191) & +91.0\% & 7 \\
+& Chip Makers & 0.391*** & (0.113) & +47.9\% & 11 \\
+& DC REITs & $-0.309$ & (0.436) & $-26.6\%$ & 4 \\
+& SaaS Firms & 0.416 & (0.305) & +51.6\% & 6 \\
+\midrule
+\multicolumn{6}{l}{\textit{Panel D: Pre-Treatment Growth Trajectory}} \\
+& High Pre-Growth & 0.984*** & (0.090) & +167.4\% & 14 \\
+& Low Pre-Growth & $-0.162$ & (0.145) & $-15.0\%$ & 14 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\noindent\textit{Notes:} DiD estimates for AI Builder $\times$ Post-GPT-3 interaction by subgroup. All specifications include firm and year fixed effects. Robust standard errors (HC3). Hyperscalers: MSFT, GOOGL, AMZN, META. * $p < 0.1$, ** $p < 0.05$, *** $p < 0.01$.
+\end{table}
+
+\textbf{Hyperscaler Concentration.} The effect is massively concentrated in the four hyperscalers (Microsoft, Alphabet, Amazon, Meta), who show a +216\% differential Scope 2 growth ($\beta = 1.15$, $p < 0.0001$). Other AI builders exhibit only a marginally significant +25\% effect. This concentration reflects the scale of hyperscaler data center expansion: these four firms announced over \$200 billion in AI infrastructure investment through 2025.
+
+\textbf{Supply Chain Position.} Cloud providers show the largest effect (+91\%, $p < 0.001$), consistent with their direct operational control over energy-intensive data centers. Chip makers also show significant effects (+48\%, $p < 0.001$), reflecting electricity-intensive semiconductor fabrication. Notably, data center REITs show no significant effect despite owning physical infrastructure---they lease facilities to tenants who report the Scope 2 emissions. SaaS firms show positive but insignificant effects, consistent with lighter operational footprints.
+
+\textbf{Pre-Treatment Growth.} Firms with high pre-2021 emissions growth show dramatically larger effects (+167\%, $p < 0.0001$), while low pre-growth firms show no significant effect. This pattern suggests the AI boom amplified existing infrastructure expansion trajectories rather than creating new ones. Firms that had already committed to scaling (likely anticipating AI demand) saw accelerated emissions growth post-GPT-3.
+
+\textbf{Firm Size.} Large emitters (above-median pre-2021 Scope 2) show stronger effects (+64\%, $p < 0.01$) than small emitters (+32\%, $p < 0.1$). Scale amplifies the emissions impact, possibly because larger firms have more capacity to expand rapidly.
+
+Figure \ref{fig:heterogeneity} visualizes these heterogeneity patterns. The results suggest that aggregate AI industry emissions growth is driven primarily by a small number of hyperscalers with large pre-existing infrastructure and high growth trajectories. Policy interventions targeting AI emissions may be most effective when focused on this concentrated set of firms.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../analysis/output/fig_heterogeneity_analysis.png}
+\caption{Heterogeneity in AI Builder Effect on Scope 2 Emissions}
+\label{fig:heterogeneity}
+\par\smallskip\noindent\textit{Notes:} DiD coefficients by subgroup with 95\% confidence intervals. Red dashed line indicates base effect (0.387). Green = significant ($p < 0.01$), yellow = marginally significant ($p < 0.10$), gray = not significant.
+\end{figure}
+
 \section{Alternative Strategies and Additional Evidence}
 
 \subsection{Utility Electricity Demand in Data Center Hubs}
