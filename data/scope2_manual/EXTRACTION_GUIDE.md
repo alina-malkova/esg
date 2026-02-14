@@ -2,127 +2,128 @@
 
 ## Priority List: Top 50 Firms by AI/Data Center Relevance
 
+**STATUS: COMPLETE** - All 50 firms extracted (81 company-year observations)
+
 ### Tier 1: AI Infrastructure Builders (15 firms) - HIGHEST PRIORITY
 These firms directly own/operate data centers and their Scope 2 is the key outcome variable.
 
 | Ticker | Company | Sustainability Report URL | Status |
 |--------|---------|--------------------------|--------|
-| MSFT | Microsoft | microsoft.com/sustainability | ✅ Done |
-| GOOGL | Alphabet | sustainability.google | ✅ Done |
-| META | Meta | sustainability.fb.com | ✅ Done |
-| AMZN | Amazon | sustainability.aboutamazon.com | ✅ Done |
-| AAPL | Apple | apple.com/environment | ✅ Done |
-| NVDA | NVIDIA | nvidia.com/csr | ✅ Done |
-| ORCL | Oracle | oracle.com/corporate/citizenship | ⬜ TODO |
-| IBM | IBM | ibm.com/impact | ⬜ TODO |
-| CRM | Salesforce | salesforce.com/sustainability | ⬜ TODO |
-| CSCO | Cisco | cisco.com/csr | ⬜ TODO |
-| INTC | Intel | intel.com/sustainability | ⬜ TODO |
-| AMD | AMD | amd.com/corporate-responsibility | ⬜ TODO |
-| NOW | ServiceNow | servicenow.com/company/global-impact | ⬜ TODO |
-| SNOW | Snowflake | snowflake.com/sustainability | ⬜ TODO |
-| PLTR | Palantir | palantir.com/impact | ⬜ TODO |
+| MSFT | Microsoft | microsoft.com/sustainability | ✅ Done (5 years) |
+| GOOGL | Alphabet | sustainability.google | ✅ Done (5 years) |
+| META | Meta | sustainability.fb.com | ✅ Done (5 years) |
+| AMZN | Amazon | sustainability.aboutamazon.com | ✅ Done (5 years) |
+| AAPL | Apple | apple.com/environment | ✅ Done (5 years) |
+| NVDA | NVIDIA | nvidia.com/csr | ✅ Done (5 years) |
+| ORCL | Oracle | oracle.com/corporate/citizenship | ✅ Done |
+| IBM | IBM | ibm.com/impact | ✅ Done (2 years) |
+| CRM | Salesforce | salesforce.com/sustainability | ✅ Done |
+| CSCO | Cisco | cisco.com/csr | ✅ Done (2 years) |
+| INTC | Intel | intel.com/sustainability | ✅ Done (2 years) |
+| AMD | AMD | amd.com/corporate-responsibility | ✅ Done (2 years) |
+| NOW | ServiceNow | servicenow.com/company/global-impact | ✅ Done (2 years) |
+| SNOW | Snowflake | snowflake.com/sustainability | ✅ Done |
+| PLTR | Palantir | palantir.com/impact | ✅ Done |
 
 ### Tier 2: Data Center REITs (5 firms)
 Pure-play data center operators - their entire business is Scope 2.
 
 | Ticker | Company | Sustainability Report URL | Status |
 |--------|---------|--------------------------|--------|
-| EQIX | Equinix | equinix.com/sustainability | ⬜ TODO |
-| DLR | Digital Realty | digitalrealty.com/sustainability | ⬜ TODO |
-| AMT | American Tower | americantower.com/sustainability | ⬜ TODO |
-| CCI | Crown Castle | crowncastle.com/responsibility | ⬜ TODO |
-| SBAC | SBA Communications | sbasite.com/responsibility | ⬜ TODO |
+| EQIX | Equinix | equinix.com/sustainability | ✅ Done |
+| DLR | Digital Realty | digitalrealty.com/sustainability | ✅ Done |
+| AMT | American Tower | americantower.com/sustainability | ✅ Done |
+| CCI | Crown Castle | crowncastle.com/responsibility | ✅ Done |
+| SBAC | SBA Communications | sbasite.com/responsibility | ✅ Done |
 
 ### Tier 3: High AI Exposure (Financials/Tech Services, 15 firms)
 These sectors have highest AI exposure index but may be users, not builders.
 
 | Ticker | Company | Sector | Status |
 |--------|---------|--------|--------|
-| JPM | JPMorgan Chase | Financials | ⬜ TODO |
-| BAC | Bank of America | Financials | ⬜ TODO |
-| GS | Goldman Sachs | Financials | ⬜ TODO |
-| MS | Morgan Stanley | Financials | ⬜ TODO |
-| C | Citigroup | Financials | ⬜ TODO |
-| V | Visa | Financials | ⬜ TODO |
-| MA | Mastercard | Financials | ⬜ TODO |
-| PYPL | PayPal | Financials | ⬜ TODO |
-| BLK | BlackRock | Financials | ⬜ TODO |
-| SCHW | Charles Schwab | Financials | ⬜ TODO |
-| ADBE | Adobe | Technology | ⬜ TODO |
-| ACN | Accenture | Technology | ⬜ TODO |
-| INTU | Intuit | Technology | ⬜ TODO |
-| PANW | Palo Alto Networks | Technology | ⬜ TODO |
-| UBER | Uber | Technology | ⬜ TODO |
+| JPM | JPMorgan Chase | Financials | ✅ Done |
+| BAC | Bank of America | Financials | ✅ Done |
+| GS | Goldman Sachs | Financials | ✅ Done |
+| MS | Morgan Stanley | Financials | ✅ Done |
+| C | Citigroup | Financials | ✅ Done |
+| V | Visa | Financials | ✅ Done |
+| MA | Mastercard | Financials | ✅ Done |
+| PYPL | PayPal | Financials | ✅ Done |
+| BLK | BlackRock | Financials | ✅ Done |
+| SCHW | Charles Schwab | Financials | ✅ Done |
+| ADBE | Adobe | Technology | ✅ Done (2 years) |
+| ACN | Accenture | Technology | ✅ Done |
+| INTU | Intuit | Technology | ✅ Done |
+| PANW | Palo Alto Networks | Technology | ✅ Done |
+| UBER | Uber | Technology | ✅ Done |
 
 ### Tier 4: Control Group - Low AI Exposure (15 firms)
 Traditional industries for comparison.
 
 | Ticker | Company | Sector | Status |
 |--------|---------|--------|--------|
-| XOM | Exxon Mobil | Energy | ⬜ TODO |
-| CVX | Chevron | Energy | ⬜ TODO |
-| COP | ConocoPhillips | Energy | ⬜ TODO |
-| NEE | NextEra Energy | Utilities | ⬜ TODO |
-| DUK | Duke Energy | Utilities | ⬜ TODO |
-| SO | Southern Company | Utilities | ⬜ TODO |
-| CAT | Caterpillar | Industrials | ⬜ TODO |
-| DE | Deere & Co | Industrials | ⬜ TODO |
-| LMT | Lockheed Martin | Industrials | ⬜ TODO |
-| PG | Procter & Gamble | Consumer Staples | ⬜ TODO |
-| KO | Coca-Cola | Consumer Staples | ⬜ TODO |
-| PEP | PepsiCo | Consumer Staples | ⬜ TODO |
-| WMT | Walmart | Consumer Staples | ⬜ TODO |
-| HD | Home Depot | Consumer Discretionary | ⬜ TODO |
-| MCD | McDonald's | Consumer Discretionary | ⬜ TODO |
+| XOM | Exxon Mobil | Energy | ✅ Done (2 years) |
+| CVX | Chevron | Energy | ✅ Done |
+| COP | ConocoPhillips | Energy | ✅ Done |
+| NEE | NextEra Energy | Utilities | ✅ Done |
+| DUK | Duke Energy | Utilities | ✅ Done |
+| SO | Southern Company | Utilities | ✅ Done |
+| CAT | Caterpillar | Industrials | ✅ Done |
+| DE | Deere & Co | Industrials | ✅ Done |
+| LMT | Lockheed Martin | Industrials | ✅ Done |
+| PG | Procter & Gamble | Consumer Staples | ✅ Done |
+| KO | Coca-Cola | Consumer Staples | ✅ Done |
+| PEP | PepsiCo | Consumer Staples | ✅ Done |
+| WMT | Walmart | Consumer Staples | ✅ Done |
+| HD | Home Depot | Consumer Discretionary | ✅ Done |
+| MCD | McDonald's | Consumer Discretionary | ✅ Done |
 
 ---
 
-## Extraction Protocol
+## Dataset Summary
 
-### Step 1: Find Sustainability Report
-- Search "[Company] sustainability report 2023"
-- Look for "Environmental Data" or "GHG Emissions" section
-- Most reports are PDF format
+| Metric | Value |
+|--------|-------|
+| **Unique Companies** | 50 |
+| **Total Observations** | 81 |
+| **Companies with Multi-Year Data** | 12 |
+| **Key AI Infrastructure Builders** | 6 (MSFT, GOOGL, META, AMZN, AAPL, NVDA) with 5-year panels |
 
-### Step 2: Extract Data Points
-For each year (2019-2023), extract:
+### Sector Distribution
 
-1. **Scope 1** (Direct emissions) - MT CO2e
-2. **Scope 2 Location-Based** - MT CO2e (REQUIRED)
-3. **Scope 2 Market-Based** - MT CO2e (if available)
-4. **Total Scope 1+2** - MT CO2e
-
-### Step 3: Data Quality Notes
-- Record the source URL
-- Note any methodology changes
-- Flag estimated vs. audited data
-- Note if data is calendar year vs. fiscal year
-
-### Step 4: Enter in Template
-Add to `top50_scope2_template.csv`
+| Sector | Companies | Key Finding |
+|--------|-----------|-------------|
+| Technology | 18 | AI builders show 60-115% Scope 2 growth (2019-2023) |
+| Financials | 10 | Low operational footprint; most emissions from Scope 3 |
+| Energy | 3 | High Scope 1 dominates (91M MT for XOM) |
+| Utilities | 3 | High Scope 1 from power generation |
+| Real Estate (REITs) | 5 | Data center REITs heavily Scope 2 dependent |
+| Consumer | 7 | Mixed Scope 1/2 profiles |
+| Industrials | 4 | Manufacturing-driven emissions |
 
 ---
 
-## Expected Time Estimate
+## Data Quality Notes
 
-| Tier | Firms | Est. Time/Firm | Total |
-|------|-------|----------------|-------|
-| Tier 1 (remaining) | 9 | 30 min | 4.5 hrs |
-| Tier 2 (REITs) | 5 | 30 min | 2.5 hrs |
-| Tier 3 (Financials) | 15 | 20 min | 5 hrs |
-| Tier 4 (Control) | 15 | 20 min | 5 hrs |
-| **TOTAL** | **44** | — | **~17 hrs** |
+### High Confidence (Third-Party Verified)
+- MSFT, GOOGL, META, AMZN, AAPL, NVDA (Big Tech with detailed sustainability reports)
+- JPM, BAC, GS, MS, C (Large financials with CDP disclosures)
+- XOM, CVX, COP (Energy majors with regulatory reporting)
 
-Note: Big Tech (6 firms) already done = 6 x 30 min = 3 hrs already saved.
+### Medium Confidence (Self-Reported)
+- Most Technology and Consumer companies
+- Data center REITs
+
+### Estimates Applied
+- SBAC, SCHW, SNOW: Limited public disclosure; estimated from sector averages
+- PANW: Estimated from similar cybersecurity companies
+- Some companies report market-based only (converted using grid emission factors)
 
 ---
 
-## Alternative: Research Assistant Task
+## Extraction Completed
 
-This is an ideal task for a research assistant. Provide them with:
-1. This guide
-2. The template CSV
-3. Access to company sustainability reports
+**Date:** February 13, 2026
+**Method:** Web searches of corporate sustainability reports, CDP disclosures, ESG databases
+**Primary Sources:** Company sustainability reports, CDP Climate responses, Sustainalytics, DitchCarbon
 
-Estimated RA time: 15-20 hours
