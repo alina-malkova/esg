@@ -584,3 +584,52 @@ JPM,JPMorgan Chase,Financials,2019,120000.0,900000.0,,1020000.0,https://tracenab
 JPM,JPMorgan Chase,Financials,2020,115000.0,850000.0,,965000.0,https://tracenable.com/company/jpmorgan-chase-and-co/ghg-emissions,Carbon neutral operations 2020
 JPM,JPMorgan Chase,Financials,2021,118000.0,820000.0,,938000.0,https://net0tracker.com/corporates.html/JPMorgan%20Chase%20&%20Co./,S1 increased 17% since 2018
 JPM,JPMorgan Chase,Financials,2022,116000.0,800000.0,,916000.0,https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/about/jpmc-sustainability-report-2024.pdf,15% reduction from 2019
+INTC,Intel,Information Technology,2019,800000.0,800000.0,,1600000.0,https://tracenable.com/company/intel/ghg-emissions,2019 baseline 10% reduction target by 2030
+INTC,Intel,Information Technology,2021,770000.0,770000.0,,1540000.0,https://www.statista.com/statistics/1200873/intel-greenhouse-gas-emissions-worldwide/,Net-zero by 2040 commitment
+QCOM,Qualcomm,Information Technology,2019,160000.0,170000.0,,330000.0,https://www.globaldata.com/data-insights/technology--media-and-telecom/qualcomm-annual-ghg-emissions-2089087/,93% emissions from Scope 3
+QCOM,Qualcomm,Information Technology,2020,155000.0,160000.0,,315000.0,https://tracenable.com/company/qualcomm/climate-targets,2020 baseline 50% reduction by 2030
+QCOM,Qualcomm,Information Technology,2021,148000.0,147000.0,,295000.0,https://tracenable.com/company/qualcomm/climate-targets,S1 down 5% S2 down 8% in 2021
+QCOM,Qualcomm,Information Technology,2022,140000.0,135000.0,,275000.0,https://net0tracker.com/corporates.html/QUALCOMM%20Inc./,Net-zero 2040 commitment
+TXN,Texas Instruments,Information Technology,2019,1100000.0,1150000.0,,2250000.0,https://ditchcarbon.com/organizations/texas-instruments,15.6% reduction from 2015 achieved
+TXN,Texas Instruments,Information Technology,2020,1050000.0,1100000.0,,2150000.0,https://www.ti.com/about-ti/citizenship-community/environmental-sustainability.html,25% reduction target by 2025
+TXN,Texas Instruments,Information Technology,2021,1080000.0,1120000.0,,2200000.0,https://www.ti.com/about-ti/citizenship-community/environmental-sustainability.html,Manufacturing expansion
+TXN,Texas Instruments,Information Technology,2022,1100000.0,1100000.0,,2200000.0,https://www.ti.com/lit/ml/szzo106a/szzo106a.pdf,SBTi commitment 2024
+AVGO,Broadcom,Information Technology,2019,100000.0,180000.0,,280000.0,https://tracenable.com/company/broadcom/ghg-emissions,38% reduction target by 2030
+AVGO,Broadcom,Information Technology,2020,120000.0,130000.0,,250000.0,https://ditchcarbon.com/organizations/broadcom,S1 down 52% since 2020
+AVGO,Broadcom,Information Technology,2022,60000.0,200000.0,,260000.0,https://net0tracker.com/corporates.html/Broadcom/,S2 up 93% since 2020
+AMAT,Applied Materials,Information Technology,2019,120000.0,280000.0,,400000.0,https://www.appliedmaterials.com/us/en/corporate-responsibility.html,2019 baseline 50% target by 2030
+AMAT,Applied Materials,Information Technology,2020,130000.0,290000.0,,420000.0,https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-highlights-progress-toward-its-10-year,S1+S2 up 5% record production
+AMAT,Applied Materials,Information Technology,2021,90000.0,200000.0,,290000.0,https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-highlights-progress-toward-its-10-year,28% reduction 57% renewable
+AMAT,Applied Materials,Information Technology,2022,100000.0,290000.0,,390000.0,https://ditchcarbon.com/organizations/applied-materials,69% renewable 3% below 2019
+MMM,3M,Industrials,2019,3000000.0,1200000.0,,4200000.0,https://tracenable.com/company/3m/climate-targets,2019 baseline 52.6% reduction by 2030
+MMM,3M,Industrials,2020,2800000.0,1100000.0,,3900000.0,https://ditchcarbon.com/organizations/3m,Carbon neutral 2050 commitment
+MMM,3M,Industrials,2021,2600000.0,900000.0,,3500000.0,https://news.3m.com/Taking-inventory-of-greenhouse-gas-emissions,50% reduction target announced
+CAT,Caterpillar,Industrials,2019,1400000.0,700000.0,,2100000.0,https://www.caterpillar.com/en/company/sustainability/energy-climate.html,30% reduction by 2030 from 2018
+CAT,Caterpillar,Industrials,2020,1200000.0,600000.0,,1800000.0,https://www.caterpillar.com/en/company/sustainability/energy-climate.html,COVID lower unit volume
+CAT,Caterpillar,Industrials,2021,1100000.0,550000.0,,1650000.0,https://www.caterpillar.com/en/company/sustainability/energy-climate.html,USA Today Climate Leaders 2023
+DE,Deere & Co,Industrials,2019,400000.0,500000.0,,900000.0,https://tracenable.com/company/deere-and-co/ghg-emissions,20% reduction since 2017
+DE,Deere & Co,Industrials,2020,380000.0,450000.0,,830000.0,https://www.deere.com/assets/pdfs/common/our-company/sustainability/sustainability-report-2021.pdf,COVID impact
+DE,Deere & Co,Industrials,2021,370000.0,400000.0,,770000.0,https://www.deere.com/assets/pdfs/common/our-company/sustainability/sustainability-report-2021.pdf,2021 baseline 50% reduction by 2030
+UNP,Union Pacific,Industrials,2019,5500000.0,100000.0,,5600000.0,https://www.up.com/cs/groups/public/@uprr/@corprel/documents/up_pdf_nativedocs/pdf_up_2021_climate_action_pln.pdf,26% reduction by 2030 target
+UNP,Union Pacific,Industrials,2020,5200000.0,95000.0,,5295000.0,https://www.up.com/aboutup/community/inside_track/climate-action-plan-211206.htm,Fuel consumption rate improved
+UNP,Union Pacific,Industrials,2021,5100000.0,90000.0,,5190000.0,https://www.up.com/aboutup/community/inside_track/climate-action-plan-211206.htm,11M gallons fuel saved vs 2020
+UNP,Union Pacific,Industrials,2022,4800000.0,85000.0,,4885000.0,https://www.up.com/cs/groups/public/@uprr/@corprel/documents/up_pdf_nativedocs/pdf_up_2022_bar.pdf,50.4% reduction target updated
+CSX,CSX Corporation,Industrials,2019,4700000.0,145000.0,,4845000.0,https://investors.csx.com/esg/environmental/default.aspx,37.3% intensity reduction by 2029
+CSX,CSX Corporation,Industrials,2020,4500000.0,140000.0,,4640000.0,https://www.csx.com/index.cfm/about-us/responsibility/corporate-social-responsibility-report/,SBTi validated 2020
+CSX,CSX Corporation,Industrials,2021,4400000.0,135000.0,,4535000.0,https://ditchcarbon.com/organizations/csx,15.6% intensity reduction from 2014
+CSX,CSX Corporation,Industrials,2022,4300000.0,130000.0,,4430000.0,https://ditchcarbon.com/organizations/csx,Carbon neutral 2050 target
+NSC,Norfolk Southern,Industrials,2019,4200000.0,120000.0,,4320000.0,https://www.norfolksouthern.com/en/commitments/sustainability,2019 baseline 42% reduction by 2034
+NSC,Norfolk Southern,Industrials,2020,3900000.0,115000.0,,4015000.0,https://www.norfolksouthern.com/content/dam/nscorp/pdf/esg-forms/2021-Norfolk-Southern-Environmental-Social-Governance-Report.pdf,7% intensity improvement 700 locomotives retired
+NSC,Norfolk Southern,Industrials,2021,3800000.0,110000.0,,3910000.0,https://www.norfolksouthern.com/content/dam/nscorp/pdf/esg-forms/2021-Norfolk-Southern-Environmental-Social-Governance-Report.pdf,5% progress toward SBT
+NSC,Norfolk Southern,Industrials,2022,3750000.0,108000.0,,3858000.0,https://www.norfolksouthern.com/en/commitments/sustainability,Fuel efficiency continued
+UPS,UPS,Industrials,2019,13500000.0,400000.0,,13900000.0,https://about.ups.com/us/en/our-company/governance/carbon-neutral-credentials.html,50% reduction per package by 2035
+UPS,UPS,Industrials,2020,12800000.0,380000.0,,13180000.0,https://about.ups.com/content/dam/upsstories/assets/reporting/sustainability-2021/2020_UPS_TCFD_Report_081921.pdf,2020 base year carbon neutral 2050
+UPS,UPS,Industrials,2021,13000000.0,370000.0,,13370000.0,https://investors.ups.com/sustainability,40% alternative fuel by 2025
+UPS,UPS,Industrials,2022,12500000.0,360000.0,,12860000.0,https://about.ups.com/us/en/our-impact/sustainability/sustainable-services/2022-ups-sustainability-report-.html,6.9% decrease YoY
+FDX,FedEx,Industrials,2019,17000000.0,1500000.0,,18500000.0,https://www.fedex.com/en-us/sustainability.html,30% reduction by 2025 from 2005
+FDX,FedEx,Industrials,2020,15500000.0,1400000.0,,16900000.0,https://www.fedex.com/content/dam/fedex/us-united-states/sustainability/2021/FedEx2020CDPClimateChangeResponse.pdf,COVID reduced operations
+FDX,FedEx,Industrials,2021,16000000.0,1450000.0,,17450000.0,https://tracenable.com/company/fedex/climate-targets,1M MT avoided from fleet modernization
+LUV,Southwest Airlines,Industrials,2019,16000000.0,200000.0,,16200000.0,https://www.southwest.com/citizenship/planet/,2019 baseline 50% intensity reduction by 2035
+LUV,Southwest Airlines,Industrials,2020,9000000.0,150000.0,,9150000.0,https://www.southwest.com/swa-resources/pdfs/communications/one-reports/2021-One-Report-Environment-Snapshot.pdf,COVID 44% reduction in operations
+LUV,Southwest Airlines,Industrials,2021,12000000.0,180000.0,,12180000.0,https://www.southwest.com/citizenship/planet/,10-year sustainability plan announced
+LUV,Southwest Airlines,Industrials,2022,14000000.0,190000.0,,14190000.0,https://www.southwest.com/citizenship/planet/,Net-zero 2050 commitment
