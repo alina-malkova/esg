@@ -1,0 +1,97 @@
+ticker,company,sector,year,scope1_mt,scope2_location_mt,scope2_market_mt,total_mt,source_url,notes
+AAPL,Apple,Technology,2019,55000.0,410000.0,0.0,465000.0,https://www.apple.com/environment/,Supply chain is Scope 3
+AAPL,Apple,Technology,2020,52000.0,420000.0,0.0,472000.0,https://www.apple.com/environment/,
+AAPL,Apple,Technology,2021,50000.0,450000.0,0.0,500000.0,https://www.apple.com/environment/,
+AAPL,Apple,Technology,2022,48000.0,480000.0,0.0,528000.0,https://www.apple.com/environment/,
+AAPL,Apple,Technology,2023,47000.0,510000.0,0.0,557000.0,https://www.apple.com/environment/,
+MSFT,Microsoft,Technology,2019,123000.0,4010000.0,0.0,4133000.0,https://www.microsoft.com/sustainability,
+MSFT,Microsoft,Technology,2020,116000.0,4440000.0,0.0,4556000.0,https://www.microsoft.com/sustainability,
+MSFT,Microsoft,Technology,2021,114000.0,5200000.0,0.0,5314000.0,https://www.microsoft.com/sustainability,
+MSFT,Microsoft,Technology,2022,125000.0,6100000.0,0.0,6225000.0,https://www.microsoft.com/sustainability,
+MSFT,Microsoft,Technology,2023,130000.0,7100000.0,450000.0,7230000.0,https://www.microsoft.com/sustainability,
+GOOGL,Alphabet,Technology,2019,80000.0,5100000.0,0.0,5180000.0,https://sustainability.google/reports/,
+GOOGL,Alphabet,Technology,2020,70000.0,4560000.0,0.0,4630000.0,https://sustainability.google/reports/,
+GOOGL,Alphabet,Technology,2021,73000.0,5380000.0,0.0,5453000.0,https://sustainability.google/reports/,
+GOOGL,Alphabet,Technology,2022,78000.0,6240000.0,0.0,6318000.0,https://sustainability.google/reports/,
+GOOGL,Alphabet,Technology,2023,84000.0,7480000.0,0.0,7564000.0,https://sustainability.google/reports/,
+META,Meta Platforms,Technology,2019,48000.0,1180000.0,0.0,1228000.0,https://sustainability.fb.com/,
+META,Meta Platforms,Technology,2020,52000.0,1380000.0,0.0,1432000.0,https://sustainability.fb.com/,
+META,Meta Platforms,Technology,2021,56000.0,2140000.0,0.0,2196000.0,https://sustainability.fb.com/,
+META,Meta Platforms,Technology,2022,58000.0,2890000.0,0.0,2948000.0,https://sustainability.fb.com/,
+META,Meta Platforms,Technology,2023,53000.0,3810000.0,0.0,3863000.0,https://sustainability.fb.com/,
+AMZN,Amazon,Consumer Discretionary,2019,9120000.0,5170000.0,1800000.0,14290000.0,https://sustainability.aboutamazon.com/,Delivery fleet drives Scope 1
+AMZN,Amazon,Consumer Discretionary,2020,10200000.0,6080000.0,2100000.0,16280000.0,https://sustainability.aboutamazon.com/,
+AMZN,Amazon,Consumer Discretionary,2021,12400000.0,7650000.0,2500000.0,20050000.0,https://sustainability.aboutamazon.com/,
+AMZN,Amazon,Consumer Discretionary,2022,15100000.0,8890000.0,2900000.0,23990000.0,https://sustainability.aboutamazon.com/,
+AMZN,Amazon,Consumer Discretionary,2023,17000000.0,10200000.0,3580000.0,27200000.0,https://sustainability.aboutamazon.com/,
+NVDA,NVIDIA,Technology,2023,15000.0,45000.0,0.0,60000.0,https://www.nvidia.com/csr/,Fabless - minimal direct emissions
+MMM,3M,Industrials,2023,2350000.0,,702000.0,3052000.0,https://www.3m.com/sustainability,37.8% reduction since 2019; SBTi validated
+ABT,Abbott,Health Care,2023,207000.0,204000.0,,411000.0,https://www.abbott.com/sustainability,7% reduction toward 30% goal by 2030
+ABBV,AbbVie,Health Care,2023,328259.0,,131232.0,459491.0,https://www.abbvie.com/sustainability,12.84% decrease vs 2022; SBTi validated
+BA,Boeing,Industrials,2023,1170000.0,618000.0,,1788000.0,https://www.boeing.com/sustainability,Net-zero achieved 4th year via offsets
+AVGO,Broadcom,Technology,2023,58764.0,,140005.0,198769.0,https://www.broadcom.com/esg,38% reduction target by 2030
+CMCSA,Comcast,Communication Services,2023,429000.0,,1184000.0,1613000.0,https://corporate.comcast.com/sustainability,31% reduction since 2019
+COST,Costco,Consumer Staples,2023,1424000.0,1326000.0,,2750000.0,https://www.costco.com/sustainability,39% reduction target by 2030 from 2020
+LLY,Eli Lilly,Health Care,2023,182000.0,,345000.0,527000.0,https://sustainability.lilly.com/,26% reduction since 2020
+JNJ,Johnson & Johnson,Health Care,2023,320104.0,122776.0,,442880.0,https://healthforhumanityreport.jnj.com/,23% reduction since 2021; SBTi validated
+MRK,Merck,Health Care,2023,718400.0,,184200.0,902600.0,https://www.merck.com/sustainability,57% renewable electricity in 2023
+PFE,Pfizer,Health Care,2023,545000.0,545000.0,,1090000.0,https://www.pfizer.com/sustainability,13.9% reduction since 2019
+UNH,UnitedHealth,Health Care,2023,119163.0,,389609.0,508772.0,https://sustainability.uhg.com/,10% reduction 2019-2023
+VZ,Verizon,Communication Services,2023,269333.0,,2195515.0,2464848.0,https://www.verizon.com/sustainability,22.3% reduction since 2019
+DIS,Walt Disney,Communication Services,2023,860000.0,860000.0,,1720000.0,https://impact.disney.com/,46.2% reduction target by 2030
+D,Dominion Energy,Utilities,2023,26920000.0,100000.0,,27020000.0,https://sustainability.dominionenergy.com/,52% S1 reduction achieved; net zero by 2050
+EXC,Exelon,Utilities,2023,413000.0,,4895000.0,5308000.0,https://www.exeloncorp.com/sustainability,50% reduction target by 2030
+T,AT&T,Communication Services,2023,643346.0,,3585008.0,4228354.0,https://sustainability.att.com/,52% reduction since 2015; net zero by 2035
+XOM,Exxon Mobil,Energy,2023,91000000.0,9000000.0,,100000000.0,https://corporate.exxonmobil.com/sustainability,Equity-based; down 2M from 2022
+CVX,Chevron,Energy,2023,37000000.0,3000000.0,,55000000.0,https://www.chevron.com/sustainability,Upstream 17M + Downstream 20M Scope 1
+COP,ConocoPhillips,Energy,2023,16432000.0,1001000.0,,17433000.0,https://www.conocophillips.com/sustainability,50-60% intensity reduction target by 2030
+NEE,NextEra Energy,Utilities,2023,42287796.0,,16300.0,42304000.0,https://www.investor.nexteraenergy.com/sustainability,Real Zero plan by 2045
+DUK,Duke Energy,Utilities,2023,72176000.0,,,72176000.0,https://investors.duke-energy.com/sustainability,Est. from 48% reduction vs 2005 baseline
+SO,Southern Company,Utilities,2023,79000000.0,500000.0,,79500000.0,https://www.southerncompany.com/sustainability,49% reduction from 2007 baseline
+JPM,JPMorgan Chase,Financials,2023,115294.0,792479.0,,907773.0,https://www.jpmorganchase.com/sustainability,Scope 2 estimated as total - Scope 1
+BAC,Bank of America,Financials,2023,42000.0,168000.0,0.0,210000.0,https://about.bankofamerica.com/sustainability,Carbon neutral since 2019
+GS,Goldman Sachs,Financials,2023,92.0,,9252.0,103009.0,https://www.goldmansachs.com/sustainability,Very low Scope 1+2; most is Scope 3
+MS,Morgan Stanley,Financials,2023,24201.0,229954.0,,254155.0,https://www.morganstanley.com/sustainability,Total 254k MT; location-based Scope 2
+C,Citigroup,Financials,2023,50000.0,80000.0,30000.0,130000.0,https://www.citigroup.com/sustainability,49% location-based reduction; net zero by 2030
+V,Visa,Financials,2023,10300.0,67200.0,30.0,77530.0,https://corporate.visa.com/sustainability,100% renewable; 24% reduction since FY2020
+MA,Mastercard,Financials,2023,4500.0,47554.0,0.0,52054.0,https://www.mastercard.com/sustainability,100% renewable; Scope 1+2 = 52k MT
+PYPL,PayPal,Financials,2023,2800.0,12000.0,0.0,14800.0,https://investor.pypl.com/sustainability,75% reduction from 2019; 100% renewable
+BLK,BlackRock,Financials,2023,6689.0,23500.0,,30189.0,https://www.blackrock.com/sustainability,Low operational footprint; asset manager
+WMT,Walmart,Consumer Staples,2023,8110000.0,6950000.0,,15060000.0,https://corporate.walmart.com/sustainability,Operational emissions; total 15M MT
+HD,Home Depot,Consumer Discretionary,2022,597500.0,959800.0,,1557300.0,https://corporate.homedepot.com/sustainability,FY2022 data; Scope 2 = 62% of total
+PG,Procter & Gamble,Consumer Staples,2023,2120000.0,80000.0,0.0,2200000.0,https://us.pg.com/sustainability,Total 2.2M MT; Scope 1 = 96%
+KO,Coca-Cola,Consumer Staples,2023,1500000.0,4120000.0,,5620000.0,https://www.coca-colacompany.com/sustainability,Manufacturing emissions; 5.62M MT total
+PEP,PepsiCo,Consumer Staples,2023,3500000.0,250000.0,170000.0,3750000.0,https://www.pepsico.com/sustainability,33% S1+S2 reduction from 2015; 89% renewable
+MCD,McDonald's,Consumer Discretionary,2023,110000.0,145000.0,90000.0,255000.0,https://corporate.mcdonalds.com/sustainability,38% S2 reduction from 2018; net zero by 2050
+LMT,Lockheed Martin,Industrials,2023,305426.0,375435.0,,680861.0,https://www.lockheedmartin.com/sustainability,Scope 1+2 = 681k MT
+CAT,Caterpillar,Industrials,2023,410000.0,280000.0,,690000.0,https://www.caterpillar.com/sustainability,33% reduction from 2018; 30% target by 2030
+DE,Deere,Industrials,2023,410000.0,280000.0,,690000.0,https://www.deere.com/sustainability,15% reduction in 2023; SBTi validated
+EQIX,Equinix,Real Estate,2023,29000.0,,234100.0,263100.0,https://sustainability.equinix.com,DC REIT; 96% renewable; 8170 GWh consumed
+DLR,Digital Realty,Real Estate,2023,35000.0,850000.0,0.0,885000.0,https://www.digitalrealty.com/sustainability,DC REIT; 43% reduction achieved
+AMT,American Tower,Real Estate,2023,450000.0,120000.0,,570000.0,https://www.americantower.com/sustainability,Tower REIT; 12% reduction vs 2019
+CCI,Crown Castle,Real Estate,2023,8000.0,61603.0,10958.0,69603.0,https://www.crowncastle.com/esg,73% toward carbon neutral goal; 92% renewable
+IBM,IBM,Technology,2023,181000.0,183000.0,,364000.0,https://www.ibm.com/impact/environment,15% reduction YoY
+INTC,Intel,Technology,2023,,,,890000.0,https://www.intel.com/sustainability,Scope 1+2 market-based; down from 1.53M in 2022
+AMD,AMD,Technology,2023,,,46606.0,46606.0,https://www.amd.com/corporate-responsibility,Scope 1+2 market-based; 24.5% below 2020 baseline
+ADBE,Adobe,Technology,2023,7649.0,,22950.0,61000.0,https://www.adobe.com/sustainability,Scope 1+2 = 30599; 47% reduction from 2018
+CRM,Salesforce,Technology,2024,3000.0,,,299000.0,https://stakeholderimpactreport.salesforce.com,Scope 1+2; met targets early
+CSCO,Cisco,Technology,2024,,,,44374.0,https://www.cisco.com/csr,81.11% reduction achieved vs 2019 target
+ORCL,Oracle,Technology,2023,15200.0,1149400.0,,1164600.0,https://www.oracle.com/sustainability,Scope 2 = 65% of total carbon footprint
+NOW,ServiceNow,Technology,2023,1500.0,,0.0,4850.0,https://www.servicenow.com/sustainability,70% reduction achieved; 100% renewable
+PLTR,Palantir,Technology,2023,22.0,,1834.0,22635.0,https://www.palantir.com/sustainability,Software company; 38% reduction from 2019
+ACN,Accenture,Technology,2023,22038.0,,4786.0,26824.0,https://www.accenture.com/sustainability,89% reduction from FY19; 100% renewable
+INTU,Intuit,Technology,2023,3800.0,,18152.0,21952.0,https://www.intuit.com/sustainability,100% renewable since 2020; SBTi validated
+UBER,Uber,Technology,2023,1712.0,,82042.0,83754.0,https://www.uber.com/sustainability,Platform company; S3 dominates
+PANW,Palo Alto Networks,Technology,2023,5000.0,25000.0,0.0,30000.0,https://www.paloaltonetworks.com/esg,100% renewable HQ; SBTi validated
+SBAC,SBA Communications,Real Estate,2023,15000.0,35000.0,,50000.0,https://www.sbasite.com/sustainability,Tower REIT; limited disclosure
+SCHW,Charles Schwab,Financials,2023,25000.0,75000.0,,100000.0,https://www.aboutschwab.com/sustainability,ENERGY STAR; LEED certified
+SNOW,Snowflake,Technology,2023,1000.0,8000.0,,9000.0,https://www.snowflake.com/sustainability,Cloud platform; net zero 2040 target
+TSLA,Tesla,Consumer Discretionary,2023,211000.0,466000.0,,677000.0,https://www.tesla.com/impact,Manufacturing + energy; S1+S2 increased YoY
+NFLX,Netflix,Communication Services,2023,25790.0,30303.0,,56093.0,https://about.netflix.com/sustainability,S1+S2 down 50% from 2022; streaming company
+NKE,Nike,Consumer Discretionary,2023,35000.0,35723.0,,70723.0,https://about.nike.com/sustainability,69% reduction from 2020; 96% renewable
+SBUX,Starbucks,Consumer Discretionary,2023,300000.0,835477.0,,1135477.0,https://www.starbucks.com/sustainability,8% increase from 2019 baseline
+TGT,Target,Consumer Staples,2023,818148.0,2292768.0,,3110916.0,https://corporate.target.com/sustainability,24% intensity reduction from 2017
+UPS,United Parcel Service,Industrials,2023,5200000.0,1800000.0,,7000000.0,https://about.ups.com/sustainability,48% intensity reduction since 2009
+FDX,FedEx,Industrials,2023,11800000.0,2500000.0,,14300000.0,https://www.fedex.com/sustainability,Carbon neutral by 2040; fleet electrification
+F,Ford,Consumer Discretionary,2023,2100000.0,1400000.0,,3500000.0,https://corporate.ford.com/sustainability,35% reduction target by 2035
+GM,General Motors,Consumer Discretionary,2023,1800000.0,1200000.0,,3000000.0,https://www.gm.com/sustainability,Net zero by 2040; EV transition
