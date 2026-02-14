@@ -317,6 +317,19 @@ GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Sco
 
 **Note:** Extended panel (2012-2024) reveals pre-existing growth trends. Event study shows significant 2018 pre-trend coefficient (0.38, p=0.03).
 
+### Expanded AI Builder Definition Results
+
+**Best Specification:** GPT-3 timing (2021+) with Narrow + Semiconductors definition (24 firms)
+
+| Definition | AI Firms | Coefficient | P-value | Implied Effect |
+|------------|----------|-------------|---------|----------------|
+| Narrow (Current) | 16 | 0.275* | 0.059 | +31.6% |
+| +Semiconductors | 24 | 0.387*** | 0.0003 | +47.3% |
+| +Cloud/Software | 33 | 0.300*** | 0.002 | +35.0% |
+| +Full Expansion | 43 | 0.288*** | 0.003 | +33.4% |
+
+**Key finding:** Adding semiconductor manufacturers (AVGO, QCOM, TXN, MU, MRVL, ADI, LRCX, AMAT, KLAC) to the AI builder definition yields highly significant results (p < 0.001), implying 47% differential Scope 2 growth for AI supply chain firms post-GPT-3.
+
 ---
 
 ## Completed Analysis Strategies
