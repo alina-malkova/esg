@@ -377,6 +377,47 @@ Figure \ref{fig:esg_bigtech} presents the pillar decomposition for Big Tech firm
 \par\smallskip\noindent\textit{Notes:} ESG risk decomposed into Environmental (E), Social (S), and Governance (G) pillars. Total risk score and risk level shown above bars. Horizontal line shows S\&P 500 average.
 \end{figure}
 
+\subsection{Multi-Source ESG Validation}
+
+To further validate the AI-ESG trade-off hypothesis, I compare Big Tech rankings across multiple independent ESG-related sources: Fortune's ``World's Most Admired Companies'' (reputation-based), Newsweek's ``America's Most Responsible Companies'' (CSR-focused with scores), and Sustainalytics ESG Risk Ratings. Table \ref{tab:multisource_esg} presents the comparison.
+
+\begin{table}[H]
+\centering
+\caption{Big Tech ESG Performance Across Multiple Sources (2024)}
+\label{tab:multisource_esg}
+\begin{tabular}{lcccccc}
+\toprule
+Company & Fortune & Newsweek & NW Score & Sust. Risk & MSCI 2023 & Risk Level \\
+\midrule
+Apple & 1 & --- & --- & 17.2 & AA & Low \\
+Microsoft & 2 & 34 & 87.3 & 15.1 & AAA & Low \\
+Amazon & 3 & --- & --- & 30.6 & BB & High \\
+NVIDIA & 4 & 25 & 84.8 & 13.6 & AA & Low \\
+Alphabet & 8 & --- & --- & 24.2 & BB & Medium \\
+Meta & --- & --- & --- & 34.1 & CCC & High \\
+\bottomrule
+\end{tabular}
+\par\smallskip\noindent\textit{Notes:} Fortune rank from ``World's Most Admired Companies'' (reputation-based). Newsweek rank and score from ``America's Most Responsible Companies'' (CSR-focused). Sust. Risk from Sustainalytics (higher = worse). ``---'' indicates not ranked in top listings.
+\end{table}
+
+Several striking patterns emerge. First, there is a clear disconnect between corporate reputation and ESG responsibility: Apple, Amazon, and Alphabet rank highly on Fortune's admiration list (\#1, \#3, \#8 respectively) but are \textit{absent} from Newsweek's top 49 Most Responsible Companies. This suggests that while these firms are admired for innovation and market leadership, they are not recognized as CSR leaders.
+
+Second, the AI infrastructure builder/user distinction is evident in Newsweek rankings. Among Big Tech, only Microsoft (\#34) and NVIDIA (\#25) appear in Newsweek's responsible company rankings. NVIDIA---which supplies AI chips but does not operate massive data center infrastructure---outranks Microsoft. Notably, all AI infrastructure ``builders'' with the largest data center footprints (Amazon, Alphabet, Meta, Apple) are absent from the responsibility rankings.
+
+Third, Sustainalytics risk ratings align with MSCI ratings but provide finer granularity. Meta (34.1) and Amazon (30.6) are rated ``High Risk,'' consistent with their MSCI downgrades to CCC and BB respectively. NVIDIA (13.6) and Microsoft (15.1) are ``Low Risk,'' reflecting their AAA/AA MSCI ratings.
+
+Figure \ref{fig:multisource} visualizes these comparisons across the four dimensions: Sustainalytics total and environmental risk, Fortune admiration versus ESG risk, MSCI rating distribution, and tech company Newsweek responsibility scores.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{../analysis/output/fig19_multi_source_esg_comparison.png}
+\caption{Multi-Source ESG Comparison for Big Tech}
+\label{fig:multisource}
+\par\smallskip\noindent\textit{Notes:} Panel A: Sustainalytics ESG risk scores (total and environmental). Panel B: Fortune admiration rank vs. Sustainalytics risk. Panel C: MSCI rating distribution. Panel D: Tech companies in Newsweek Most Responsible rankings with scores.
+\end{figure}
+
+The multi-source analysis reinforces the central finding: AI infrastructure builders face an ESG trade-off that manifests differently across rating systems. Reputation-based rankings (Fortune) reward innovation and market success, while responsibility-focused rankings (Newsweek) and risk-based ratings (Sustainalytics, MSCI) penalize the environmental and social costs of AI infrastructure buildout. This divergence supports the hypothesis that aggregate ESG scores may mask significant heterogeneity in how AI adoption affects different stakeholder dimensions.
+
 \subsection{Research Agenda: Forward-Looking Empirical Strategies}
 
 This paper establishes the measurement challenge; future work can exploit strategies that directly capture Scope 2 emissions and ESG pillar decomposition.
