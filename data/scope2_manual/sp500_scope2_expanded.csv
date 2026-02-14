@@ -403,3 +403,17 @@ DFS,Discover Financial,Financials,2023,1680.0,33005.0,,34685.0,https://ditchcarb
 DLTR,Dollar Tree,Consumer Discretionary,2023,380687.0,968584.0,,1349271.0,https://ditchcarbon.com/organizations/dollar-tree,Net-zero by 2050 retail TCFD aligned
 DPZ,Dominos Pizza,Consumer Discretionary,2023,12758.0,1681.0,,14439.0,https://ditchcarbon.com/organizations/dominos-pizza,30% S2 by 2030 96% Scope 3 dominant
 DOV,Dover Corporation,Industrials,2023,54800.0,115100.0,,169900.0,https://tracenable.com/company/dover/ghg-emissions,Industrial machinery SBTi target
+XOM,Exxon Mobil,Energy,2020,105000000.0,9000000.0,,114000000.0,https://tracenable.com/company/exxon-mobil/ghg-emissions,COVID year reduced production
+XOM,Exxon Mobil,Energy,2022,52000000.0,3500000.0,,55500000.0,https://tracenable.com/company/exxon-mobil/ghg-emissions,All-time low S1 emissions
+CVX,Chevron,Energy,2022,52000000.0,3500000.0,,55500000.0,https://tracenable.com/company/chevron/ghg-emissions,All-time low S1 emissions
+WMT,Walmart,Consumer Staples,2020,7240000.0,9190000.0,,16430000.0,https://tracenable.com/company/walmart/ghg-emissions,COVID year 5% reduction from 2019
+WMT,Walmart,Consumer Staples,2022,7100000.0,7100000.0,,14200000.0,https://tracenable.com/company/walmart/ghg-emissions,19.3% reduction from 2015 baseline
+KO,Coca-Cola,Consumer Staples,2021,1610000.0,3560000.0,,5170000.0,https://tracenable.com/company/coca-cola/ghg-emissions,8% increase from 2020 post-COVID recovery
+DAL,Delta Air Lines,Industrials,2022,30741000.0,188000.0,,30929000.0,https://esghub.delta.com/historical-emissions-data,Pre-pandemic recovery year
+DAL,Delta Air Lines,Industrials,2019,37300000.0,295000.0,,37595000.0,https://esghub.delta.com/historical-emissions-data,Pre-pandemic baseline year
+T,AT&T,Communication Services,2019,990955.0,5534088.0,,6525043.0,https://esg.att.com/priority-topics/greenhouse-gas-emissions,Pre-divestiture baseline
+COST,Costco,Consumer Staples,2020,1307000.0,1307000.0,,2614000.0,https://tracenable.com/company/costco-wholesale/ghg-emissions,2020 baseline year for 39% reduction target
+COST,Costco,Consumer Staples,2022,1405640.0,1418244.0,,2823884.0,https://tracenable.com/company/costco-wholesale/ghg-emissions,Exceeded 2020 baseline emissions
+COP,ConocoPhillips,Energy,2020,15552000.0,648000.0,,16200000.0,https://www.conocophillips.com/sustainability/performance-metrics/our-performance/performance-metrics-by-year/,21% YoY reduction COVID year
+CMCSA,Comcast,Communication Services,2021,500000.0,1299000.0,,1799000.0,https://ditchcarbon.com/organizations/comcast,19% reduction from 2020
+CMCSA,Comcast,Communication Services,2019,600000.0,1700000.0,,2300000.0,https://ditchcarbon.com/organizations/comcast,Pre-pandemic baseline for 50% target
