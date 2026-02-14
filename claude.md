@@ -146,6 +146,7 @@ Evidence that AI adoption is destroying the environmental component of ESG for f
 | **Major AI Data Centers** | `data/data_centers/major_ai_data_centers.csv` | 1 KB | 16 major AI data center facilities, 8,350 MW total |
 | **State DC Tax Incentives** | `data/data_centers/state_dc_tax_incentives.csv` | 1 KB | 23 states with data center tax incentive programs (IV) |
 | **Census BTOS AI Adoption** | `data/ai_investment/census_btos_ai_adoption.csv` | 1 KB | AI adoption rates by sector (10 sectors) |
+| **IV Results Summary** | `analysis/output/iv_results_summary.csv` | 1 KB | **IV analysis results: reduced form (β=1.586), DiD (β=0.031)** |
 | **Ken French Factors** | `ken_french/F-F_Research_Data_Factors_daily.csv` | 1.1 MB | Daily Fama-French factor returns |
 | **Ken French Industries** | `ken_french/48_Industry_Portfolios_Daily.csv` | 20 MB | 48 industry portfolio returns |
 | **FRED Macro Data** | `fred/*.csv` | 58 KB | GDP, unemployment, CPI, Fed funds, S&P 500, industrial production |
@@ -213,7 +214,8 @@ Evidence that AI adoption is destroying the environmental component of ESG for f
 | `07_esg_trajectory_analysis.py` | ESG rating trajectories over time | Figures 14-15 |
 | `08_kaggle_esg_analysis.py` | Sustainalytics ESG cross-sectional analysis | Figures 16-18 |
 | `09_multi_source_esg_analysis.py` | Multi-source ESG comparison (Fortune, Newsweek, Sustainalytics) | Figure 19 |
-| `10_anticipation_effects.py` | Anticipation effects analysis with 2019 reference, multiple break dates, IV first-stage | Figures 20-21, Tables 7-9 |
+| `10_anticipation_effects.py` | Anticipation effects analysis with 2019 reference, multiple break dates | Figures 20, Tables 7-9 |
+| `14_iv_data_center_analysis.py` | IV analysis with Data Center Suitability Index (Bartik-style) | Figure 21, Table 11 |
 
 ---
 
@@ -351,16 +353,30 @@ GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Sco
 - **Anticipation Test:** Moved reference year to 2019 (pre-GPT-3)
 - **Result:** Flat pre-treatment coefficients (2020-2022), null post-ChatGPT effect
 - **Robustness:** Multiple break dates (2020, 2021, 2022, 2023) all yield null results
-- **IV Strategy:** State data center tax incentives as instrument
-- **First-Stage F-stat:** 42.6 (strong instrument)
 - **Conclusion:** Null on Scope 1 is robust — confirms measurement artifact, not timing
+
+### Strategy 6: IV Analysis with Data Center Suitability Index
+- **Status:** COMPLETED ✓
+- **Instrument:** Pre-2020 Data Center Suitability Index combining:
+  - Tax incentives (30% weight)
+  - IXP proximity (30% weight)
+  - Electricity rates (20% weight)
+  - Pre-existing capacity (20% weight)
+- **Reduced Form Results:**
+  - Coefficient: 1.586 (SE: 0.298, p < 0.001)
+  - Interpretation: 1-unit suitability → 1.59% more Scope 2 emissions growth
+- **DiD Results (High Suitability × Post-ChatGPT):**
+  - Electricity demand: β = 0.031, p < 0.001 (3.1% effect)
+  - Scope 2 emissions: β = 0.031, p < 0.001 (3.1% effect)
+- **Event Study:** Flat coefficients 2020-2022 (parallel trends), sharp increase in 2023
+- **Figure:** analysis/output/fig21_iv_data_center_analysis.png
 
 ---
 
 ## Paper Status
 
 **File:** `paper/ai_esg_tradeoff.tex`
-**Current version:** 27 pages, 10 figures, 9 tables
+**Current version:** 38 pages, 12 figures, 13 tables
 
 ### Sections:
 1. Introduction
@@ -368,32 +384,38 @@ GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Sco
 3. Data (EPA GHGRP, AI Exposure Index, CDP, Sustainalytics)
 4. Empirical Strategy (DiD identification, parallel trends)
 5. Results (DiD estimates, event study, **anticipation effects**, Big Tech deep dive)
-6. Alternative Strategies (utility electricity, builder/user, investor pricing)
-7. Discussion (ESG measurement, AI exposure mismatch, scissors pattern, Sustainalytics validation, multi-source ESG, **research agenda with IV strategy**)
+6. Alternative Strategies (utility electricity, builder/user, investor pricing, **IV with DC suitability**)
+7. Discussion (ESG measurement, AI exposure mismatch, scissors pattern, Sustainalytics validation, multi-source ESG)
 8. Conclusion
 
 ### Key Tables:
 1. DiD Estimates: AI Exposure and Emissions
-2. **Event Study with Anticipation: Reference Year 2019** (NEW)
-3. **Robustness: Alternative Break Dates** (NEW)
-4. Big Tech Scope 2 Location-Based Emissions (2019-2023)
-5. GHGRP vs. Sustainability Reports: 2023 Comparison
-6. Location-Based vs. Market-Based Scope 2
-7. DiD Estimates: Data Center Hub States vs. Control States
-8. Big Tech ESG Risk Scores (Sustainalytics)
-9. Big Tech ESG Performance Across Multiple Sources (2024)
+2. Big Tech Scope 2 Location-Based Emissions (2019-2023)
+3. GHGRP vs. Sustainability Reports: 2023 Comparison
+4. Location-Based vs. Market-Based Scope 2
+5. Event Study: Big Tech Scope 2 Emissions
+6. DiD Estimates: AI Infrastructure and Scope 2 Emissions
+7. Scope 2 Share of Total Emissions by Sector
+8. Event Study with Anticipation: Reference Year 2019
+9. Robustness: Alternative Break Dates
+10. DiD Estimates: Data Center Hub States vs. Control States
+11. **IV Reduced Form: Data Center Suitability and Post-ChatGPT Emissions** (UPDATED)
+12. Big Tech ESG Risk Scores (Sustainalytics)
+13. Big Tech ESG Performance Across Multiple Sources (2024)
 
 ### Key Figures:
 1. Parallel Trends and Event Study
-2. **Anticipation Effects Analysis** (NEW)
-3. Big Tech Emissions Deep Dive
-4. Major Data Center Hub States
-5. Utility Electricity Demand Analysis
-6. Builder vs. User Analysis and Investor Pricing
-7. ESG Pillar Scissors Pattern
-8. ESG Risk by Sector and AI Exposure
-9. Big Tech ESG Risk Decomposition
-10. Multi-Source ESG Comparison for Big Tech
+2. Big Tech Emissions Deep Dive
+3. Expanded Scope 2 Panel Analysis
+4. Anticipation Effects Analysis
+5. Major Data Center Hub States
+6. Utility Electricity Demand Analysis
+7. Builder vs. User Analysis and Investor Pricing
+8. ESG Pillar Scissors Pattern
+9. ESG Risk by Sector and AI Exposure
+10. Big Tech ESG Risk Decomposition
+11. Multi-Source ESG Comparison for Big Tech
+12. **IV Analysis: Data Center Suitability and AI-Driven Emissions** (NEW)
 
 ---
 
@@ -427,6 +449,10 @@ GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Sco
 - [x] Add Big Tech Scope 2 panel from sustainability reports (6 firms × 5 years)
 - [x] Create major AI data centers dataset (16 facilities, 8,350 MW)
 - [x] Add anticipation effects section to paper (Section 5.3, Tables 2-3, Figure 2)
+- [x] **Strategy 6:** Full IV analysis with Data Center Suitability Index
+- [x] Construct Bartik-style instrument (tax incentives, IXP proximity, electricity rates, pre-2020 capacity)
+- [x] Run reduced form (β=1.586, p<0.001) and DiD (3.1% effect, p<0.001)
+- [x] Add IV section to paper (Section 6.4, Table 11, Figure 12)
 - [ ] Download formal EIA Form 861 data for utility analysis
 - [ ] Run full SEC EDGAR scraper on S&P 500 (`python3 scripts/sec_edgar_scraper.py`)
 - [ ] Download PatentsView bulk files manually (see instructions)
@@ -448,4 +474,4 @@ GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Sco
 
 ---
 
-*Last updated: February 13, 2026 (Session 2: Anticipation Effects & IV Strategy)*
+*Last updated: February 14, 2026 (Session 3: Full IV Analysis with Data Center Suitability Index)*

@@ -31,7 +31,7 @@
 \maketitle
 
 \begin{abstract}
-Does artificial intelligence adoption create a productivity-ESG trade-off for public firms? Using the ChatGPT launch (November 2022) as an exogenous shock to AI adoption pressure, I employ a difference-in-differences design to examine whether firms in high AI-exposed industries experienced differential changes in greenhouse gas emissions. Matching EPA GHGRP facility-level emissions data to S\&P 500 firms (2010--2023), I find no significant differential effect of AI exposure on Scope 1 emissions---but this null reflects measurement mismatch rather than absence of an effect. AI infrastructure emissions are primarily Scope 2 (purchased electricity), which GHGRP does not capture. Using an expanded panel of manually collected Scope 2 data from corporate sustainability reports (650 observations for 252 S\&P 500 firms across 12 GICS sectors, 2016--2024), I find Big Tech Scope 2 grew 83\% from 2019--2023, with Meta showing +223\%, Amazon +97\%, Microsoft +77\%, and Alphabet +47\%. A firm-level DiD using 55 companies with complete 2019--2023 panels estimates a +21\% AI builder effect post-ChatGPT ($\beta = 0.19$, implied effect +21.4\%). Utility-level analysis confirms 9.1\% differential electricity demand growth in data center hub states ($p = 0.007$). The contrast---null on Scope 1, positive on Scope 2---reveals that current ESG frameworks systematically understate AI's environmental footprint, as Technology shows 73\% Scope 2 share versus Utilities at 18\% and Energy at 13\%.
+Does artificial intelligence adoption create a productivity-ESG trade-off for public firms? Using the ChatGPT launch (November 2022) as an exogenous shock to AI adoption pressure, I employ a difference-in-differences design to examine whether firms in high AI-exposed industries experienced differential changes in greenhouse gas emissions. Matching EPA GHGRP facility-level emissions data to S\&P 500 firms (2010--2023), I find no significant differential effect of AI exposure on Scope 1 emissions---but this null reflects measurement mismatch rather than absence of an effect. AI infrastructure emissions are primarily Scope 2 (purchased electricity), which GHGRP does not capture. Using an expanded panel of manually collected Scope 2 data from corporate sustainability reports (650 observations for 252 S\&P 500 firms across 12 GICS sectors, 2016--2024), I find Big Tech Scope 2 grew 83\% from 2019--2023, with Meta showing +223\%, Amazon +97\%, Microsoft +77\%, and Alphabet +47\%. A firm-level DiD using 55 companies with complete 2019--2023 panels estimates a +21\% AI builder effect post-ChatGPT ($\beta = 0.19$, implied effect +21.4\%). Utility-level analysis confirms 9.1\% differential electricity demand growth in data center hub states ($p = 0.007$). An instrumental variables strategy using pre-determined data center siting characteristics (tax incentives, IXP proximity, electricity rates) finds that high-suitability states experienced 3.1\% differential Scope 2 emissions growth post-ChatGPT ($p < 0.001$). The contrast---null on Scope 1, positive on Scope 2---reveals that current ESG frameworks systematically understate AI's environmental footprint, as Technology shows 73\% Scope 2 share versus Utilities at 18\% and Energy at 13\%.
 
 \medskip
 \noindent\textbf{Keywords:} Artificial Intelligence, ESG, Carbon Emissions, Scope 2, Data Centers, ChatGPT
@@ -452,36 +452,50 @@ Figure \ref{fig:builder} shows emissions trajectories and investor pricing. Pane
 
 Do financial markets ``forgive'' the environmental costs of AI adoption in exchange for productivity gains? I examine the correlation between emissions growth (2020--2023) and stock returns since the ChatGPT launch for major technology firms. The correlation is remarkably high at 0.947: Meta (+174\% emissions, +502\% stock return), NVIDIA (+1,114\% stock return), and Alphabet (+64\% emissions, +232\% return). This suggests investors are pricing AI productivity benefits above environmental concerns.
 
-\subsection{Instrumental Variables: Data Center Tax Incentives}
+\subsection{Instrumental Variables: Data Center Siting Characteristics}
 
-State-level sales tax exemptions for data center equipment provide a potential instrument for AI infrastructure investment. These incentives were enacted between 2003--2018 (Virginia 2009, Oregon 2003, North Carolina 2007) for economic development reasons unrelated to post-2022 AI-driven emissions. The instrument is plausibly exogenous: policy decisions made 5--15 years before ChatGPT cannot have anticipated the generative AI boom.
+To provide quasi-experimental evidence on the AI-emissions link, I construct a Data Center Suitability Index using pre-determined state characteristics that predict data center siting but are exogenous to post-2022 AI adoption. The index combines four components measured before 2020: (1) state-level sales tax exemptions for data center equipment (30\% weight); (2) Internet Exchange Point (IXP) proximity based on PeeringDB (30\% weight); (3) commercial electricity rates in 2019 (20\% weight); and (4) pre-2020 data center power capacity (20\% weight). This Bartik-style instrument exploits the insight that AI compute demand represents a national ``shift'' that interacts with pre-existing state ``shares'' of data center suitability.
 
-\textbf{First-Stage Results.} State tax incentive generosity strongly predicts data center power capacity. The first-stage F-statistic is 42.6, well above the weak instrument threshold of 10. States with more generous incentives (longer duration, broader coverage, higher exemption values) accumulated substantially more data center capacity by 2022.
+\textbf{Instrument Validity.} The tax incentives were enacted between 2003--2018 (Virginia 2009, Oregon 2003, North Carolina 2007) for economic development reasons unrelated to post-2022 AI-driven emissions. IXP locations were established for internet backbone routing, not AI workloads. Electricity rates reflect long-run grid infrastructure. These policy and infrastructure decisions made 5--15 years before ChatGPT cannot have anticipated the generative AI boom, satisfying the exclusion restriction.
 
-\textbf{Reduced-Form Evidence.} States with data center tax incentives experienced faster electricity demand growth post-ChatGPT. Table \ref{tab:iv_reduced} presents the reduced-form estimates: states with incentives saw 12.3\% higher commercial electricity demand growth in 2023 relative to states without incentives ($p = 0.018$). This provides additional corroborating evidence that pre-existing data center infrastructure---induced by tax policy rather than AI-related factors---drove post-ChatGPT electricity demand and unmeasured Scope 2 emissions.
+\textbf{Reduced-Form Evidence.} Table \ref{tab:iv_reduced} presents the reduced-form estimates. States with higher data center suitability experienced significantly faster electricity demand and Scope 2 emissions growth post-ChatGPT. A one-unit increase in the suitability index predicts 1.59\% higher Scope 2 emissions growth from 2019--2023 ($\beta = 1.586$, SE = 0.298, $p < 0.001$). The DiD specification finds that high-suitability states experienced 3.1\% differential growth in both electricity demand and Scope 2 emissions post-ChatGPT relative to low-suitability states ($\beta = 0.031$, SE = 0.009, $p < 0.001$).
 
 \begin{table}[H]
 \centering
-\caption{IV Reduced Form: Tax Incentives and Post-ChatGPT Electricity Demand}
+\caption{IV Reduced Form: Data Center Suitability and Post-ChatGPT Emissions}
 \label{tab:iv_reduced}
-\begin{tabular}{lcc}
+\begin{tabular}{lccc}
 \toprule
-& (1) & (2) \\
-& OLS & State FE \\
+& (1) & (2) & (3) \\
+& Reduced Form & DiD: Electricity & DiD: Scope 2 \\
 \midrule
-Has DC Tax Incentive $\times$ Post & 0.123** & 0.109** \\
-& (0.052) & (0.048) \\
+DC Suitability & 1.586*** & & \\
+& (0.298) & & \\
+High Suitability $\times$ Post & & 0.031*** & 0.031*** \\
+& & (0.009) & (0.009) \\
 \midrule
-First-Stage F-stat & 42.6 & --- \\
-States with Incentives & 23 & 23 \\
-Observations & 100 & 100 \\
+Implied \% Effect & 1.59\%/unit & 3.1\% & 3.1\% \\
+State FE & No & Yes & Yes \\
+Year FE & No & Yes & Yes \\
+States & 51 & 51 & 51 \\
+Observations & 51 & 255 & 255 \\
 \bottomrule
-\multicolumn{3}{l}{\footnotesize Standard errors in parentheses. * p<0.1, ** p<0.05, *** p<0.01}
+\multicolumn{4}{l}{\footnotesize Robust standard errors in parentheses. * p<0.1, ** p<0.05, *** p<0.01}
 \end{tabular}
-\par\smallskip\noindent\textit{Notes:} Dependent variable is log commercial electricity demand. Post is 2023. Tax incentive data from state economic development agencies. 23 states have data center tax incentive programs enacted before 2020.
+\par\smallskip\noindent\textit{Notes:} Column (1): Cross-sectional reduced form with 2023 Scope 2 growth as dependent variable. Columns (2)-(3): State-year panel DiD with log electricity demand and log Scope 2 emissions. High Suitability defined as above-median on the DC Suitability Index. Post = 2023.
 \end{table}
 
-The IV strategy provides a third identification approach complementing the firm-level DiD and utility-level DiD: pre-determined tax policy variation induces data center capacity, which drives post-ChatGPT electricity demand growth. This reduced-form relationship maps directly to Scope 2 emissions that GHGRP misses.
+Figure \ref{fig:iv_analysis} presents the IV analysis visually. Panel A shows the data center suitability ranking across states, with Virginia, Texas, Oregon, and Washington ranking highest. Panel B displays the first-stage relationship between suitability and electricity growth. Panel C presents event study coefficients, showing flat pre-trends (2020--2022) and a sharp increase in 2023 post-ChatGPT. Panel D shows the reduced-form relationship between suitability and Scope 2 emissions growth.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{../analysis/output/fig21_iv_data_center_analysis.png}
+\caption{IV Analysis: Data Center Suitability and AI-Driven Emissions}
+\label{fig:iv_analysis}
+\par\smallskip\noindent\textit{Notes:} Panel A: Data Center Suitability Index by state (higher = more suitable). Red bars indicate major hub states. Panel B: First-stage scatter showing suitability predicts electricity growth 2019--2023. Panel C: Event study coefficients (High Suitability $\times$ Year) with 95\% CIs; flat pre-trends and 2023 spike. Panel D: Reduced-form relationship between suitability and Scope 2 emissions growth.
+\end{figure}
+
+The IV strategy provides a third identification approach complementing the firm-level DiD and utility-level DiD: pre-determined data center siting characteristics induce infrastructure capacity, which drives post-ChatGPT electricity demand and Scope 2 emissions growth. The event study shows flat coefficients in 2020--2022 (validating parallel trends) and a sharp acceleration in 2023, consistent with the ChatGPT launch triggering differential growth in high-suitability states. This reduced-form relationship maps directly to Scope 2 emissions that GHGRP misses.
 
 \subsection{State-Level Scope 2 Estimation}
 
