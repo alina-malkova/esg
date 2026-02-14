@@ -1,31 +1,52 @@
 ticker,company,sector,year,scope1_mt,scope2_location_mt,scope2_market_mt,total_mt,source_url,notes
-MSFT,Microsoft,Technology,2019,123000,4010000,0,4133000,https://www.microsoft.com/en-us/corporate-responsibility/sustainability/report,
-MSFT,Microsoft,Technology,2020,116000,4440000,0,4556000,https://www.microsoft.com/en-us/corporate-responsibility/sustainability/report,
-MSFT,Microsoft,Technology,2021,114000,5200000,0,5314000,https://www.microsoft.com/en-us/corporate-responsibility/sustainability/report,
-MSFT,Microsoft,Technology,2022,125000,6100000,0,6225000,https://www.microsoft.com/en-us/corporate-responsibility/sustainability/report,
-MSFT,Microsoft,Technology,2023,130000,7100000,450000,7230000,https://www.microsoft.com/en-us/corporate-responsibility/sustainability/report,
-GOOGL,Alphabet,Technology,2019,80000,5100000,0,5180000,https://sustainability.google/reports/,
-GOOGL,Alphabet,Technology,2020,70000,4560000,0,4630000,https://sustainability.google/reports/,
-GOOGL,Alphabet,Technology,2021,73000,5380000,0,5453000,https://sustainability.google/reports/,
-GOOGL,Alphabet,Technology,2022,78000,6240000,0,6318000,https://sustainability.google/reports/,
-GOOGL,Alphabet,Technology,2023,84000,7480000,0,7564000,https://sustainability.google/reports/,
-META,Meta Platforms,Technology,2019,48000,1180000,0,1228000,https://sustainability.fb.com/,
-META,Meta Platforms,Technology,2020,52000,1380000,0,1432000,https://sustainability.fb.com/,
-META,Meta Platforms,Technology,2021,56000,2140000,0,2196000,https://sustainability.fb.com/,
-META,Meta Platforms,Technology,2022,58000,2890000,0,2948000,https://sustainability.fb.com/,
-META,Meta Platforms,Technology,2023,53000,3810000,0,3863000,https://sustainability.fb.com/,
-AMZN,Amazon,Consumer Discretionary,2019,9120000,5170000,1800000,14290000,https://sustainability.aboutamazon.com/,Delivery fleet drives Scope 1
-AMZN,Amazon,Consumer Discretionary,2020,10200000,6080000,2100000,16280000,https://sustainability.aboutamazon.com/,
-AMZN,Amazon,Consumer Discretionary,2021,12400000,7650000,2500000,20050000,https://sustainability.aboutamazon.com/,
-AMZN,Amazon,Consumer Discretionary,2022,15100000,8890000,2900000,23990000,https://sustainability.aboutamazon.com/,
-AMZN,Amazon,Consumer Discretionary,2023,17000000,10200000,3580000,27200000,https://sustainability.aboutamazon.com/,
-AAPL,Apple,Technology,2019,55000,410000,0,465000,https://www.apple.com/environment/,Supply chain is Scope 3
-AAPL,Apple,Technology,2020,52000,420000,0,472000,https://www.apple.com/environment/,
-AAPL,Apple,Technology,2021,50000,450000,0,500000,https://www.apple.com/environment/,
-AAPL,Apple,Technology,2022,48000,480000,0,528000,https://www.apple.com/environment/,
-AAPL,Apple,Technology,2023,47000,510000,0,557000,https://www.apple.com/environment/,
+AAPL,Apple,Technology,2019,55000.0,410000.0,0.0,465000.0,https://www.apple.com/environment/,Supply chain is Scope 3
+AAPL,Apple,Technology,2020,52000.0,420000.0,0.0,472000.0,https://www.apple.com/environment/,
+AAPL,Apple,Technology,2021,50000.0,450000.0,0.0,500000.0,https://www.apple.com/environment/,
+AAPL,Apple,Technology,2022,48000.0,480000.0,0.0,528000.0,https://www.apple.com/environment/,
+AAPL,Apple,Technology,2023,47000.0,510000.0,0.0,557000.0,https://www.apple.com/environment/,
+ADBE,Adobe,Technology,2022,,,,57500.0,https://www.adobe.com/corporate-responsibility/sustainability,Baseline year for 42% reduction target by FY2030
+ADBE,Adobe,Technology,2023,7649.0,,22950.0,61000.0,https://www.adobe.com/corporate-responsibility/sustainability,"Scope 1+2 = 30,599; 47% reduction from 2018; 100% renewable"
+AMD,AMD,Technology,2020,,,61754.0,61754.0,https://www.amd.com/corporate-responsibility,Baseline year for 50% reduction target by 2030
+AMD,AMD,Technology,2023,,,46606.0,46606.0,https://www.amd.com/corporate-responsibility,Scope 1+2 market-based; 24.5% below 2020 baseline
+AMZN,Amazon,Consumer Discretionary,2019,9120000.0,5170000.0,1800000.0,14290000.0,https://sustainability.aboutamazon.com/,Delivery fleet drives Scope 1
+AMZN,Amazon,Consumer Discretionary,2020,10200000.0,6080000.0,2100000.0,16280000.0,https://sustainability.aboutamazon.com/,
+AMZN,Amazon,Consumer Discretionary,2021,12400000.0,7650000.0,2500000.0,20050000.0,https://sustainability.aboutamazon.com/,
+AMZN,Amazon,Consumer Discretionary,2022,15100000.0,8890000.0,2900000.0,23990000.0,https://sustainability.aboutamazon.com/,
+AMZN,Amazon,Consumer Discretionary,2023,17000000.0,10200000.0,3580000.0,27200000.0,https://sustainability.aboutamazon.com/,
+CRM,Salesforce,Technology,2024,3000.0,,,299000.0,https://stakeholderimpactreport.salesforce.com,Scope 1+2; met Scope 1+2 targets early
+CSCO,Cisco,Technology,2019,,,,234704.0,https://www.cisco.com/csr,Baseline for 90% reduction target by 2025
+CSCO,Cisco,Technology,2024,,,,44374.0,https://www.cisco.com/csr,81.11% reduction achieved; target was 90% by 2025
+CVX,Chevron,Energy,2023,37000000.0,3000000.0,,55000000.0,https://www.chevron.com/sustainability,Upstream 17M + Downstream 20M Scope 1; total includes Scope 2
+DUK,Duke Energy,Utilities,2023,72176000.0,,,72176000.0,https://investors.duke-energy.com/sustainability,Est. from 48% reduction vs 2005 baseline of 138.8M
+EQIX,Equinix,Real Estate,2023,29000.0,,234100.0,263100.0,https://sustainability.equinix.com,"DC REIT; 96% renewable; 8,170 GWh consumed"
+GOOGL,Alphabet,Technology,2019,80000.0,5100000.0,0.0,5180000.0,https://sustainability.google/reports/,
+GOOGL,Alphabet,Technology,2020,70000.0,4560000.0,0.0,4630000.0,https://sustainability.google/reports/,
+GOOGL,Alphabet,Technology,2021,73000.0,5380000.0,0.0,5453000.0,https://sustainability.google/reports/,
+GOOGL,Alphabet,Technology,2022,78000.0,6240000.0,0.0,6318000.0,https://sustainability.google/reports/,
+GOOGL,Alphabet,Technology,2023,84000.0,7480000.0,0.0,7564000.0,https://sustainability.google/reports/,
+GS,Goldman Sachs,Financials,2023,92.0,,9252.0,103009.0,https://www.goldmansachs.com/sustainability,Very low Scope 1+2; most is Scope 3 business travel
+IBM,IBM,Technology,2023,181000.0,183000.0,,364000.0,https://www.ibm.com/impact/environment,Est split based on 2022 ratio; 15% reduction YoY
+IBM,IBM,Technology,2024,,,,265000.0,https://www.ibm.com/impact/environment,Met 2025 target early
+INTC,Intel,Technology,2022,,,,1530000.0,https://www.intel.com/sustainability,Peak year; 70% reduction since 2006
+INTC,Intel,Technology,2023,,,,890000.0,https://www.intel.com/sustainability,Scope 1+2 market-based; down from 1.53M in 2022
+JPM,JPMorgan Chase,Financials,2023,115294.0,792479.0,,907773.0,https://www.jpmorganchase.com/sustainability,"Total = 907,773; Scope 2 estimated as total - Scope 1"
+META,Meta Platforms,Technology,2019,48000.0,1180000.0,0.0,1228000.0,https://sustainability.fb.com/,
+META,Meta Platforms,Technology,2020,52000.0,1380000.0,0.0,1432000.0,https://sustainability.fb.com/,
+META,Meta Platforms,Technology,2021,56000.0,2140000.0,0.0,2196000.0,https://sustainability.fb.com/,
+META,Meta Platforms,Technology,2022,58000.0,2890000.0,0.0,2948000.0,https://sustainability.fb.com/,
+META,Meta Platforms,Technology,2023,53000.0,3810000.0,0.0,3863000.0,https://sustainability.fb.com/,
+MSFT,Microsoft,Technology,2019,123000.0,4010000.0,0.0,4133000.0,https://www.microsoft.com/en-us/corporate-responsibility/sustainability/report,
+MSFT,Microsoft,Technology,2020,116000.0,4440000.0,0.0,4556000.0,https://www.microsoft.com/en-us/corporate-responsibility/sustainability/report,
+MSFT,Microsoft,Technology,2021,114000.0,5200000.0,0.0,5314000.0,https://www.microsoft.com/en-us/corporate-responsibility/sustainability/report,
+MSFT,Microsoft,Technology,2022,125000.0,6100000.0,0.0,6225000.0,https://www.microsoft.com/en-us/corporate-responsibility/sustainability/report,
+MSFT,Microsoft,Technology,2023,130000.0,7100000.0,450000.0,7230000.0,https://www.microsoft.com/en-us/corporate-responsibility/sustainability/report,
+NEE,NextEra Energy,Utilities,2023,42287796.0,,16300.0,42304000.0,https://www.investor.nexteraenergy.com/sustainability,Partners LP data; Real Zero plan by 2045
 NVDA,NVIDIA,Technology,2019,,,,,https://www.nvidia.com/en-us/csr/,Fabless - minimal direct emissions
 NVDA,NVIDIA,Technology,2020,,,,,https://www.nvidia.com/en-us/csr/,
 NVDA,NVIDIA,Technology,2021,,,,,https://www.nvidia.com/en-us/csr/,
 NVDA,NVIDIA,Technology,2022,,,,,https://www.nvidia.com/en-us/csr/,
-NVDA,NVIDIA,Technology,2023,15000,45000,0,60000,https://www.nvidia.com/en-us/csr/,
+NVDA,NVIDIA,Technology,2023,15000.0,45000.0,0.0,60000.0,https://www.nvidia.com/en-us/csr/,
+ORCL,Oracle,Technology,2023,15200.0,1149400.0,,1164600.0,https://tracenable.com/company/oracle/ghg-emissions,Scope 2 = 65% of total carbon footprint
+V,Visa,Financials,2023,10300.0,67200.0,30.0,77530.0,https://corporate.visa.com/sustainability,100% renewable electricity; 24% reduction since FY2020
+XOM,Exxon Mobil,Energy,2023,91000000.0,9000000.0,,111000000.0,https://corporate.exxonmobil.com/sustainability,Equity-based; down 2M from 2022
+XOM,Exxon Mobil,Energy,2024,91000000.0,9000000.0,,100000000.0,https://corporate.exxonmobil.com/sustainability,Scope 1 = 91M; total = 100M
