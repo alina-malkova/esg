@@ -143,6 +143,7 @@ Evidence that AI adoption is destroying the environmental component of ESG for f
 | **CDP Emissions** | `cdp/*.csv` | 2 MB | Corporate emissions 2010-2013 (Scope 1 + 2) |
 | **CDP Processed** | `analysis/output/cdp_emissions_sp500.csv` | 40 KB | 183 S&P 500 firms with Scope 1 & 2 (2011-2013) |
 | **Big Tech Scope 2 Panel** | `data/cdp_scope2/big_tech_scope2_panel.csv` | 2 KB | **6 companies × 5 years Scope 2 from sustainability reports** |
+| **Expanded Scope 2 Panel** | `data/scope2_manual/sp500_scope2_expanded.csv` | 150 KB | **2,405 obs for 348 S&P 500 firms (2012-2024), 989 pre-2019 obs** |
 | **Major AI Data Centers** | `data/data_centers/major_ai_data_centers.csv` | 1 KB | 16 major AI data center facilities, 8,350 MW total |
 | **State DC Tax Incentives** | `data/data_centers/state_dc_tax_incentives.csv` | 1 KB | 23 states with data center tax incentive programs (IV) |
 | **Census BTOS AI Adoption** | `data/ai_investment/census_btos_ai_adoption.csv` | 1 KB | AI adoption rates by sector (10 sectors) |
@@ -163,6 +164,7 @@ Evidence that AI adoption is destroying the environmental component of ESG for f
 | **Kaggle Sustainalytics** | ✅ Downloaded | Cross-sectional | 503 firms, June 2024 |
 | **Manual Big Tech Panel** | ✅ Created | Time series | 6 firms, 2019-2023 |
 | **Big Tech Scope 2 Panel** | ✅ Created | Time series | 6 firms, 2019-2023 (from sustainability reports) |
+| **Expanded Scope 2 Panel** | ✅ Created | Time series | 348 firms, 2012-2024 (2,405 obs, 989 pre-2019) |
 | **Fortune Most Admired** | ✅ Scraped | Ranking | Top 10 companies |
 | **Newsweek Most Responsible** | ✅ Scraped | Ranking + Score | Top 49 companies |
 | **Multi-source Summary** | ✅ Created | Consolidated | Big Tech + sectors |
@@ -302,16 +304,18 @@ GHGRP only captures **Scope 1** (direct combustion). Tech/AI emissions are **Sco
 
 **Conclusion:** The null result on Scope 1 emissions is robust — this confirms the measurement artifact (Scope 1 vs. Scope 2), not timing issues.
 
-### Big Tech Scope 2 Growth (2019-2023)
+### Big Tech Scope 2 Growth (2012-2023)
 
-| Company | 2019 (MT) | 2023 (MT) | % Change |
-|---------|-----------|-----------|----------|
-| Microsoft | 4.01M | 7.10M | +77% |
-| Alphabet | 4.35M | 7.48M | +72% |
-| Meta | 1.77M | 3.81M | +115% |
-| Amazon | 5.73M | 10.20M | +78% |
-| Apple | 2.50M | 2.95M | +18% |
-| **Total** | **18.36M** | **33.72M** | **+83.7%** |
+| Company | 2012 (MT) | 2019 (MT) | 2023 (MT) | 2012-2023 % |
+|---------|-----------|-----------|-----------|-------------|
+| Microsoft | 1.25M | 4.01M | 7.10M | +468% |
+| Alphabet | 1.85M | 5.10M | 7.48M | +304% |
+| Meta | N/A | 1.18M | 3.81M | +223% (2019-23) |
+| Amazon | 2.15M | 5.17M | 10.20M | +374% |
+| Apple | 0.29M | 0.41M | 0.51M | +76% |
+| **Total** | **5.54M** | **15.87M** | **29.1M** | **+425%** |
+
+**Note:** Extended panel (2012-2024) reveals pre-existing growth trends. Event study shows significant 2018 pre-trend coefficient (0.38, p=0.03).
 
 ---
 

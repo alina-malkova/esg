@@ -31,7 +31,7 @@
 \maketitle
 
 \begin{abstract}
-Does artificial intelligence adoption create a productivity-ESG trade-off for public firms? Using the ChatGPT launch (November 2022) as an exogenous shock to AI adoption pressure, I employ a difference-in-differences design to examine whether firms in high AI-exposed industries experienced differential changes in greenhouse gas emissions. Matching EPA GHGRP facility-level emissions data to S\&P 500 firms (2010--2023), I find no significant differential effect of AI exposure on Scope 1 emissions---but this null reflects measurement mismatch rather than absence of an effect. AI infrastructure emissions are primarily Scope 2 (purchased electricity), which GHGRP does not capture. Using an expanded panel of manually collected Scope 2 data from corporate sustainability reports (1,423 observations for 319 S\&P 500 firms across 12 GICS sectors, 2016--2024), I find Big Tech Scope 2 grew substantially from 2019--2023, with Meta showing +223\%, Amazon +97\%, Microsoft +77\%, and Alphabet +47\%. A firm-level DiD using 219 companies with complete 2019--2023 panels estimates a statistically significant +73\% AI builder effect post-ChatGPT ($\beta = 0.55$, $p = 0.009$). Utility-level analysis confirms 9.1\% differential electricity demand growth in data center hub states ($p = 0.007$). An instrumental variables strategy using pre-determined data center siting characteristics (tax incentives, IXP proximity, electricity rates) finds that high-suitability states experienced 3.1\% differential Scope 2 emissions growth post-ChatGPT ($p < 0.001$). The contrast---null on Scope 1, positive on Scope 2---reveals that current ESG frameworks systematically understate AI's environmental footprint, as Information Technology shows 84\% Scope 2 share versus Utilities at 17\% and Energy at 14\%.
+Does artificial intelligence adoption create a productivity-ESG trade-off for public firms? Using the ChatGPT launch (November 2022) as an exogenous shock to AI adoption pressure, I employ a difference-in-differences design to examine whether firms in high AI-exposed industries experienced differential changes in greenhouse gas emissions. Matching EPA GHGRP facility-level emissions data to S\&P 500 firms (2010--2023), I find no significant differential effect of AI exposure on Scope 1 emissions---but this null reflects measurement mismatch rather than absence of an effect. AI infrastructure emissions are primarily Scope 2 (purchased electricity), which GHGRP does not capture. Using an expanded panel of manually collected Scope 2 data from corporate sustainability reports (2,405 observations for 348 S\&P 500 firms across 12 GICS sectors, 2012--2024), I find Big Tech Scope 2 grew substantially from 2012--2023, with Microsoft growing from 1.25M to 7.1M MT (+468\%), Alphabet from 1.85M to 7.48M MT (+304\%), and Amazon from 2.15M to 10.2M MT (+374\%). A firm-level DiD using 240 companies with complete pre-post panels estimates a +27\% AI builder effect post-ChatGPT ($\beta = 0.24$, $p = 0.46$). However, event study analysis reveals significant pre-trends, with AI builders showing elevated emissions trajectories even before ChatGPT (2018 coefficient = 0.38, $p = 0.03$). Utility-level analysis confirms 9.1\% differential electricity demand growth in data center hub states ($p = 0.007$). An instrumental variables strategy using pre-determined data center siting characteristics (tax incentives, IXP proximity, electricity rates) finds that high-suitability states experienced 3.1\% differential Scope 2 emissions growth post-ChatGPT ($p < 0.001$). The contrast---null on Scope 1, positive on Scope 2---reveals that current ESG frameworks systematically understate AI's environmental footprint, as Information Technology shows 84\% Scope 2 share versus Utilities at 17\% and Energy at 14\%.
 
 \medskip
 \noindent\textbf{Keywords:} Artificial Intelligence, ESG, Carbon Emissions, Scope 2, Data Centers, ChatGPT
@@ -81,9 +81,9 @@ To examine the measurement gap, I obtain corporate emissions data from CDP (form
 
 \subsection{Manual Scope 2 Panel}
 
-To enable direct DiD estimation on Scope 2 emissions, I manually collect emissions data from corporate sustainability reports for 319 S\&P 500 firms across all 12 GICS sectors (1,423 company-year observations, 2016--2024). The expanded sample provides comprehensive coverage including: (1) AI Infrastructure Builders (MSFT, GOOGL, META, AMZN, AAPL, NVDA, ORCL, IBM, INTC, AMD, CRM, ADBE, CSCO); (2) Data Center REITs (EQIX, DLR, AMT, CCI, SBAC); (3) Semiconductors (QCOM, TXN, AVGO, AMAT, MU, NXPI, MCHP, KLAC, LRCX); (4) Financials (JPM, BAC, GS, MS, C, WFC, V, MA, BLK, SPGI, MCO, ICE, CME); (5) Energy majors (XOM, CVX, COP, PSX, SLB, HAL, OXY, MPC, VLO, EOG); (6) Utilities (DUK, SO, NEE, D, XEL, AEP, ETR, WEC, ED, SRE, PCG, AEE, FE, PPL); (7) Industrials (BA, GE, HON, LMT, RTX, CAT, DE, MMM, UNP, CSX, NSC, UPS, FDX, WM, RSG, CMI, ETN, PH); (8) Healthcare (MRK, PFE, ABBV, LLY, BMY, JNJ, TMO, DHR, AMGN, GILD, MDT, CVS, ISRG, VRTX, REGN); (9) Retail/Consumer (WMT, COST, TGT, HD, LOW, NKE, SBUX, MCD, DIS, TJX, ROST, CMG, YUM, MAR, HLT); (10) Airlines (DAL, AAL, UAL, LUV); (11) Telecom (T, VZ, TMUS, CMCSA); and (12) Real Estate (PLD, SPG, WELL, PSA, EQIX, DLR).
+To enable direct DiD estimation on Scope 2 emissions, I manually collect emissions data from corporate sustainability reports for 348 S\&P 500 firms across all 12 GICS sectors (2,405 company-year observations, 2012--2024). The expanded sample provides comprehensive coverage including: (1) AI Infrastructure Builders (MSFT, GOOGL, META, AMZN, AAPL, NVDA, ORCL, IBM, INTC, AMD, CRM, ADBE, CSCO); (2) Data Center REITs (EQIX, DLR, AMT, CCI, SBAC); (3) Semiconductors (QCOM, TXN, AVGO, AMAT, MU, NXPI, MCHP, KLAC, LRCX); (4) Financials (JPM, BAC, GS, MS, C, WFC, V, MA, BLK, SPGI, MCO, ICE, CME); (5) Energy majors (XOM, CVX, COP, PSX, SLB, HAL, OXY, MPC, VLO, EOG); (6) Utilities (DUK, SO, NEE, D, XEL, AEP, ETR, WEC, ED, SRE, PCG, AEE, FE, PPL); (7) Industrials (BA, GE, HON, LMT, RTX, CAT, DE, MMM, UNP, CSX, NSC, UPS, FDX, WM, RSG, CMI, ETN, PH); (8) Healthcare (MRK, PFE, ABBV, LLY, BMY, JNJ, TMO, DHR, AMGN, GILD, MDT, CVS, ISRG, VRTX, REGN); (9) Retail/Consumer (WMT, COST, TGT, HD, LOW, NKE, SBUX, MCD, DIS, TJX, ROST, CMG, YUM, MAR, HLT); (10) Airlines (DAL, AAL, UAL, LUV); (11) Telecom (T, VZ, TMUS, CMCSA); and (12) Real Estate (PLD, SPG, WELL, PSA, EQIX, DLR).
 
-The panel is substantially improved for longitudinal analysis: 242 firms have multi-year data, 219 firms have 5+ years of coverage, and 219 firms have complete balanced panels for 2019--2023 enabling proper DiD estimation. Year distribution: 2019 (233 obs), 2020 (236 obs), 2021 (239 obs), 2022 (245 obs), 2023 (461 obs). Data sources include annual sustainability reports, CDP Climate responses, and third-party ESG databases (Sustainalytics, DitchCarbon, Tracenable, GlobalData).
+The panel spans 13 years from 2012--2024, enabling extended pre-period analysis: 989 observations pre-2019, 1,416 observations 2019 and later. Year distribution: 2012 (42 obs), 2013 (42 obs), 2014 (42 obs), 2015 (214 obs), 2016 (217 obs), 2017 (216 obs), 2018 (216 obs), 2019 (233 obs), 2020 (236 obs), 2021 (239 obs), 2022 (245 obs), 2023 (461 obs). A total of 240 companies have complete pre-ChatGPT and post-ChatGPT observations enabling proper DiD estimation. Data sources include annual sustainability reports, CDP Climate responses, and third-party ESG databases (Sustainalytics, DitchCarbon, Tracenable, GlobalData).
 
 \subsection{Sustainalytics ESG Risk Ratings}
 
@@ -261,7 +261,7 @@ Year & Coefficient & SE & 95\% CI & Phase \\
 \ln(\text{Scope2}_{it}) = \beta(\text{CloudBuilder}_i \times \text{Post}_t) + \alpha_i + \gamma_t + \varepsilon_{it}
 \end{equation}
 
-Table \ref{tab:scope2_did} presents the results from the expanded panel. Using all 219 firms with complete 2019--2023 data and classifying AI infrastructure builders (MSFT, GOOGL, META, AMZN, NVDA, ORCL, IBM, INTC, CRM, ADBE, CSCO, EQIX, DLR) versus control firms, the DiD coefficient is 0.546 (implied effect: +72.6\%), statistically significant at the 1\% level ($p = 0.009$). This result demonstrates that AI infrastructure builders experienced dramatically higher Scope 2 emissions growth post-ChatGPT compared to non-builder firms. The expanded sample of 219 firms (1,095 balanced panel observations) provides substantially greater statistical power than previous estimates. Cloud builders' compound annual growth rate (CAGR) averaged 19.5\% compared to non-builders' 5--8\%.
+Table \ref{tab:scope2_did} presents results from the substantially expanded panel (2,405 observations for 348 firms, 2012--2024). Using 240 firms with complete pre-ChatGPT and post-ChatGPT data and classifying AI infrastructure builders (MSFT, GOOGL, META, AMZN, NVDA, ORCL, IBM, INTC, CRM, ADBE, CSCO, EQIX, DLR, AMT, CCI) versus control firms, the DiD coefficient is 0.236 (implied effect: +27\%), though not statistically significant at conventional levels ($p = 0.46$). Importantly, the extended pre-period reveals significant pre-trends: the 2018 coefficient is 0.38 ($p = 0.03$), indicating AI builders already exhibited elevated emissions trajectories before ChatGPT. This suggests that while AI builders do experience higher Scope 2 growth, this trend predates the ChatGPT shock, likely reflecting earlier AI infrastructure investments (GPT-3 in 2020, cloud computing expansion). The expanded sample provides important context: Microsoft's Scope 2 grew from 1.25M MT (2012) to 7.1M MT (2023, +468\%), Alphabet from 1.85M to 7.48M MT (+304\%), and Amazon from 2.15M to 10.2M MT (+374\%).
 
 \begin{table}[H]
 \centering
@@ -270,21 +270,24 @@ Table \ref{tab:scope2_did} presents the results from the expanded panel. Using a
 \begin{tabular}{lccc}
 \toprule
 & (1) & (2) & (3) \\
-& Event Study & Firm FE & Expanded Panel DiD \\
+& Firm FE & Firm + Year FE & Extended Panel \\
 \midrule
-2023 vs. 2022 & 0.162* & 0.162* & --- \\
-& (0.098) & (0.098) & \\
-AI Builder $\times$ Post-ChatGPT & --- & --- & 0.546*** \\
-& & & (0.208) \\
-Implied \% Effect & +17.6\% & +17.6\% & +72.6\% \\
+AI Builder $\times$ Post-ChatGPT & 0.236 & 0.255 & --- \\
+& (0.318) & (0.320) & \\
+2018 (Pre-trend) & --- & --- & 0.383** \\
+& & & (0.176) \\
+2023 (Post-ChatGPT) & --- & --- & 0.395 \\
+& & & (0.323) \\
+Implied \% Effect & +27\% & +29\% & +48\% \\
 \midrule
-Firm FE & No & Yes & Yes \\
-N & 25 & 25 & 1,095 \\
-Firms & 5 & 5 & 219 \\
-$p$-value & 0.098 & 0.098 & 0.009 \\
+Firm FE & Yes & Yes & Yes \\
+Year FE & No & Yes & Yes \\
+N & 2,132 & 2,132 & 2,132 \\
+Firms & 240 & 240 & 240 \\
+$p$-value & 0.459 & 0.425 & --- \\
 \bottomrule
 \end{tabular}
-\par\smallskip\noindent\textit{Notes:} Dependent variable is log Scope 2 location-based emissions. Columns (1)--(2) use Big Tech 5-firm panel. Column (3) uses expanded panel of 219 firms with balanced 2019--2023 data. AI Builders = MSFT, GOOGL, META, AMZN, ORCL, IBM, INTC, NVDA, CRM, ADBE, CSCO, EQIX, DLR. Robust standard errors (HC3). *** p$<$0.01, * p$<$0.1.
+\par\smallskip\noindent\textit{Notes:} Dependent variable is log Scope 2 location-based emissions. Columns (1)--(2) estimate DiD on expanded panel (2012--2024). Column (3) shows event study coefficients (reference: 2019). Pre-trend in 2018 is statistically significant, suggesting AI builders were already on elevated trajectories before ChatGPT. AI Builders = 14 firms including MSFT, GOOGL, META, AMZN, ORCL, IBM, INTC, NVDA, AAPL. Robust standard errors (HC3). ** p$<$0.05.
 \end{table}
 
 \textbf{Sector-Level Comparison.} Extending the analysis to all 252 firms across 12 GICS sectors, Table \ref{tab:scope2_sectors} presents the Scope 2 share of total emissions by sector in 2023. The contrast is stark: Technology firms show 73\% Scope 2 share (driven by data center electricity), Financials 70\%, while Utilities show 18\% (power generation is Scope 1) and Energy 13\%. This sector-level pattern confirms that the null result on GHGRP Scope 1 emissions reflects genuine measurement mismatch rather than absence of an effect.

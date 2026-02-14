@@ -1,0 +1,11 @@
+Metric,Value
+Total Observations,2405
+Unique Companies,348
+Year Range,2012-2024
+Pre-2019 Obs,989
+2019+ Obs,1416
+AI Builders in Panel,14
+DiD Coefficient,0.2355
+DiD SE,0.3182
+DiD P-value,0.4592
+Implied Effect,+26.6%
