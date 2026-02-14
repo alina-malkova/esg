@@ -1,0 +1,29 @@
+
+BABINA ET AL. AI INVESTMENT DATASET
+====================================
+
+Citation:
+Babina, T., Fedyk, A., He, A.X., Hodson, J. (2024).
+"Artificial Intelligence, Firm Growth, and Product Innovation"
+Journal of Financial Economics, 151, 103745.
+
+Download:
+1. Go to: https://data.mendeley.com/datasets/4x9j5wg4r3
+2. Click "Download" (requires free Mendeley account)
+3. Extract files to this directory
+
+OR
+
+Request updated 2025 version:
+1. Go to: https://www.taniababina.com/data
+2. Fill out the Google Form to request access
+3. Dataset includes AI hiring measures through 2025
+
+Key Variables:
+- firm_id: PERMNO or GVKEY
+- year: 2010-2018 (or 2025 in updated version)
+- ai_hiring_intensity: Share of new hires with AI skills
+- ai_patent_count: Number of AI-related patents filed
+- ai_earnings_mentions: AI mentions in earnings calls
+
+This is the gold standard measure of firm-level AI investment.

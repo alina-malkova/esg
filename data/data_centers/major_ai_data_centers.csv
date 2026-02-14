@@ -1,0 +1,17 @@
+company,name,state,county,power_mw,year_operational,expansion_2023,ai_focused
+Microsoft,Quincy WA Campus,WA,Grant,600,2018,True,True
+Microsoft,San Antonio TX,TX,Bexar,400,2020,True,True
+Microsoft,Phoenix AZ,AZ,Maricopa,500,2021,True,True
+Microsoft,Cheyenne WY,WY,Laramie,300,2019,True,True
+Google,The Dalles OR,OR,Wasco,500,2006,True,True
+Google,Council Bluffs IA,IA,Pottawattamie,450,2009,True,True
+Google,Lenoir NC,NC,Caldwell,400,2008,True,True
+Google,Mayes County OK,OK,Mayes,350,2012,True,True
+Amazon,Northern Virginia,VA,Loudoun,2000,2011,True,True
+Amazon,Oregon,OR,Umatilla,800,2013,True,True
+Amazon,Ohio,OH,Franklin,500,2016,True,True
+Meta,Prineville OR,OR,Crook,350,2011,True,True
+Meta,Forest City NC,NC,Rutherford,300,2012,True,True
+Meta,Altoona IA,IA,Polk,400,2014,True,True
+Meta,Fort Worth TX,TX,Tarrant,450,2016,True,True
+NVIDIA,Santa Clara HQ,CA,Santa Clara,50,2010,True,True

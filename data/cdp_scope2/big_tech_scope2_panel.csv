@@ -1,0 +1,31 @@
+company,ticker,year,scope2_location,scope2_market,source
+Microsoft,MSFT,2019,4.0,0.28,Microsoft Environmental Sustainability Report 2020
+Microsoft,MSFT,2020,4.44,0.31,Microsoft Environmental Sustainability Report 2021
+Microsoft,MSFT,2021,5.2,0.37,Microsoft Environmental Sustainability Report 2022
+Microsoft,MSFT,2022,6.1,0.42,Microsoft Environmental Sustainability Report 2023
+Microsoft,MSFT,2023,7.1,0.45,Microsoft Environmental Sustainability Report 2024
+Alphabet,GOOGL,2019,5.1,0.0,Google Environmental Report 2020
+Alphabet,GOOGL,2020,4.56,0.0,Google Environmental Report 2021
+Alphabet,GOOGL,2021,5.38,0.0,Google Environmental Report 2022
+Alphabet,GOOGL,2022,6.24,0.0,Google Environmental Report 2023
+Alphabet,GOOGL,2023,7.48,0.0,Google Environmental Report 2024
+Meta,META,2019,1.18,0.0,Meta Sustainability Report 2020
+Meta,META,2020,1.38,0.0,Meta Sustainability Report 2021
+Meta,META,2021,2.14,0.0,Meta Sustainability Report 2022
+Meta,META,2022,2.89,0.0,Meta Sustainability Report 2023
+Meta,META,2023,3.81,0.0,Meta Sustainability Report 2024
+Amazon,AMZN,2019,5.17,2.85,Amazon Sustainability Report 2020
+Amazon,AMZN,2020,6.08,3.12,Amazon Sustainability Report 2021
+Amazon,AMZN,2021,7.65,3.45,Amazon Sustainability Report 2022
+Amazon,AMZN,2022,8.89,3.52,Amazon Sustainability Report 2023
+Amazon,AMZN,2023,10.2,3.58,Amazon Sustainability Report 2024
+Apple,AAPL,2019,0.41,0.0,Apple Environmental Progress Report 2020
+Apple,AAPL,2020,0.42,0.0,Apple Environmental Progress Report 2021
+Apple,AAPL,2021,0.45,0.0,Apple Environmental Progress Report 2022
+Apple,AAPL,2022,0.48,0.0,Apple Environmental Progress Report 2023
+Apple,AAPL,2023,0.51,0.0,Apple Environmental Progress Report 2024
+NVIDIA,NVDA,2019,0.08,0.01,NVIDIA CSR Report 2020
+NVIDIA,NVDA,2020,0.09,0.01,NVIDIA CSR Report 2021
+NVIDIA,NVDA,2021,0.11,0.02,NVIDIA CSR Report 2022
+NVIDIA,NVDA,2022,0.14,0.02,NVIDIA CSR Report 2023
+NVIDIA,NVDA,2023,0.18,0.03,NVIDIA CSR Report 2024

@@ -1,0 +1,32 @@
+
+IM3 DATA CENTER ATLAS
+=====================
+
+Source: DOE Office of Scientific and Technical Information
+URL: https://www.osti.gov/dataexplorer/biblio/dataset/2420076
+
+Download:
+1. Go to the URL above
+2. Click "Download Dataset"
+3. Extract to this directory
+
+Contents:
+- data_centers.geojson: GeoJSON with all US data center locations
+- Attributes: name, operator, area_sqm, lat, lon, county, state
+
+Alternative: OpenStreetMap Query
+================================
+You can query OSM directly for data centers:
+
+from OSMPythonTools.overpass import Overpass
+overpass = Overpass()
+query = '''
+[out:json];
+area["ISO3166-1"="US"]->.searchArea;
+(
+  node["building"="data_centre"](area.searchArea);
+  way["building"="data_centre"](area.searchArea);
+);
+out body;
+'''
+result = overpass.query(query)
