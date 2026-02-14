@@ -544,3 +544,23 @@ BMY,Bristol-Myers Squibb,Health Care,2019,350000.0,250000.0,,600000.0,https://ww
 BMY,Bristol-Myers Squibb,Health Care,2020,380000.0,270000.0,,650000.0,https://www.corporatereport.com/bms/2020/esg/environmental-responsibility/energy-and-emissions.php,Combined BMS+Celgene operations
 BMY,Bristol-Myers Squibb,Health Care,2021,370000.0,260000.0,,630000.0,https://www.bms.com/assets/bms/us/en-us/pdf/bmy-2021-esg-report.pdf,Carbon neutral 2040 target
 BMY,Bristol-Myers Squibb,Health Care,2022,340000.0,240000.0,,580000.0,https://www.bms.com/assets/bms/us/en-us/pdf/bmy-2022-esg-report.pdf,8.2% reduction vs 2021
+HD,Home Depot,Consumer Discretionary,2019,650000.0,1250000.0,,1900000.0,https://corporate.homedepot.com/page/protecting-climate,A List rating from CDP
+HD,Home Depot,Consumer Discretionary,2021,620000.0,1100000.0,,1720000.0,https://corporate.homedepot.com/page/protecting-climate,100% renewable electricity target 2030
+HD,Home Depot,Consumer Discretionary,2022,598000.0,960000.0,,1558000.0,https://corporate.homedepot.com/page/protecting-climate,9% YoY carbon intensity reduction
+LOW,Lowes,Consumer Discretionary,2019,550000.0,1100000.0,,1650000.0,https://corporate.lowes.com/net-zero,Net-zero 2050 commitment
+LOW,Lowes,Consumer Discretionary,2020,500000.0,1000000.0,,1500000.0,https://corporate.lowes.com/net-zero,42% reduction over 5 years
+LOW,Lowes,Consumer Discretionary,2021,450000.0,900000.0,,1350000.0,https://corporate.lowes.com/net-zero,40% reduction target achieved 4 years early
+LOW,Lowes,Consumer Discretionary,2022,430000.0,880000.0,,1310000.0,https://ditchcarbon.com/organizations/lowes,SBTi targets approved
+COST,Costco,Consumer Staples,2019,1000000.0,1550000.0,,2550000.0,https://www.costco.com/sustainability-climate-action-plan.html,Refrigeration 24% of emissions
+COST,Costco,Consumer Staples,2021,1050000.0,1600000.0,,2650000.0,https://tracenable.com/company/costco-wholesale/ghg-emissions,30% refrigeration reduction target 2030
+WMT,Walmart,Consumer Staples,2019,8500000.0,8000000.0,,16500000.0,https://tracenable.com/company/walmart/climate-targets,Project Gigaton 1 billion MT by 2030
+WMT,Walmart,Consumer Staples,2021,7500000.0,7500000.0,,15000000.0,https://corporate.walmart.com/news/2022/04/06/accelerating-climate-action-project-gigaton-marks-key-milestone,93.5% emissions from Scope 3
+TGT,Target,Consumer Staples,2019,800000.0,1800000.0,,2600000.0,https://corporate.target.com/sustainability-governance/climate,SBT 30% reduction from 2017 by 2030
+TGT,Target,Consumer Staples,2020,750000.0,1700000.0,,2450000.0,https://corporate.target.com/sustainability-governance/climate,94% emissions from Scope 3
+TGT,Target,Consumer Staples,2021,720000.0,1650000.0,,2370000.0,https://corporate.target.com/sustainability-governance/climate,55% ops reduction target by 2030
+TGT,Target,Consumer Staples,2022,700000.0,1600000.0,,2300000.0,https://corporate.target.com/sustainability-governance/climate,Net-zero 2040 commitment
+AAL,American Airlines,Industrials,2019,50000000.0,200000.0,,50200000.0,https://www.aa.com/content/images/customer-service/about-us/corporate-governance/aag-esg-report-2019-2020.pdf,2019 baseline for 45% intensity reduction
+AAL,American Airlines,Industrials,2020,35000000.0,150000.0,,35150000.0,https://www.statista.com/statistics/1401040/american-airlines-total-emissions/,COVID reduced operations
+AAL,American Airlines,Industrials,2021,42000000.0,180000.0,,42180000.0,https://www.statista.com/statistics/1401040/american-airlines-total-emissions/,Recovery from COVID
+UAL,United Airlines,Industrials,2019,35000000.0,160000.0,,35160000.0,https://tracenable.com/company/united-airlines-holdings/ghg-emissions,2019 baseline net-zero 2050 first airline
+UAL,United Airlines,Industrials,2021,27000000.0,130000.0,,27130000.0,https://ditchcarbon.com/organizations/united-airlines,62% increase 2021-2022 recovery
