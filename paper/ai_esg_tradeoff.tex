@@ -565,6 +565,31 @@ Figure \ref{fig:robustness} summarizes the robustness evidence. Panel A shows pl
 \par\smallskip\noindent\textit{Notes:} Panel A: Placebo tests comparing AI builders to alternative treatment groups. Panel B: Leave-one-out sensitivity showing coefficient stability. Panel C: Key heterogeneity results. Panel D: Implied effects across identification strategies.
 \end{figure}
 
+\subsection{Continuous AI Investment Measure}
+
+I test whether continuous measures of AI adoption intensity predict Scope 2 emissions growth, using AI keyword counts from SEC 10-K filings. Extracting 3,731 company-year observations from EDGAR (2018--2025, 495 firms), I count mentions of AI-related terms (artificial intelligence, machine learning, deep learning, neural network, generative AI, large language model, etc.) and normalize by document length to create an AI keyword intensity measure.
+
+Table \ref{tab:continuous_ai} compares continuous versus binary treatments. Strikingly, continuous AI keyword intensity shows \textit{no} significant relationship with Scope 2 emissions ($\beta = -0.03$, $p = 0.25$). High AI intensity firms (top quartile by keyword counts) also show no differential effect ($\beta = 0.00$, $p = 0.99$). In contrast, the binary AI infrastructure builder treatment remains highly significant ($\beta = 0.34$, $p < 0.0001$), even when controlling for continuous intensity.
+
+\begin{table}[H]
+\centering
+\caption{Continuous vs. Binary AI Treatment}
+\label{tab:continuous_ai}
+\begin{tabular}{lcccc}
+\toprule
+Treatment Measure & Coefficient & SE & P-value & Implied Effect \\
+\midrule
+AI Intensity (Std.) $\times$ Post & $-0.033$ & (0.029) & 0.247 & $-3.3\%$/SD \\
+High AI (Top 25\%) $\times$ Post & 0.001 & (0.083) & 0.990 & $+0.1\%$ \\
+Binary AI Builder $\times$ Post & 0.337*** & (0.081) & $<0.001$ & $+40.1\%$ \\
+Builder (controlling for intensity) & 0.363*** & (0.083) & $<0.001$ & $+43.7\%$ \\
+\bottomrule
+\end{tabular}
+\par\smallskip\noindent\textit{Notes:} DiD estimates from merged SEC 10-K and Scope 2 panel (1,401 obs, 212 firms). All specifications include firm and year fixed effects. Robust standard errors (HC3). * $p < 0.1$, ** $p < 0.05$, *** $p < 0.01$.
+\end{table}
+
+This result clarifies the mechanism: the emissions effect derives from \textit{infrastructure ownership}, not AI adoption or disclosure intensity. Firms that extensively discuss AI in their 10-Ks but don't own data centers (e.g., AI-using financial firms) show no emissions growth. Firms that build infrastructure (hyperscalers, chip manufacturers, data center REITs) show large effects regardless of how much they mention AI in disclosures. The binary treatment correctly identifies infrastructure ownership; continuous keyword measures capture disclosure intensity, which is orthogonal to the emissions channel.
+
 \section{Alternative Strategies and Additional Evidence}
 
 \subsection{Utility Electricity Demand in Data Center Hubs}
